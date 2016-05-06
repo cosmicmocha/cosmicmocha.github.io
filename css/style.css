@@ -14,7 +14,7 @@ h4 {
     color: #fff;
 }
 
-.eightcol iframe {
+.eightcol iframe, img {
     max-width: 100%;
 }
 .fourcol img {
