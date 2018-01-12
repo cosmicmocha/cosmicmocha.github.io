@@ -1,180 +1,240 @@
+<!------------------------------------>
+<!-- Valery Marier - Personal Website -->
+<!--         Portfolio Page         -->
+<!------------------------------------>
+
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-
+    <!-- Page Title and Metadata -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Graphic Design | Valery Marier</title>
+    <title>Portfolio | Valery Marier</title>
     <meta name="author" content="Valery Marier">
     <meta name="description" content="The personal website of Valery Marier">
+    <!-- Site Favicon -->
     <link rel="icon" type="image/png" src="logo.png">
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-
-    <!-- Custom styles for this template -->
-    <link href="css/agency-portfolio.css" rel="stylesheet">
-
+    <!-- Site Stylesheet, Bootstrap, & Font Awesome -->
+    <link href="ect/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="ect/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/work.css" rel="stylesheet">
   </head>
-
-  <body id="page-top">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+  <body>
+    <!-- Menu Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="menubar">
       <div class="container">
+
+        <!-- Menu Header -->
         <a class="navbar-brand js-scroll-trigger" href="index.html">Valery Marier</a>
+
+        <!-- For small browser windows -->
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
         </button>
+
+        <!-- Menu items -->
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="work.html">Graphic Design</a>
-            </li>
-            <li class="nav-item"><a class="nav-link">/</a></li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="http://instagram.com/cosmicmocha">Photography</a>
-            </li>
-              <li class="nav-item"><a class="nav-link">/</a></li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="about.html">About</a>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="work.html">Graphic Design</a></li>
+            <li class="nav-item"><a class="nav-link" href="http://instagram.com/cosmicmocha">Photography</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- Portfolio Grid -->
-    <section class="bg-light" id="portfolio">
+    <!-- The Portfolio Item Grid -->
+    <section id="port">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 text-center">
-            <h1 class="section-heading text-uppercase">Graphic Design</h1>
-            <h3 class="section-subheading text-muted">A collection of my print and web design work</h3>
-          </div>
+          <!-- Page headline and subheading -->
+          <div class="col-lg-12 text-center"><h1 class="section-heading text-uppercase">Graphic Design</h1></div>
         </div>
+        <br>
         <div class="row">
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
+
+          <!-- Portfolio Item 1 Display Box -->
+          <div class="col-md-4 col-sm-6 port-item">
+            <!-- Link to modal -->
+            <a class="port-link" data-toggle="modal" href="#portModal1">
+              <!-- Hover Actions -->
+              <div class="port-hover">
+                <div class="port-hover-content"><i class="fa fa-expand fa-3x"></i></div>
               </div>
-              <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+              <!-- Image Thumbnail -->
+              <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" title="Options Poster" alt="Options Poster">
             </a>
-            <div class="portfolio-caption">
-              <h4>Options Poster</h4>
+            <!-- Portfolio Item Name and Type -->
+            <div class="port-caption">
+              <h4>Options Posters</h4>
               <p class="text-muted">Print Design</p>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
+
+          <!-- Portfolio Item 2 Display Box -->
+          <div class="col-md-4 col-sm-6 port-item">
+              <!-- Link to modal -->
+              <a class="port-link" data-toggle="modal" href="#portModal2">
+              <!-- Hover Actions -->
+                <div class="port-hover">
+                  <div class="port-hover-content"><i class="fa fa-expand fa-3x"></i></div>
                 </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Slice Magazine</h4>
+                <!-- Image Thumbnail -->
+                <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" title="Design Culture Now poster" alt="Design Culture Now poster">
+              </a>
+            <!-- Portfolio Item Name and Type -->
+            <div class="port-caption">
+              <h4>Design Culture Now</h4>
               <p class="text-muted">Print Design</p>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
+
+          <!-- Portfolio Item 3 Display Box -->
+          <div class="col-md-4 col-sm-6 port-item">
+            <!-- Link to modal -->
+            <a class="port-link" data-toggle="modal" href="#portModal3">
+              <!-- Hover Actions -->
+              <div class="port-hover">
+                <div class="port-hover-content"><i class="fa fa-expand fa-3x"></i></div>
               </div>
-              <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
+              <!-- Image Thumbnail -->
+              <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" title="Magazine Cover" alt="Magazine Cover">
             </a>
-            <div class="portfolio-caption">
+            <!-- Portfolio Item Name and Type -->
+            <div class="port-caption">
               <h4>zone*out Magazine</h4>
               <p class="text-muted">Print Design</p>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
+
+          <!-- Portfolio Item 4 Display Box -->
+          <div class="col-md-4 col-sm-6 port-item">
+            <!-- Link to modal -->
+            <a class="port-link" data-toggle="modal" href="#portModal4">
+              <!-- Hover Actions -->
+              <div class="port-hover">
+                <div class="port-hover-content"><i class="fa fa-expand fa-3x"></i></div>
               </div>
-              <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
+              <!-- Image Thumbnail -->
+              <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" title="Magazine Cover" alt="Magazine Cover">
             </a>
-            <div class="portfolio-caption">
-              <h4>Gig Poster</h4>
+            <!-- Portfolio Item Name and Type -->
+            <div class="port-caption">
+              <h4>Slice Magazine</h4>
               <p class="text-muted">Print Design</p>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
+
+          <!-- Portfolio Item 5 Display Box -->
+          <div class="col-md-4 col-sm-6 port-item">
+            <!-- Link to modal -->
+            <a class="port-link" data-toggle="modal" href="#portModal5">
+              <!-- Hover Actions -->
+              <div class="port-hover">
+                <div class="port-hover-content"><i class="fa fa-expand fa-3x"></i></div>
               </div>
-              <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
+              <!-- Image Thumbnail -->
+              <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" title="Website Design" alt="Website Design">
             </a>
-            <div class="portfolio-caption">
-              <h4>Street Love</h4>
+            <!-- Portfolio Item Name and Type -->
+            <div class="port-caption">
+              <h4>Thoreau's Walden</h4>
               <p class="text-muted">Website Design</p>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
+
+          <!-- Portfolio Item 6 Display Box -->
+          <div class="col-md-4 col-sm-6 port-item">
+            <!-- Link to modal -->
+            <a class="port-link" data-toggle="modal" href="#portModal6">
+              <!-- Hover Actions -->
+              <div class="port-hover">
+                <div class="port-hover-content"><i class="fa fa-expand fa-3x"></i></div>
               </div>
-              <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
+              <!-- Image Thumbnail -->
+              <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" title="Logo for a fictional company called Atlas Air" alt="Logo for a fictional company called Atlas Air">
             </a>
-            <div class="portfolio-caption">
-              <h4>Olympic Running</h4>
+            <!-- Portfolio Item Name and Type -->
+            <div class="port-caption">
+              <h4>Logo Study</h4>
+              <p class="text-muted">Branding</p>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 7 Display Box -->
+          <div class="col-md-4 col-sm-6 port-item">
+            <!-- Link to modal -->
+            <a class="port-link" data-toggle="modal" href="#portModal7">
+              <!-- Hover Actions -->
+              <div class="port-hover">
+                <div class="port-hover-content"><i class="fa fa-expand fa-3x"></i></div>
+              </div>
+              <!-- Image Thumbnail -->
+              <img class="img-fluid" src="img/portfolio/07-thumbnail.jpg" title="Poster Designs" alt="Poster Designs">
+            </a>
+            <!-- Portfolio Item Name and Type -->
+            <div class="port-caption">
+              <h4>Time Posters</h4>
+              <p class="text-muted">Print Design</p>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 8 Display Box -->
+          <div class="col-md-4 col-sm-6 port-item">
+            <!-- Link to modal -->
+            <a class="port-link" data-toggle="modal" href="#portModal8">
+              <!-- Hover Actions -->
+              <div class="port-hover">
+                <div class="port-hover-content"><i class="fa fa-expand fa-3x"></i></div>
+              </div>
+              <!-- Image Thumbnail -->
+              <img class="img-fluid" src="img/portfolio/08-thumbnail.jpg" title="Visual Contrast Compositions book cover" alt="Visual Contrast Compositions book cover">
+            </a>
+            <!-- Portfolio Item Name and Type -->
+            <div class="port-caption">
+              <h4>Visual Contrasts</h4>
+              <p class="text-muted">Print Design</p>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 9 Display Box -->
+          <div class="col-md-4 col-sm-6 port-item">
+            <!-- Link to modal -->
+            <a class="port-link" data-toggle="modal" href="#portModal9">
+              <!-- Hover Actions -->
+              <div class="port-hover">
+                <div class="port-hover-content"><i class="fa fa-expand fa-3x"></i></div>
+              </div>
+              <!-- Image Thumbnail -->
+              <img class="img-fluid" src="img/portfolio/09-thumbnail.jpg" title="Blogging Website Design" alt="Blogging Website Design">
+            </a>
+            <!-- Portfolio Item Name and Type -->
+            <div class="port-caption">
+              <h4>Blogging Site</h4>
               <p class="text-muted">Website Design</p>
             </div>
           </div>
+
         </div>
+
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
+    <!-- Page Footer -->
+    <footer class="bg-light">
       <div class="container">
         <div class="row">
+          <!-- Page Copyright Info -->
           <div class="col-md-4">
             <span class="copyright">Copyright &copy; Valery Marier 2017</span>
           </div>
+          <!-- Social Links -->
           <div class="col-md-4">
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="http://twitter.com/cosmicmocha">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="http://instagram.com/cosmicmocha">
-                  <i class="fa fa-instagram"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="http://youtube.com/caffeinatedrobotus">
-                  <i class="fa fa-youtube"></i>
-                </a>
-              </li>
+            <ul class="list-inline social">
+              <li class="list-inline-item"><a href="http://twitter.com/cosmicmocha"><i class="fa fa-twitter"></i></a></li>
+              <li class="list-inline-item"><a href="http://instagram.com/cosmicmocha"><i class="fa fa-instagram"></i></a></li>
+              <li class="list-inline-item"><a href="http://youtube.com/caffeinatedrobotus"><i class="fa fa-youtube"></i></a></li>
             </ul>
           </div>
         </div>
@@ -184,38 +244,32 @@
     <!-- Portfolio Modals -->
 
     <!-- Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="port-modal modal fade" id="portModal1" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
+          <!-- Top Close Button -->
           <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
+            <i class=" close-symbol fa fa-window-close"></i>
           </div>
+          <!-- Content container -->
           <div class="container">
+            <div class="row">
+              <div class="col-lg-5 mx-auto">
+                <img class="img-fluid d-block mx-auto" style="border: 1px solid black;" src="img/portfolio/01-full.jpg" title="Options Skilled Trades Competition, June 2016" alt="Options Skilled Trades Competition, June 2016">
+              </div>
+              <div class="col-lg-5 mx-auto">
+                <img class="img-fluid d-block mx-auto" style="border: 1px solid black;" src="img/portfolio/01-full-b.jpg" title="Options Skilled Trades Competition, June 2015" alt="Options Skilled Trades Competition, June 2015">
+              </div>
+            </div>
             <div class="row">
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
-                  <!-- Project Details Go Here -->
+                  <!-- the details of the portfolio item goes here -->
                   <h2 class="text-uppercase">Options Posters</h2>
-                  <p class="item-intro text-muted">11" x 17" Poster Design</p>
+                  <p class="item-intro text-muted">Two 11" x 17" Poster Designs</p>
                   <p>Both posters were made in under three hours for a desktop publishing competition using Adobe Photoshop CS5. Logos were provided by the competition. All photographs were taken by me.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
-                  <ul class="list-inline">
-                    <li>Date: June 2015</li>
-                    <li>Client: Options Skilled Trades Competition</li>
-                    <li>Category: Print Design</li>
-                  </ul>
-                  <br>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full-b.jpg" alt="">
-                  <ul class="list-inline">
-                    <li>Date: June 2016</li>
-                    <li>Client: Options Skilled Trades Competition</li>
-                    <li>Category: Print Design</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
+                  <!-- bottom close button -->
+                  <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i>&nbsp;Close Project</button>
                 </div>
               </div>
             </div>
@@ -225,31 +279,29 @@
     </div>
 
     <!-- Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="port-modal modal fade" id="portModal2" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
+          <!-- Top Close Button -->
           <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
+            <i class=" close-symbol fa fa-window-close"></i>
           </div>
+          <!-- Content container -->
           <div class="container">
             <div class="row">
+              <div class="col-lg-6 mx-auto">
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" title="Design Culture Now Poster" alt="Design Culture Now Poster">
+              </div>
+            </div>
+              <div class="row">
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Slice Magazine</h2>
-                  <p class="item-intro text-muted">Magazine Cover Design</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
-                  <p>Made in Adobe Photoshop CC for a project in a communications course. Minor touch ups were done to the model. The photograph was not taken by me. The Slice wordmark and Parliment bar code were made by me.</p>
-                  <ul class="list-inline">
-                    <li>Date: Spring 2016</li>
-                    <li>Client: Communications Technology</li>
-                    <li>Category: Print Design</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
+                  <!-- the details of the portfolio item goes here -->
+                  <h2 class="text-uppercase">Design Culture Now</h2>
+                  <p class="item-intro text-muted">18" x 24" Poster Design</p>
+                  <p>A Poster that was made using a combination of Adobe Illustrator CC 2017, Photoshop CC 2017, and physical mediums.</p>
+                  <!-- bottom close button -->
+                  <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i>&nbsp;Close Project</button>
                 </div>
               </div>
             </div>
@@ -259,31 +311,25 @@
     </div>
 
     <!-- Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="port-modal modal fade" id="portModal3" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
+          <!-- Top Close Button -->
           <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
+            <i class=" close-symbol fa fa-window-close"></i>
           </div>
+          <!-- Content container -->
           <div class="container">
             <div class="row">
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
-                  <!-- Project Details Go Here -->
+                  <!-- the details of the portfolio item goes here -->
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.png" title="zone*out magazine cover" alt="zone*out magazine cover">
                   <h2 class="text-uppercase">zone*out Magazine</h2>
-                  <p class="item-intro text-muted">Magazine Cover Design</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
-                  <p>Made in Adobe Photoshop CC for a project in a communications course. Minor touch ups were done to the model. The photograph was not taken by me. The Slice wordmark was made by me.</p>
-                  <ul class="list-inline">
-                    <li>Date: Spring 2015</li>
-                    <li>Client: Communications Technology</li>
-                    <li>Category: Print Design</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
+                  <p class="item-intro text-muted">8.5" x 11" Magazine Cover Design</p>
+                  <p>Made in Adobe Photoshop CC for a project in a communications course. Minor touch ups were done to the model. The photograph was not taken by me. The magazine's wordmark was made by me.</p>
+                  <!-- bottom close button -->
+                  <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i>&nbsp;Close Project</button>
                 </div>
               </div>
             </div>
@@ -293,31 +339,25 @@
     </div>
 
     <!-- Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="port-modal modal fade" id="portModal4" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
+          <!-- Top Close Button -->
           <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
+            <i class=" close-symbol fa fa-window-close"></i>
           </div>
+          <!-- Content container -->
           <div class="container">
             <div class="row">
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Gig Poster</h2>
-                  <p class="item-intro text-muted">11" x 17" Poster Design</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
-                  <p>A fictional music gig poster. Made in Adobe Photoshop CC for a project in a communications course. The texture overlays are from Adobe Stock. The spaceship illustration and space photographs created by me.</p>
-                  <ul class="list-inline">
-                    <li>Date: Spring 2016</li>
-                    <li>Client: Communications Technology</li>
-                    <li>Category: Branding</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
+                  <!-- the details of the portfolio item goes here -->
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" title="Slice magazine cover" alt="Slice magazine cover">
+                  <h2 class="text-uppercase">Slice Magazine</h2>
+                  <p class="item-intro text-muted">8.5" x 11" Magazine Cover Design</p>
+                  <p>Made in Adobe Photoshop CC for a project in a communications course. Minor touch ups were done to the model. The photograph was not taken by me. The magazine's wordmark was made by me.</p>
+                  <!-- bottom close button -->
+                  <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i>&nbsp;Close Project</button>
                 </div>
               </div>
             </div>
@@ -327,31 +367,26 @@
     </div>
 
     <!-- Modal 5 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="port-modal modal fade" id="portModal5" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
+          <!-- Top Close Button -->
           <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
+            <i class=" close-symbol fa fa-window-close"></i>
           </div>
+          <!-- Content container -->
           <div class="container">
             <div class="row">
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Street Love</h2>
-                  <p class="item-intro text-muted">Online Blog Template</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
-                  <p>An online blog template. Coded in HTML5 and CSS3 as a project in a communications course. The photographs were not taken by me.</p>
-                  <ul class="list-inline">
-                    <li>Date: Spring 2016</li>
-                    <li>Client: Communications Technology</li>
-                    <li>Category: Website Design</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
+                  <!-- the details of the portfolio item goes here -->
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" title="A picture of the site homepage" alt="A picture of the site homepage">
+                  <h2 class="text-uppercase">Thoreau's Walden</h2>
+                  <p class="item-intro text-muted">Responsive Website Design</p>
+                  <p>A website about american author Henry David Thoreau's book <em>Walden; Or, Life In The Woods</em>. Coded in HTML5, CSS, and jQuery as a project in a communications course. The photographs were not taken by me.</p>
+
+                  <!-- bottom close button -->
+                  <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i>&nbsp;Close Project</button>
                 </div>
               </div>
             </div>
@@ -361,31 +396,24 @@
     </div>
 
     <!-- Modal 6 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="port-modal modal fade" id="portModal6" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
+          <!-- Top Close Button -->
           <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
+            <i class=" close-symbol fa fa-window-close"></i>
           </div>
+          <!-- Content container -->
           <div class="container">
             <div class="row">
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Olympic Running</h2>
-                  <p class="item-intro text-muted">Single Page Website Design</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
-                  <p>An informational website about the history of running in the Olympics. Coded in HTML5 and CSS3 as a project in a communications course. The photographs were not taken by me.</p>
-                  <ul class="list-inline">
-                    <li>Date: Spring 2016</li>
-                    <li>Client: Communications Technology</li>
-                    <li>Category: Website Design</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
+                  <!-- the details of the portfolio item goes here -->
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" title="Several Logos for Ficticious Companies" alt="Several Logos for Ficticious Companies">
+                  <h2 class="text-uppercase">Logo Study</h2>
+                  <p>A set of various ficticious logos made using Adobe Illustrator CC in order to better understand what goes into a successful logo design.</p>
+                  <!-- bottom close button -->
+                  <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i>&nbsp;Close Project</button>
                 </div>
               </div>
             </div>
@@ -394,19 +422,110 @@
       </div>
     </div>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Modal 7 -->
+    <div class="port-modal modal fade" id="portModal7" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Top Close Button -->
+          <div class="close-modal" data-dismiss="modal">
+            <i class=" close-symbol fa fa-window-close"></i>
+          </div>
+          <!-- Content container -->
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-5 mx-auto">
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/07-full-c.jpg" title="Connotative Time Poster" alt="Connotative Time Poster">
+              </div>
+              <div class="col-lg-5 mx-auto">
+                <img class="img-fluid d-block mx-auto" style="border: 1px solid black;" src="img/portfolio/07-full-d.jpg" title="Denotative Time Poster" alt="Denotative Time Poster">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- the details of the portfolio item goes here -->
+                  <h2 class="text-uppercase">Time Posters</h2>
+                  <p class="item-intro text-muted">Two 11" x 17" Poster Designs</p>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+                  <p>A connotative <em>(left)</em> and a denotative <em>(right)</em> poster set that present the connotative and denotative meanings of Time. Both of the posters were made in Adobe Illustrator CC 2017 using a single sans-serif typeface.</p>
+                  <!-- bottom close button -->
+                  <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i>&nbsp;Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <!-- Contact form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+    <!-- Modal 8 -->
+    <div class="port-modal modal fade" id="portModal8" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Top Close Button -->
+          <div class="close-modal" data-dismiss="modal">
+            <i class=" close-symbol fa fa-window-close"></i>
+          </div>
+          <!-- Content container -->
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- the details of the portfolio item goes here -->
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/08-full.jpg" title="Book Cover and a selection of Visual Contrasts" alt="Book Cover and a selection of Visual Contrasts">
+                  <h2 class="text-uppercase">Visual Contrasts</h2>
+                  <p class="item-intro text-muted">Print Design At Various Sizes</p>
+                  <p>A collection of visual contrast compositions made during the course FA/YSDN 1001 Visual Language in Fall 2017. The final product was coil bound into a book. The compositions were made using Adobe Illustrator CC 2017.</p>
+                  <!-- bottom close button -->
+                  <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i>&nbsp;Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/agency.min.js"></script>
+    <!-- Modal 9 -->
+    <div class="port-modal modal fade" id="portModal9" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Top Close Button -->
+          <div class="close-modal" data-dismiss="modal">
+            <i class=" close-symbol fa fa-window-close"></i>
+          </div>
+          <!-- Content container -->
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 mx-auto">
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/09-full-a.jpg" title="Blog homepage" alt="Blog homepage">
+              </div>
+              <div class="col-lg-6 mx-auto">
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/09-full-b.png" title="Blog about page" alt="Blog about page">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- the details of the portfolio item goes here -->
+                  <h2 class="text-uppercase">Online Blog Template</h2>
+                  <p class="item-intro text-muted">Website Design</p>
+                  <p>An online blog template. Coded in HTML5 and CSS3 as a project in a communications course. The photographs were not taken by me.</p>
+                  <!-- bottom close button -->
+                  <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i>&nbsp;Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascript placed at the bottom for faster loading speeds -->
+    <script src="ect/jquery/jquery.min.js"></script>
+    <script src="ect/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="ect/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/app.js"></script>
 
   </body>
 
