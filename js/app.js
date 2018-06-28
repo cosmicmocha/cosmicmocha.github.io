@@ -15,7 +15,15 @@ $('#spin-in2').toggleClass('show2');
 $('#spin-in3').toggleClass('show3');
 });
     //super sassy back to top button
+    $('#fullpage').fullpage({
+      verticalCentered: false,
+      scrollBar: true,
+      autoScrolling: false,
+      fitToSection: false,
+      anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+      menu: '#MainNav'
 
+    });
     var windowHeight = $(window).height();
     $(document).scroll(function() {
     $('#to-top').toggle($(this).scrollTop() > windowHeight-300);
