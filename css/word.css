@@ -1,0 +1,111 @@
+/* Word of the Minute App Styles */
+
+/* imports google fonts */
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700|Open+Sans:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+font-family: 'Playfair Display', serif;
+font-family: 'Open Sans', sans serif;
+font-family: 'Lora', serif;
+
+* {
+}
+html, body {
+font-family: 'Lora', Helvetica, Arial, sans-serif;
+margin: 0;
+width:100%;
+height:100%;
+overflow-x: hidden; /* disables scrolling */
+overflow-y: hidden;
+}
+/* document background image */
+#bg {
+	background: url(../img/bgword.jpg) no-repeat center center fixed;
+	background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width:100%;
+  height:100%;
+}
+/* word and definition container */
+#container {
+	position: relative;
+	margin: 16% auto 0 auto;
+	width: 100%;
+	max-width: 525px;
+}
+/* nav item container */
+.cont {
+	margin: 0 auto;
+width: 100%;
+max-width: 525px;}
+/* link styles */
+a {
+color: #fff;
+text-decoration: none;
+}
+a:hover, a:focus, a:active {
+color: red;
+text-decoration: none;
+}
+/* navigation styles */
+nav {
+	margin-top: 0;
+	position: fixed;
+	width: 100%;
+	height: 35px;
+	background-color: black;
+	z-index: 100;
+	opacity: 0.65;
+}
+nav ul {
+	list-style-type: none;
+	text-align: center;
+	padding: 0;
+	margin-top: 3px;
+}
+nav li {
+	font-family: 'Open Sans';
+	font-weight: 300;
+	color: white;
+	display: inline;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 2px;
+}
+/* word & definitions typography */
+#word {
+	display: none;
+	padding: 20px;
+	color: #2d2d2d;
+}
+#word h1 {
+	padding: 0px;
+	margin: 0px;
+	color: #000 ;
+	font: 'Playfair Display';
+	font-weight: 300;
+	font-size: 74px;
+	letter-spacing: 0.9px;
+}
+#word .wordtype {
+	list-style-type: none;
+	padding: 0;
+	margin: 5px 0px 10px 0px;
+}
+#word .wordtype li {
+	display: inline;
+	font-size: 20px;
+	color: rgb(59, 62, 65) ;
+	font: 'Lora';
+}
+ #word .definition {
+	margin: 0;
+	padding: 0;
+	color: rgb(59, 62, 65) ;
+	font: 'Lora';
+	font-size: 18px;
+	list-style-type: none;
+}
