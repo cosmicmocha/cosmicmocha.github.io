@@ -1,42 +1,203 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<!-- page title and metadata-->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Valery Marier</title>
-<meta name="author" content="Valery Marier">
-<meta name="description" content="Valery Marier's Design Portfolio">
-<meta name="keywords" content="valery marier, marier, valery, portfolio, design portfolio, designer, web design, graphics, graphic design"/>
-<!-- favicon and font -->
-<link rel="icon" type="image/png" src="logo.png">
-<link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i" rel="stylesheet">
-<!-- minified site css, its inline css because I like the early 2000s ;-) -->
-<style>
-nav p { text-align: left;margin-top: 5px; margin-left: 5px; width: 60px;}
-h1,h3,p{font-family:"Lato",sans-serif;font-size:1.25em;text-align:center;font-weight:300}a{color:#797979;text-decoration:none}a:hover,a:focus{color:#EF4036}::-moz-selection{background-color:#111;color:#fff;text-shadow:none}::selection{background-color:#111;color:#fff;text-shadow:none}body{display:flex;min-height:100vh;flex-direction:column;margin:0}body header h1{display:inline-block;font-size:4em;font-weight:100}body header{max-width:43.75em;margin-left:auto;margin-right:auto;margin-top:25vh;height:8.125em}body section{height:12.5em;flex:1;max-width:37.5em;margin:auto}@media only screen and (max-width:650px){h1,h3,p{font-size:.875em}body header h1{font-size:2.5em}body header{max-width:90%;margin-top:30vh;height:5.625em}body section{max-width:65%}}@media only screen and (max-width:450px){body header h1{font-size:2em}}
-.english { display: inline-block;}
-.french { display: none;}
-</style>
-</head>
-<body>
-  <nav>
-    <p><a id="english">en</a> /
-    <a id="french">fr</a><p>
-  </nav>
-<header>
-<h1 class="english">I&rsquo;m Getting A Makeover!</h1>
-<h1 class="french">Travail En Cours</h1>
-</header>
-<section>
-<p class="english">Hi! I&rsquo;m Valery Marier! I create beautiful, functional design suitied to your specific needs. This portfolio website is currently getting a makeover! Please contact me for samples of my work <em><a href="mailto:valerymarier@cosmicmocha.com">here</a></em>.</p>
-<p class="french">Salut! Je m&rsquo;appelle Valery Marier! Je suis une graphiste canadienne qui voudrais cr&eacute;er des projets beaux et fonctionnel. Ce site web est un travail en cours. Je vous invite &agrave; me contacter <em><a href="mailto:valerymarier@cosmicmocha.com">ici</a></em>.</p>
-<h3><a href="https://twitter.com/cosmicmocha">twitter</a> / <a href="https://instagram.com/cosmicmocha">instagram</a> / <a class="english" href="https://ko-fi.com/cosmicmocha">buy me a coffee</a><a class="french" href="https://ko-fi.com/cosmicmocha">ach&egrave;te-moi un caf&eacute;</a></h3>
-</section>
-
-<!-- Javascript placed at the bottom for faster loading speeds -->
-<script type="text/javascript" src="jquery.min.js"></script>
-<script type="text/javascript" src="lang.js"></script>
-
-</body>
+<!DOCTYPE HTML>
+<html lang='en'>
+    <head>
+          <!-- Misc Metadata -->
+  <meta charset="utf-8">
+  <title>Valery Marier | Home</title>
+  <meta name="description" content="The Personal Portfolio Of Valery Marier">
+  <meta name="author" content="Valery Marier">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="design, graphic, graphic design, portfolio, design portfolio, designer, graphic designer, photographer"/>
+  <meta name="subject" content="Portfolio Website">
+  <meta name="copyright" content="Copyright 2018 by Valery Marier">
+<link rel="icon" type="image/png" href="img/favicon.png">
+        
+        <link rel="stylesheet" type="text/css" href="css/main.css">  
+        <link rel="stylesheet" type="text/css" href="css/fonts.css">    
+        
+        <script src="js/jquery.min.js"></script>
+    </head>
+    <body id="anchor-top">
+        <a href="#anchor-top" id="to-top">&#8710;</a>
+        	<!-- About/Contact Modal -->
+        <div class="modal">
+            <div class="modal-content">
+                <img src="img/about.png" alt="An illustration of Valery smiling in front of a pink background. Drawn by @pawleena on Twitter.">
+                <span class="close-button">&times;</span>
+                <div class="modal-textbox">
+                    <h1>About Me</h1>
+                    <p class="modal-copy">I&rsquo;m a canadian graphic designer who creates beautiful, functional designs suited to your specific needs. I believe that when the things we interact with are designed well, the overall quality of life in our society will be improved. Currently I do web design, branding, and print. If you&rsquo;d like to hire me for a project or just talk ideas over coffee you can get in touch with me <a href="mailto:&#109;&#97;&#114;&#105;&#101;&#114;&#46;&#118;&#97;&#108;&#101;&#114;&#121;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;"><em>here</em></a>.</p>
+                    <ul>
+                        <li><i class="icon-floppy"></i><p>Web</p></li>
+                        <li><i class="icon-book"></i><p>Print</p></li>
+                        <li><i class="icon-camera"></i><p>Photos</p></li>
+                        <li><i class="icon-cup"></i><p>Coffee &lt;3</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End Of Modal-->
+        <section class="index-section-one">
+            <nav id="modalfade">
+                <img class="logo-image" src="img/logo.png" alt="A power button that looks like a colour wheel.">
+                <ul>
+                    <li><a href="#anchor-portfolio">Portfolio</a></li>
+                    <li><a href="#anchor-experiments">Experiments</a></li>
+                    <li><a class="trigger">Contact</a></li>
+                </ul>
+            </nav>
+            <header class="index-slug">
+                <h1>Hey, I&rsquo;m Valery Marier!</h1>
+                <p>Let&rsquo;s make something beautiful together</p>
+                <div class="slug-button trigger2">About Me</div>
+            </header>
+            <ul class="nav-social">
+                <li>
+							<a href="https://instagram.com/cosmicmocha"><i class="icon-instagram spin0"></i></a>
+							<div id="spin-in0" class="box">Look at my pretty pics &rarr;</div>
+				</li>
+				<li>
+					<a href="https://twitter.com/acosmicmocha"><i class="icon-twitter spin1"></i></a>
+					<div id="spin-in1" class="box">Read my incoherent babbles &rarr;</div></li>
+				<li>
+					<a href="https://forum.fork.sh/u/cosmicmocha/activity"><i class="icon-fork spin2"></i></a>
+					<div id="spin-in2" class="box">See my nerdier side &rarr;</div></li>
+				<li>
+					<a href="https://ko-fi.com/cosmicmocha"><i class="icon-coffee spin3"></i></a>
+					<div id="spin-in3" class="box">Buy me a coffee &rarr;</div>
+				</li>
+            </ul>
+            <div class="scroll-portfolio">
+                <p><a href="#anchor-portfolio">Portfolio</a></p>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+        <section class="index-section-two">
+            <div class="background-line"></div>
+            <div class="container" id="anchor-portfolio">
+            <div class="row">
+                <div class="col-12 index-section-two-header">
+                    <p>Portfolio</p>
+                    <h2>Latest Work</h2>
+                </div>
+            </div>
+            <div class="row">    
+                <div class="col-7">
+                    <div class="portfolio-item-lg">
+                        <a href="construction.html"> <!-- portfolio page link -->
+                            <img  src="img/portfolio-thumb-one.png" alt="An assortment of tops hanging on a clothing rack." /><!-- portfolio image-->
+                            <div class="portfolio-item-overlay">  <!-- portfolio text overlay -->
+                                <div class="portfolio-item-text">
+                                    <h1>Comet Apparel</h1>
+                                    <p>Branding, E-commerce, Web Design</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><br><br>
+                    <div class="portfolio-item-lg">
+                        <a href="utah.html"> <!-- portfolio page link -->
+                            <img  src="img/portfolio-thumb-two.png" alt="A steel teapot next to an Apple Macbook Pro." /><!-- portfolio image-->
+                            <div class="portfolio-item-overlay">  <!-- portfolio text overlay -->
+                                <div class="portfolio-item-text">
+                                    <h1>The Utah Teapot</h1>
+                                    <p>Branding, Web Design</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="portfolio-item-sm">
+                        <a href="construction.html"> <!-- portfolio page link -->
+                            <img  src="img/portfolio-thumbnail-three.png" alt="A logo with an envelope and a heart above the words 'Mail Mate'." /><!-- portfolio image-->
+                            <div class="portfolio-item-overlay">  <!-- portfolio text overlay -->
+                                <div class="portfolio-item-text">
+                                    <h1>Mail Mate</h1>
+                                    <p>App Design, Branding</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><br>
+                    <div class="portfolio-item-sm">
+                        <a href="construction.html"> <!-- portfolio page link -->
+                            <img  src="img/portfolio-thumbnail-four.png" alt="Words laid out in the shape of an hourglass." /><!-- portfolio image-->
+                            <div class="portfolio-item-overlay">  <!-- portfolio text overlay -->
+                                <div class="portfolio-item-text">
+                                    <h1>Time Posters</h1>
+                                    <p>Print Design, Typography</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><br>
+                    <div class="portfolio-item-sm">
+                        <a href="construction.html"> <!-- portfolio page link -->
+                            <img  src="img/portfolio-thumbnail-five.png" alt="The words 'Mr. Dynamite / It's time to feel good' on top of a bubbly pink texture." /><!-- portfolio image-->
+                            <div class="portfolio-item-overlay">  <!-- portfolio text overlay -->
+                                <div class="portfolio-item-text">
+                                    <h1>Concert Poster</h1>
+                                    <p>Print Design, Typography</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="anchor-experiments">
+                <div class="col-12 index-section-two-header">
+                    <p>Experiments</p>
+                    <h2>I &lt;3 Side Projects</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="experiment-item">
+                        <a href="construction.html"> <!-- portfolio page link -->
+                            <img  src="img/experiment-thumb-one.png" alt="A screenshot of the Word Of The Minute app." /><!-- portfolio image-->
+                            <div class="experiment-item-overlay">  <!-- portfolio text overlay -->
+                                <div class="experiment-item-text">
+                                    <p>Word Of The Minute Web App</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="experiment-item">
+                        <a href="construction.html"> <!-- portfolio page link -->
+                            <img  src="img/experiment-thumb-two.png" alt="The Woah Pixels Wordmark above an image of a girl sipping coffee by a body of water." /><!-- portfolio image-->
+                            <div class="experiment-item-overlay">  <!-- portfolio text overlay -->
+                                <div class="experiment-item-text">
+                                    <p>Woah Pixels E-Zine</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="experiment-item">
+                        <a href="construction.html"> <!-- portfolio page link -->
+                            <img  src="img/experiment-thumb-three.png" alt="The words 'Biblio Boutique'." /><!-- portfolio image-->
+                            <div class="experiment-item-overlay">  <!-- portfolio text overlay -->
+                                <div class="experiment-item-text">
+                                    <p>Online Store</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </div>    
+        </section>
+        <footer>
+            <p>Copyright &copy; 2018 by Valery Marier</p>
+            <ul>
+                <li><a href="https://twitter.com/acosmicmocha"><i class="icon-twitter"></i></a></li>
+                <li><a href="https://instagram.com/cosmicmocha"><i class="icon-instagram"></i></a></li>
+                <li><a href="https://ko-fi.com/cosmicmocha"><i class="icon-coffee"></i></a></li>
+                <li><a href="https://forum.fork.sh/u/cosmicmocha/activity"><i class="icon-fork"></i></a></li>
+            </ul>
+        </footer>
+        <script type="text/javascript" src="js/app.js"></script>
+    
+    </body>
 </html>
