@@ -1,4 +1,3 @@
-
 // for scrolling that is smoother than jazz.
 $("a").on('click', function(event) { // when an anchor is clicked.
 
@@ -12,47 +11,70 @@ $("a").on('click', function(event) { // when an anchor is clicked.
     }
 });
 
-    var modal = document.querySelector(".modal");
-    var pageScroll = document.querySelector("body");
-    var trigger = document.querySelector(".trigger");
-    var closeButton = document.querySelector(".close-button");
-    var trigger2 = document.querySelector(".trigger2");
-
-
-    $(document).ready(function(){
-      $('.spin0').on('hover', function(){
-    $('#spin-in0').toggleClass('show0');
+$(document).ready(function(){
+  $('.spin0').on('hover', function(){
+$('#spin-in0').toggleClass('show0');
 });$('.spin1').on('hover', function(){
 $('#spin-in1').toggleClass('show1');
 });$('.spin2').on('hover', function(){
 $('#spin-in2').toggleClass('show2');
 });$('.spin3').on('hover', function(){
 $('#spin-in3').toggleClass('show3');
-});
-    //super sassy back to top button
+}); });
 
-    var windowHeight = $(window).height();
-    $(document).scroll(function() {
-    $('#to-top').toggle($(this).scrollTop() > windowHeight-300);
-    });
-    });
+var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
 
-    function toggleModal() {
-        modal.classList.toggle("show-modal");
-        pageScroll.classList.toggle("hide-scroll");
-        $("#modalfade").fadeToggle(850);
-        $(".nav-social").fadeToggle(850);
-        $(".index-slug").fadeToggle(850);
-        $(".scroll-portfolio").fadeToggle(850);
-    }
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
 
-    function windowOnClick(event) {
-        if (event.target === modal) {
-            toggleModal();
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
         }
-    }
 
-    trigger.addEventListener("click", toggleModal);
-    closeButton.addEventListener("click", toggleModal);
-    trigger2.addEventListener("click", toggleModal);
-    window.addEventListener("click", windowOnClick);
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #D8D8D8}";
+        document.body.appendChild(css);
+    };
