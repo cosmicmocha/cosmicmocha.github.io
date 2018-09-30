@@ -96,11 +96,7 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-.icon-book:before { content: '\e801'; } /* '' */
-.icon-camera:before { content: '\e803'; } /* '' */
-.icon-cup:before { content: '\e804'; } /* '' */
-.icon-floppy:before { content: '\e805'; } /* '' */
 .icon-twitter:before { content: '\f099'; } /* '' */
 .icon-coffee:before { content: '\f0f4'; } /* '' */
-.icon-fork:before { content: '\f126'; } /* '' */
+.icon-spotify:before { content: '\f1bc'; } /* '' */
 .icon-instagram:before { content: '\f32d'; } /* '' */
