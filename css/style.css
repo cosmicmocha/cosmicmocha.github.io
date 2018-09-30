@@ -693,12 +693,14 @@ line-height: 68px;
   grid-column: 2 / 6;
   grid-row: 3 / 6;
   padding: 30px;
+  border: none;
 color: #fff;
 line-height: 31px;
   background-color: #4A90E2;
  } .wrapper-main .item-one h3, .wrapper-main .item-two h3, .wrapper-main .item-three h3, .wrapper-main .item-four h3 {
    color: #fff;
    }.wrapper-main .image-two {
+     border: none;
   grid-column: 3 /9;
   grid-row: 8 / 13;
 } .wrapper-main .item-two {
@@ -714,6 +716,7 @@ line-height: 31px;
 } .wrapper-main .item-three {
   grid-column: 4 / 8;
   grid-row: 15 / 18;
+  border: none;
   padding: 30px;
 color: #fff;
 line-height: 31px;
@@ -721,6 +724,7 @@ line-height: 31px;
  }  .wrapper-main .image-four {
   grid-column: 2 /8;
   grid-row: 20/ 25;
+  border: none;
 } .wrapper-main .item-four {
   grid-column: 6 / 10;
   grid-row: 21 / 24;
