@@ -68,8 +68,8 @@ line-height: 1.725em;
 color:  #4E4E4E;
 }
 a {text-decoration: none;}
-button {
-  margin-top: 1.725em; ;
+.button {
+  margin-top: 1.725em;
   text-align: center;
   padding: 0.325em 1.45em;
   font-size: 0.925em;
@@ -82,7 +82,7 @@ button {
   -webkit-border-radius:0.825em;
   border-radius:0.825em;
   transition: all 0.2s ease-in;
-} button:hover {
+} .button:hover {
   background-color: #FF4949;
   border-color: #FF4949;
   color: #FFFFFF;
@@ -134,7 +134,7 @@ line-height: 1.725em;
 color:  #4E4E4E;
 }
 a {text-decoration: none;}
-button {
+.button {
   margin-top: 1.725em; ;
   text-align: center;
   padding: 0.325em 1.45em;
@@ -148,7 +148,7 @@ button {
   -webkit-border-radius:0.825em;
   border-radius:0.825em;
   transition: all 0.2s ease-in;
-} button:hover {
+} .button:hover {
   background-color: #FF4949;
   border-color: #FF4949;
   color: #FFFFFF;
@@ -489,7 +489,7 @@ margin: auto;
 }
 .button-two {
   border-radius: 0;
-  width: 100%;
+  width: auto;
   padding: 10px 25px 5px 25px;
   text-align: left;
   background-image: linear-gradient(to left, #4E4E4E 50%, #FF4949 50%);
@@ -589,7 +589,7 @@ footer {
 }
 .button-two {
   border-radius: 0;
-  width: 100%;
+  width: auto;
   padding: 20px 45px 5px 45px;
   text-align: left;
   background-image: linear-gradient(to left, #4E4E4E 50%, #FF4949 50%);
