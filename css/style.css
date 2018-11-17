@@ -39,6 +39,9 @@ main {
   font-size: 0.95em;
 }
 
+  a:-webkit-any-link { text-decoration: none !important;
+    color: #ff5d71;}
+
 .brand {
   position: absolute;
   padding-left: 10px;
