@@ -1,26 +1,27 @@
-// for scrolling that is smoother than jazz.
-$("a").on('click', function(event) { // when an anchor is clicked.
+(function($) { // Begin jQuery
+  $(function() { // DOM ready
+    // If a link has a dropdown, add sub menu toggle.
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      // Close one dropdown when selecting another
+      $('.nav-dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    // Clicking away from dropdown will remove the dropdown class
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    });
+    // Toggle open and close nav styles on click
+    $('#nav-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+    // Hamburger to X toggle
+    $('#nav-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+  }); // end DOM ready
+})(jQuery); // end jQuery
 
-    if (this.hash !== "") { // if it has a hashtag in the href link.
-        event.preventDefault();
-        var hash = this.hash; // the variable hash is set to the link.
-
-        $('html, body').animate({scrollTop: $(hash).offset().top}, 600, "swing", function(){
-            window.location.hash = hash; // the page scrolls to the corresponding id tag smoother than creamy peanut butter.
-        });
-    }
-});
-
-$(document).ready(function(){
-  $('.spin0').on('hover', function(){
-$('#spin-in0').toggleClass('show0');
-});$('.spin1').on('hover', function(){
-$('#spin-in1').toggleClass('show1');
-});$('.spin2').on('hover', function(){
-$('#spin-in2').toggleClass('show2');
-});$('.spin3').on('hover', function(){
-$('#spin-in3').toggleClass('show3');
-}); });
 
 var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;

@@ -32,11 +32,11 @@
 
 @font-face {
   font-family: 'Isidora Sans';
-  src: url('../font/IsidoraSans/IsidoraSans-SemiBold.eot') format('embedded-opentype'),
-       url('../font/IsidoraSans/IsidoraSans-SemiBold.woff') format('woff'),
-       url('../font/IsidoraSans/IsidoraSans-SemiBold.ttf') format('truetype'),
-       url('../font/IsidoraSans/IsidoraSans-SemiBold.svg') format('svg');
-  font-weight: 600;
+  src: url('../font/IsidoraSans/IsidoraSans-Light.eot') format('embedded-opentype'),
+       url('../font/IsidoraSans/IsidoraSans-Light.woff') format('woff'),
+       url('../font/IsidoraSans/IsidoraSans-Light.ttf') format('truetype'),
+       url('../font/IsidoraSans/IsidoraSans-Light.svg') format('svg');
+  font-weight: 300;
   font-style: normal;
 }
 
