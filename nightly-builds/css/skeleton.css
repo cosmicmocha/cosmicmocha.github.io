@@ -182,8 +182,8 @@ html {
 body {
   font-size: 2.0em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
-  font-weight: 500;
-  font-family: "Isidora Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-family: 'Isidora Sans', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222; }
 
 
