@@ -13,6 +13,7 @@ $("a").on('click', function(event) { // when an anchor is clicked.
 
 $(".hover-home").hover(function() { // Mouse over
   $(".hover-home").addClass('highlight-home');
+  $( ".frame" ).removeClass('frame-about');
   $(".highlight-about").addClass('quiet-links');
   $( ".frame" ).addClass('frame-home');
   $(".about").addClass('quiet-links');
@@ -20,6 +21,7 @@ $(".hover-home").hover(function() { // Mouse over
   $(".hover-play").addClass('quiet-links')
 }, function() { // Mouse out
       $(".hover-home").removeClass('highlight-home');
+      $( ".frame" ).addClass('frame-about');
       $(".highlight-about").removeClass('quiet-links');
       $( ".frame" ).removeClass('frame-home');
       $(".about").removeClass('quiet-links');
@@ -29,6 +31,7 @@ $(".hover-home").hover(function() { // Mouse over
 
 $(".hover-work").hover(function() { // Mouse over
   $(".hover-home").addClass('quiet-links');
+  $( ".frame" ).removeClass('frame-about');
   $(".highlight-about").addClass('quiet-links');
   $( ".frame" ).addClass('frame-work');
   $(".about").addClass('quiet-links');
@@ -36,6 +39,7 @@ $(".hover-work").hover(function() { // Mouse over
   $(".hover-play").addClass('quiet-links')
 }, function() { // Mouse out
   $(".hover-home").removeClass('quiet-links');
+  $( ".frame" ).addClass('frame-about');
   $(".highlight-about").removeClass('quiet-links');
   $( ".frame" ).removeClass('frame-work');
   $(".about").removeClass('quiet-links');
@@ -45,6 +49,7 @@ $(".hover-work").hover(function() { // Mouse over
 
 $(".hover-play").hover(function() { // Mouse over
   $(".hover-home").addClass('quiet-links');
+  $( ".frame" ).removeClass('frame-about');
   $(".highlight-about").addClass('quiet-links');
   $( ".frame" ).addClass('frame-play');
   $(".about").addClass('quiet-links');
@@ -53,6 +58,7 @@ $(".hover-play").hover(function() { // Mouse over
 
 }, function() { // Mouse out
   $(".hover-home").removeClass('quiet-links');
+  $( ".frame" ).addClass('frame-about');
   $(".highlight-about").removeClass('quiet-links');
   $( ".frame" ).removeClass('frame-play');
   $(".about").removeClass('quiet-links');

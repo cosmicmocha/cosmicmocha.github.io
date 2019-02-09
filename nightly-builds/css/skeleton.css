@@ -267,7 +267,7 @@ p {
 }
 .frame-work {
   animation: none  ;
-  background-color: #2E89FF;
+  background-color: #2E89FF !important;
 }
 .highlight-work a, .highlight-work a:hover{
   color: #2E89FF !important;
@@ -327,6 +327,12 @@ a:hover {
 .quiet-links, .quiet-links a{
   color: #888 !important ;
   animation: none !important;
+}
+.quiet-links h1, .quiet-links h5, .quiet-links p {
+  color: #000;
+}
+.dark-mode .quiet-links h1, .dark-mode .quiet-links h5, .dark-mode .quiet-links p {
+  color: #fff;
 }
 
 /* Lists
