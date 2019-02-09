@@ -12,11 +12,11 @@
 
 @font-face {
   font-family: 'Isidora Sans';
-  src: url('../font/IsidoraSans-Light.eot');
-  src: url('../font/IsidoraSans-Light.eot') format('embedded-opentype'),
-       url('../font/IsidoraSans-Light.woff') format('woff'),
-       url('../font/IsidoraSans-Light.ttf') format('truetype'),
-       url('../font/IsidoraSans-Light.svg') format('svg');
+  src: url('../font/IsidoraSans-Regular.eot');
+  src: url('../font/IsidoraSans-Regular.eot') format('embedded-opentype'),
+       url('../font/IsidoraSans-Regular.woff') format('woff'),
+       url('../font/IsidoraSans-Regular.ttf') format('truetype'),
+       url('../font/IsidoraSans-Regular.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
