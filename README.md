@@ -1,7 +1,7 @@
-#Valery's Home on the Web
+# Valery's Home on the Web
 [View it live ;p](https://marier.design)
 
-##To Do's
+## To Do's
 * Add mobile and tablet layouts
 * Add detailed pages for each portfolio item
 * Add a French mode to the Website
@@ -12,7 +12,8 @@
 * Add Portfolio images invert in dark mode
 * Add secret ASCII art to the code of each page
 * Add comments and make the site CC-BY-SA 4.0
-<code>
+
+```
                               `   .ueu.u$$$$$$$$Wu.
                                  .$$$$$$$$$$$$$$$$$$Wu
                                 :$$$$$$$$$$$$$$$$$$$$$Wu.
@@ -79,4 +80,4 @@
   `\                            !~  ~  -.!!`                    `#e.
     -eu.                       /     `-..!:                   -:.~$
      ."*$$Woouu..............:~        X$*****@We=====mm*****Wu:!!$
-  </code>
+```
