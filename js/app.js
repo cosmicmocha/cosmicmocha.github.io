@@ -1,56 +1,71 @@
-var TxtType = function(el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-    };
+// for scrolling that is smoother than jazz.
+$("a").on('click', function(event) { // when an anchor is clicked.
 
-    TxtType.prototype.tick = function() {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
+    if (this.hash !== "") { // if it has a hashtag in the href link.
+        event.preventDefault();
+        var hash = this.hash; // the variable hash is set to the link.
 
-        if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
+        $('html, body').animate({scrollTop: $(hash).offset().top}, 500, function(){
+            window.location.hash = hash; // the page scrolls to the corresponding id tag smoother than creamy peanut butter.
+        });
+    }
+});
 
-        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+$(".hover-home").hover(function() { // Mouse over
+  $(".hover-home").addClass('highlight-home');
+  $( ".frame" ).addClass('frame-home');
+  $(".nav-active").addClass('underline-off');
+  $(".about a").addClass('quiet-links');
+  $(".nav-active-about").addClass('underline-off');
+  $(".nav-active-work").addClass('underline-off');
 
-        var that = this;
-        var delta = 200 - Math.random() * 100;
+}, function() { // Mouse out
+      $(".hover-home").removeClass('highlight-home');
+      $( ".frame" ).removeClass('frame-home');
+      $(".about a").removeClass('quiet-links');
+      $(".nav-active").removeClass('underline-off');
+      $(".nav-active-about").removeClass('underline-off');
+      $(".nav-active-work").removeClass('underline-off');
+});
 
-        if (this.isDeleting) { delta /= 2; }
+$(".hover-about").hover(function() { // Mouse over
+  $(".hover-about").addClass('highlight-about');
+  $( ".frame" ).addClass('frame-about');
+  $(".nav-active").addClass('underline-off');
+  $(".nav-active-work").addClass('underline-off');
+}, function() { // Mouse out
+      $(".hover-about").removeClass('highlight-about');
+      $( ".frame" ).removeClass('frame-about');
+      $(".nav-active").removeClass('underline-off');
+      $(".nav-active-work").removeClass('underline-off');
+});
 
-        if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-        }
+$(".hover-work").hover(function() { // Mouse over
+  $(".hover-work").addClass('highlight-work');
+  $( ".frame" ).addClass('frame-work');
+  $(".nav-active").addClass('underline-off');
+  $(".about a").addClass('quiet-links');
+  $(".nav-active-about").addClass('underline-off');
+}, function() { // Mouse out
+  $(".hover-work").removeClass('highlight-work');
+      $( ".frame" ).removeClass('frame-work');
+      $(".about a").removeClass('quiet-links');
+      $(".nav-active").removeClass('underline-off');
+      $(".nav-active-about").removeClass('underline-off');
+});
 
-        setTimeout(function() {
-        that.tick();
-        }, delta);
-    };
-
-    window.onload = function() {
-        var elements = document.getElementsByClassName('typewrite');
-        for (var i=0; i<elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-type');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-              new TxtType(elements[i], JSON.parse(toRotate), period);
-            }
-        }
-        // INJECT CSS
-        var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.04em solid #D8D8D8}";
-        document.body.appendChild(css);
-    };
+$(".hover-play").hover(function() { // Mouse over
+  $(".hover-play").addClass('highlight-play');
+  $( ".frame" ).addClass('frame-play');
+  $(".nav-active").addClass('underline-off');
+  $(".about a").addClass('quiet-links');
+  $(".nav-active-about").addClass('underline-off');
+  $(".nav-active-work").addClass('underline-off');
+}, function() { // Mouse out
+  $(".hover-play").removeClass('highlight-play');
+      $( ".frame" ).removeClass('frame-play');
+      $(".about a").removeClass('quiet-links');
+      $(".nav-active").removeClass('underline-off');
+      $(".nav-active-about").removeClass('underline-off');
+      $(".nav-active-work").removeClass('underline-off');
+});

@@ -26,14 +26,13 @@
 */
 
 .dark-mode, .dark-mode nav {
-  background-color: #242526;
+  background-color: #222;
   transition: all 0.2s ease-in-out;
 }
-.dark-mode nav ul li, .dark-mode nav ul li a, .dark-mode .index-btns a, .dark-mode h1, .dark-mode h5, .dark-mode .about, .dark-mode .work {
+.dark-mode nav ul li, .dark-mode nav ul li a, .dark-mode .index-btns a, .dark-mode h1 {
   color: #fff;
   transition: all 0.2s ease-in-out;
 }
-
 
 @keyframes colorchange
     {
@@ -62,9 +61,12 @@
               80% {color: #05c7e6;}
               100% {color: #4bd58d;}
             }
-
+.index-active a, .index-btns a {
+  animation: colorchange-type 10s ease alternate infinite;
+}
 .frame {
   background-color: #eee;
+  animation: colorchange 10s ease alternate infinite;
 }
 
   #top, #bottom, #left, #right {
@@ -89,7 +91,7 @@
 .container {
   position: relative;
   width: 100%;
-  /**background-color: rgba(255, 0, 0, 0.01);**/
+  /*background-color: rgba(255, 0, 0, 0.01);*/
   max-width: 1440px;
   margin: 7em auto;
   padding: 0 20px;
@@ -249,10 +251,10 @@ p {
 }
 .frame-about {
   animation: none;
-  background-color: #FB1D6F !important;
+  background-color: #FB1D6F  ;
 }
 .frame-home {
-  animation: colorchange 10s ease alternate infinite  !important;
+  animation: colorchange 10s ease alternate infinite  ;
   background-color: #FB1D6F;
 }
 .highlight-home a, .highlight-home a:hover{
@@ -262,21 +264,23 @@ p {
 }
 .highlight-about a, .highlight-about a:hover{
   color: #FB1D6F !important;
+  animation: none;
 } nav ul .highlight-about a:after {
   border-color: #FB1D6F;
 }
 .frame-work {
   animation: none  ;
-  background-color: #2E89FF !important;
+  background-color: #2E89FF;
 }
 .highlight-work a, .highlight-work a:hover{
   color: #2E89FF !important;
+  animation: none;
 } nav ul .highlight-work a:after {
   border-color: #2E89FF;
 }
 .frame-play {
   animation: none  ;
-  background-color: #FFBF00   ;
+  background-color: #FFBF00;
 }
 .highlight-play a, .highlight-play a:hover{
   color: #FFBF00;
@@ -327,12 +331,6 @@ a:hover {
 .quiet-links, .quiet-links a{
   color: #888 !important ;
   animation: none !important;
-}
-.quiet-links h1, .quiet-links h5, .quiet-links p {
-  color: #000;
-}
-.dark-mode .quiet-links h1, .dark-mode .quiet-links h5, .dark-mode .quiet-links p {
-  color: #fff;
 }
 
 /* Lists
