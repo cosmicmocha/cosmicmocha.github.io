@@ -298,12 +298,16 @@ p {
 }
 .frame-play {
   animation: none  ;
-  background-color: #FFBF00   ;
+  background-color: #ffcb08   ;
 }
 .highlight-play a, .highlight-play a:hover{
-  color: #FFBF00;
+  color: #ffcb08;
 } nav ul .highlight-play a:after {
-  border-color: #FFBF00;
+  border-color: #ffcb08;
+}
+.play a, .play a:hover{
+  color: #ffcb08 !important;
+  font-style: normal;
 }
 
 
