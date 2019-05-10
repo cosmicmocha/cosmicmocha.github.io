@@ -33,7 +33,19 @@
   color: #fff;
   transition: all 0.2s ease-in-out;
 }
-
+.work {
+  text-align: center;
+} .work h5 {
+  margin-bottom: 0;
+  margin-top: 2%;
+}
+.work-items a h5, .work-items a p {
+  color: #000;
+  opacity: 1;
+} .work-items a:hover {
+  opacity: 0.7;
+  transition: opacity 0.25s ease-in-out;
+}
 
 @keyframes colorchange
     {
@@ -88,7 +100,7 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
   position: relative;
-  width: 100%;
+  width: 85%;
   /**background-color: rgba(255, 0, 0, 0.01);**/
   max-width: 1440px;
   margin: 7em auto;
@@ -108,7 +120,7 @@
 }
 
 /* For devices larger than 550px */
-@media (min-width: 550px) {
+@media (min-width: 776px) {
   .container {
     width: 85%; }
   .column,
@@ -207,7 +219,7 @@ h6 { font-size: 1.8rem; line-height: 1;  letter-spacing: 0; margin-bottom: 1rem;
   h3 { font-size: 3.6rem; }
   h4 { font-size: 3.0rem; }
   h5 { font-size: 2.4rem; }
-  h6 { font-size: 1.8rem; }
+  h6 { font-size: 2.15rem; }
 }
 
 p {
@@ -231,13 +243,23 @@ p {
     align-items: flex-end;
     flex-wrap: wrap;
     font-size: 1.8rem;
-    z-index: 5;
+    z-index: 5
+    ;
   } nav ul {
     list-style-type: none;
     padding: 0;
   } nav ul li {
     display: inline-block;
     margin: 0 10px;
+  }
+  @media (max-width: 400px) {
+    nav {
+     font-size: 1.6rem;
+   }nav ul li {
+     display: inline-block;
+     margin: 0 5px;
+   }
+   p{ font-size: 1.6rem;}
   }
 
   nav ul li a {
@@ -286,17 +308,32 @@ p {
 
 
 
-  .index-btns, .next {
+  .index-btns, .next, .larr-btns {
     padding-left: 0px;
     display: inline-block;
-  } .index-btns a {
+  } .index-btns a, .larr-btns a {
      font-style: normal;
      color: #888;
   }
-  .index-btns:hover, .next:hover {
+  .index-btns:hover, .next:hover, .larr-btns:hover {
     -webkit-animation-name: index-btns;
     -webkit-animation-duration: 1.75s;
     animation-name: index-btns;
+    animation-duration: 1.75s;
+    animation-iteration-count: infinite;
+    width: auto;
+  }
+
+  .rarr-btns {
+    padding-right: 0px;
+    display: inline-block;
+  } .rarr-btns a {
+    font-style: normal;
+    color: #888;
+  } .rarr-btns:hover {
+    -webkit-animation-name: rarr-btns;
+    -webkit-animation-duration: 1.75s;
+    animation-name: rarr-btns;
     animation-duration: 1.75s;
     animation-iteration-count: infinite;
     width: auto;
@@ -309,6 +346,14 @@ p {
     65% {padding-left: 14px;}
     80% {padding-left: 0px;}
     100% {padding-left: 0px;}
+  }
+  @-webkit-keyframes rarr-btns {
+    0% {padding-right: 0px;}
+    25% {padding-right: 16px;}
+    40% {padding-right: 4px;}
+    65% {padding-right: 14px;}
+    80% {padding-right: 0px;}
+    100% {padding-right: 0px;}
   }
 
 /* Links
@@ -323,6 +368,9 @@ a:hover {
 .work a, .work a:hover{
   color: #2E89FF;
   font-style: normal;
+}
+.work-piece a, .work-piece a:hover{
+  color: #2E89FF;
 }
 .quiet-links, .quiet-links a{
   color: #888 !important ;

@@ -1,0 +1,325 @@
+/**  Utah Teapot Wikipedia Pg Redesign  **/
+/** YSDN 1006 Visual Interactive Design **/
+/**  This Website is WCAG 2.0 Compliant **/
+
+/* Import the font Halcyon Bold for the site wordmark */
+@font-face {
+    font-family: 'Halcyon-Bold';
+    src: url('../fonts/Halcyon-Bold.eot');
+    src: url('../fonts/Halcyon-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Halcyon-Bold.woff') format('woff'),
+         url('../fonts/Halcyon-Bold.ttf') format('truetype'),
+         url('../fonts/Halcyon-Bold.svg#open_sansextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*********** END OF SECTION ***********/
+/************* Global Styles  *************/
+body, html {
+  background-color: #f3f3f3;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+a {
+  text-decoration: none;
+  color: #0f4880;
+  font-weight: 400;
+}
+a:hover, a:active {
+  color: #2a7ab0;
+}
+/* Main content container */
+.container {
+position: relative;
+margin: 0 auto;
+width: 960px;
+height: auto;
+padding-bottom: 45px;
+background: #fff;
+box-shadow: 0 2px 6px 1px rgba(0,0,0,0.27);
+}
+/* Body Text Container */
+.container-content {
+  position: relative;
+  width: 634px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Mobile layout for the content containers */
+@media only screen and (max-width: 960px) {
+    body, html {
+        background-color: #fff;
+    }
+    .container {
+      width: 100%;
+      box-shadow: 0 0 0 0;
+    }
+    .container-content {
+      width: 80%;
+    }
+}
+/*********** END OF SECTION ***********/
+/***********  Navigation Styles ***********/
+/* Navigation container */
+nav {
+  height: 70px;
+  padding-top: 72px;
+  border-bottom: 2px #000 solid;
+}
+/* Wordmark location and size */
+nav header {
+  font-family: "Halcyon-Bold", Helvetica, sans-serif;
+  float: left;
+  width: 50%;
+  height: 70px;
+}
+nav header a {
+  text-decoration: none;
+  color: #000;
+}
+nav header a:hover {
+  text-decoration: none;
+  color: #444;
+}
+/* "Utah Teapot" wordmark text */
+nav  h1 {
+  font-family: Halcyon-Bold;
+  font-size: 2.0625em;
+  margin: -5px 0 0 0;
+}
+/* "The" wordmark text */
+nav h3 {
+  font-family: Halcyon-Bold;
+  font-size: 1.625em;
+  letter-spacing: 4.91px;
+  margin: 0;
+}
+/** Page Navigation Button Styles **/
+nav  ul {
+  float: right;
+  list-style: none;
+  width: 50%;
+  height: 70px;
+  text-align: right;
+  vertical-align: bottom;
+  line-height: 95px;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 1px;
+}
+nav  li { display: inline;}
+nav li a, footer li a {
+  color: #000;
+  font-weight: 300;
+}
+/** Highlights Current Page Nav Button**/
+.nav-current {
+  color:  #2a7ab0;
+  font-weight: 400;
+}
+/**  Hides arrow and disables highlighting on Page 1 and Page 3**/
+.nav-off{
+  color: #fff;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+   -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* Mobile layout for the Navigation (for viewports >700px wide)*/
+@media only screen and (max-width: 700px) {
+  nav {
+    height: 140px;
+  }
+  nav header {
+      width: 320px;
+      float: none;
+      margin: 0 auto;
+  }
+  nav h1 {
+    font-size: 2.75em;
+  }
+  nav h3 {
+    font-size: 2.125em;
+    letter-spacing: 6.42px;
+  }
+  nav ul {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+}
+/* Mobile layout for the Navigation (for viewports >378px wide)*/
+@media only screen and (max-width: 378px) {
+  nav {
+    height: 120px;
+  }
+  nav header {
+      width: 260px;
+      height: 50px;
+      float: none;
+      margin: 0 auto;
+  }
+  nav h1 {
+    font-size: 2.0625em;
+  }
+  nav h3 {
+    font-size: 1.625em;
+    letter-spacing: 4.91px;
+  }
+  nav ul {
+    width: 100%;
+    height: 35px;
+    float: none;
+    text-align: center;
+  }
+}
+/*********** END OF SECTION ***********/
+/************* Article Styling  ************/
+/** Article Section Headers **/
+article h3 {
+font-family: 'Open Sans', sans-serif;
+font-size: 1.25em;
+font-weight: 700;
+letter-spacing: 3px;
+line-height: 28px;
+padding: 0;
+margin-top: 32px;
+margin-bottom: -26px;
+}
+/** Article Body Text **/
+article p {
+margin-top: 32px;
+font-size: 1.125em;
+line-height: 33.1833px
+}
+/** Article Images **/
+/* sets the image container to the main container width */
+figure {
+  width: 960px;
+  margin: 0;
+}
+/* index.html image - covers the entire width of the main container */
+figure img.large-image {
+  margin-top: 28px;
+  width: 100%;
+  height: auto;
+}
+/* history.html small image left*/
+figure img.history-image-sm-1 {
+  margin-top: 15px;
+  float: left;
+  width: 470px;
+  height: 308px;
+}
+/* history.html small image right*/
+figure img.history-image-sm-2 {
+  float: right;
+  margin-top: 15px;
+  width: 470px;
+  height: 308px;
+}
+/* appearances.html image one - slightly wider than the width of the text container */
+figure img.appearances-image-lg {
+  display: block;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: 28px;
+  width: 678px;
+  align: center;
+}
+/* appearances.html image two and three container */
+.appearances-figure-cut {
+  width: 678px;
+  margin: 0 auto;
+}
+/* appearances.html image two */
+figure img.appearances-image-cut-1 {
+  margin-top: 15px;
+  float: left;
+  width: 408px;
+  height: 435px;
+}
+/* appearances.html image three */
+figure img.appearances-image-cut-2 {
+  float: right;
+  margin-top: 15px;
+  width: 246px;
+  height: 435px;
+}
+/* image description and citations */
+figure .image-citation {
+  padding-top: 5px;
+  clear: both;
+  font-size: 0.75em;
+  color: #464646;
+  margin: 0 auto;
+  width: 634px;
+  text-align: center;
+} figure .large-image-citation {
+  clear: both;
+  font-size: 0.75em;
+  color: #464646;
+  margin: 0 auto;
+  width: 634px;
+  text-align: center;
+}
+@media only screen and (max-width: 960px) {
+  figure {
+    width: 100%;
+  }
+  figure .image-citation, figure .large-image-citation {
+    width: 80%;
+  }
+  figure img.history-image-sm-1,   figure img.history-image-sm-2 {
+    width: 49%;
+    height: auto;
+  }
+  figure img.appearances-image-lg,   .appearances-figure-cut  {
+    width: 90%;
+  }
+  figure img.appearances-image-cut-1 {
+    width: 60%;
+    height: auto;
+  }
+  figure img.appearances-image-cut-2 {
+    width: 36%;
+    height: auto;
+  }
+}
+/*********** END OF SECTION ***********/
+/************* Footer Styles *************/
+footer {
+margin-top: 32px;
+border-top: 1px #464646 solid;
+font-size: 0.75em;
+color: #464646;
+line-height: 28px;
+}
+footer p{
+  margin-top: -2px;
+  float: left;
+}
+footer  ul {
+  float: right;
+  list-style: none;
+  text-align: right;
+  padding: 0;
+  margin: -2px 0 0 0;
+  letter-spacing: 4.91px;
+}
+footer  li { display: inline;}
+@media only screen and (max-width: 700px) {
+  footer p {
+    float: none;
+    text-align: center;
+  }
+  footer ul {
+    float: none;
+    text-align: center;
+    font-size: 1.35em;
+  }
+
+}
+/*********** END OF SECTION ***********/
+/*********  END OF DOCUMENT  *********/
