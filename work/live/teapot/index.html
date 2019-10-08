@@ -1,0 +1,73 @@
+<!-- The Utah Teapot Wikipedia Page Redesign -->
+<!-- YSDN 1006 Visual Interactive Design -->
+<!-- This Website is WCAG 2.0 Compliant -->
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <!-- Misc Metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Page by Valery Marier, text from Wikipedia.org">
+    <meta name="description" content="YSDN Visual Interaction Design Project 1, Wikipedia Article Redesign.  Winter 2018">
+    <meta name="keywords" content="animation, 3d, teapot, utah, computer, graphics, computer graphics"/>
+    <meta name="subject" content="The Utah Teapot">
+    <meta name="copyright" content="Valery Marier / CC BY-SA 3.0">
+    <title>The Utah Teapot</title>
+    <!-- Links to Fonts, stylesheets, and favicon -->
+    <link rel="icon" type="image/png" href="img/tea-favicon.png">
+    <link href="../css/normalize.css" type="text/css" rel="stylesheet"/>
+    <link href="css/tea-style.css" type="text/css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Main Content Container (960px wide) -->
+    <div class="container">
+      <!--  Navigation Bar -->
+      <nav class="container-content">
+          <!-- Site Logo -->
+          <header>
+            <a href="index"><h3>THE</h3>
+            <h1>UTAH TEAPOT</h1></a>
+          </header>
+          <!-- Page Navigation -->
+          <ul>
+            <li class="nav-current">Home</li>
+            <li>/</li>
+            <li><a href="history">History</a></li>
+            <li>/</li>
+            <li><a href="appearances">Appearances</a></li>
+          </ul>
+      </nav>
+      <!-- Start of the article -->
+      <article>
+        <div class="container-content">
+          <p>The Utah teapot, or the Newell teapot, is a 3D test model that has become a standard reference object and an in-joke within the computer graphics community. It is a mathematical model of an ordinary teapot that appears solid, cylindrical, and partially convex. </p>
+        </div>
+        <!-- Images and Citations placed in a figure tag for Screen Reader optimization -->
+        <figure>
+          <img class="large-image" src="img/tea-page-one-image.png" alt="A picture of a Utah Teapot with the HTCPCP error code for &ldquo;I&rsquo;m a Teapot&rdquo; on it."/>
+          <figcaption class="large-image-citation">A picture of a Utah Teapot with the HTCPCP error code for &ldquo;I&rsquo;m a Teapot&rdquo; on it. Picture by <a href="https://www.flickr.com/photos/oskay/12821120745/">Windell Oskay</a> / <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></figcaption>
+        </figure>
+        <div class="container-content">
+          <p>A teapot primitive is considered the equivalent of a &ldquo;hello, world&rdquo; program, as a way to create an easy 3D scene with a somewhat complex model acting as a basic geometry reference for scene and light setup. Some programming libraries, such as the OpenGL Utility Toolkit, even have functions dedicated to drawing teapots.</p>
+          <p>The teapot model was created in 1975 by early computer graphics researcher Martin Newell, a member of the pioneering graphics program at the University of Utah. The original teapot the Utah teapot was based on is still available from Friesland Porzellan and is sold as the &ldquo;1,4L Utah Teapot&rdquo;.</p>
+        </div>
+      </article>
+      <!-- End of the Article -->
+      <!-- Page Footer -->
+      <footer class="container-content">
+        <!-- Visible Page Information -->
+        <p>Website by Valery Marier for YSDN 1006. Article Source: <a href="https://en.wikipedia.org/wiki/Utah_teapot">Wikipedia.org</a> / <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></p>
+        <!-- Pagination at the bottom for ease of use -->
+        <ul>
+          <li class="nav-off">&lt;</li><!-- This element is purposely invisible. Prevents different sized navs on each page. -->
+          <li class="nav-current">1</li>
+          <li><a href="history">2</a></li>
+          <li><a href="appearances">3</a></li>
+          <li><a href="history">&gt;</a></li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>

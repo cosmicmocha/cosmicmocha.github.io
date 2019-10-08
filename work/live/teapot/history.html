@@ -1,0 +1,89 @@
+<!-- The Utah Teapot Wikipedia Page Redesign -->
+<!-- YSDN 1006 Visual Interactive Design -->
+<!-- This Website is WCAG 2.0 Compliant -->
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <!-- Misc Metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Page by Valery Marier, text from Wikipedia.org">
+    <meta name="description" content="YSDN Visual Interaction Design Project 1, Wikipedia Article Redesign.  Winter 2018">
+    <meta name="keywords" content="animation, 3d, teapot, utah, computer, graphics, computer graphics"/>
+    <meta name="subject" content="The Utah Teapot">
+    <meta name="copyright" content="Valery Marier / CC BY-SA 3.0">
+    <title>The Utah Teapot</title>
+    <!-- Links to Fonts, stylesheets, and favicon -->
+    <link rel="icon" type="image/png" href="img/tea-favicon.png">
+    <link href="../css/normalize.css" type="text/css" rel="stylesheet"/>
+    <link href="css/tea-style.css" type="text/css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Main Content Container (960px wide) -->
+    <div class="container">
+      <!-- Navigation Bar -->
+      <nav class="container-content">
+        <!-- Site Logo -->
+        <header>
+          <a href="index"><h3>THE</h3>
+          <h1>UTAH TEAPOT</h1></a>
+        </header>
+        <!-- Page Navigation -->
+        <ul>
+          <li><a href="index">Home</a></li>
+          <li>/</li>
+          <li class="nav-current">History</li>
+          <li>/</li>
+          <li><a href="appearances">Appearances</a></li>
+        </ul>
+      </nav>
+      <!-- Start of the article -->
+      <article>
+        <div class="container-content">
+          <h3>HISTORY</h3>
+          <p>For his work, Newell needed a simple mathematical model of a familiar object. His wife, Sandra Newell, suggested modelling their tea service since they were sitting down for tea at the time. He sketched the teapot free-hand using graph paper and a pencil. Following that, he went back to the computer laboratory and edited bézier control points on a Tektronix storage tube, again by hand.</p>
+          <p>The teapot shape contained a number of elements that made it ideal for the graphics experiments of the time: it was round, contained saddle points, had a genus greater than zero because of the hole in the handle, could project a shadow on itself, and could be displayed accurately without a surface texture.</p>
+        </div>
+        <!-- Images and Citations placed in a figure tag for Screen Reader optimization -->
+        <figure>
+          <img class="large-image" src="img/tea-page-two-image-a.png" alt="A blank placeholder image."/>
+          <figcaption class="large-image-citation">Wireframes of the Utah Teapot. Pictures by <a href="http://resumbrae.com/">Dave Pape</a> / <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></figcaption>
+        </figure>
+        <div class="container-content">
+          <p>Newell made the mathematical data that described the teapot&rsquo;s geometry (a set of three-dimensional coordinates) publicly available, and soon other researchers began to use the same data for their computer graphics experiments. These researchers needed something with roughly the same characteristics that Newell had, and using the teapot data meant they did not have to laboriously enter geometric data for some other object. Although technical progress has meant that the act of rendering the teapot is no longer the challenge it was in 1975, the teapot continued to be used as a reference object for increasingly advanced graphics techniques.</p>
+          <p>Over the following decades, editions of computer graphics journals (such as the ACM SIGGRAPH&rsquo;s quarterly) regularly featured versions of the teapot: faceted or smooth-shaded, wireframe, bumpy, translucent, refractive, even leopard-skin and furry teapots were created.</p>
+          <p>Having no surface to represent its base, the original teapot model was not intended to be seen from below. Later versions of the data set fixed this.</p>
+          <p>The real teapot is ~33% taller (ratio 4:3) than the computer model. Jim Blinn stated that he scaled the model on the vertical axis during a demo in the lab to demonstrate that they could manipulate it. They preferred the appearance of this new version and decided to save the file out of that preference.</p>
+        </div>
+        <!-- Images and Citations placed in a figure tag for Screen Reader Optimization -->
+        <figure>
+          <img class="large-image" src="img/tea-page-two-image-b.png" alt="A blank placeholder image."/>
+          <img class="history-image-sm-1" src="img/tea-page-two-image-c.png" alt="A blank placeholder image."/>
+          <img class="history-image-sm-2" src="img/tea-page-two-image-d.png" alt="A blank placeholder image."/>
+          <figcaption class="image-citation">Top: The original Utah teapot on display at the Computer History Museum. Picture is cropped. Original picture by <a href="https://commons.wikimedia.org/wiki/File:Original_Utah_Teapot.jpg">Marshall Astor</a> / <a href="https://creativecommons.org/licenses/by-sa/2.0/deed.en">CC BY-SA 2.0</a> &nbsp; Left: The Utah Teapot rendered in 3DSMAX 5.0. Picture by <a href="http://www.haykranen.nl/">Hay Kranen</a> / <a href="https://creativecommons.org/licenses/by/3.0/nl/deed.en">CC BY 3.0 NL</a> &nbsp; Right: A Utah Teapot rendering with a metallic texture. Picture by <a href="https://commons.wikimedia.org/wiki/File:Utah_teapot_simple_2.png">Dhatfield</a> / <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">CC BY-SA 3.0</a></figcaption>
+        </figure>
+        <div class="container-content">
+          <p>The original, physical teapot was purchased from ZCMI (a department store in Salt Lake City) in 1974. It was donated to the Boston Computer Museum in 1984 where it was on display until 1990. It now resides in the ephemera collection at the Computer History Museum in Mountain View, California where it is catalogued as &ldquo;Teapot used for Computer Graphics rendering&rdquo; and bears the catalogue number X00398.1984. Versions of the teapot are still sold today by Friesland Porzellan in Germany, who were the original makers of the teapot as they were once part of the Melitta Group.</p>
+          <p>Versions of the teapot model — or sample scenes containing it — are distributed with or freely available for nearly every current rendering and modelling program and even many graphic APIs, including AutoCAD, Houdini, Lightwave 3D, MODO, POV-Ray, 3ds Max, and the OpenGL and Direct3D helper libraries. Some RenderMan-compliant renderers support the teapot as a built-in geometry by calling RiGeometry(&ldquo;teapot&rdquo;, RI_NULL). Along with the expected cubes and spheres, the GLUT library even provides the function glutSolidTeapot() as a graphics primitive, as does its Direct3D counterpart D3DX (D3DXCreateTeapot()). However version 11 of DirectX does not provide this functionality anymore. Mac OS X Tiger and Leopard also include the teapot as part of Quartz Composer; Leopard&rsquo;s teapot supports bump mapping. BeOS included a small demo of a rotating 3D teapot, intended to show off the platform&rsquo;s multimedia facilities.</p>
+          <p>Teapot scenes are commonly used for renderer self-tests and benchmarks.</p>
+        </div>
+      </article>
+      <!-- End of the Article -->
+      <!-- Page Footer -->
+      <footer class="container-content">
+        <!-- Visible Page Info -->
+        <p>Website by Valery Marier for YSDN 1006. Article Source: <a href="https://en.wikipedia.org/wiki/Utah_teapot">Wikipedia.org</a> / <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></p>
+        <!-- Page navigation repeated at the bottom for ease of use -->
+        <ul>
+          <li><a href="index">&lt;</a></li>
+          <li><a href="index">1</a></li>
+          <li class="nav-current">2</li>
+          <li><a href="appearances">3</a></li>
+          <li><a href="appearances">&gt;</a></li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>

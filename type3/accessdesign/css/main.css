@@ -1,0 +1,172 @@
+/** ADD Stuff Here **/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: #E0374C;
+} a:hover h1 {
+  padding-left: 30px;
+  transition: all ease 0.5s;
+}
+a:hover h2 {
+  padding-left: 20px;
+  transition: all ease 0.5s;
+}
+
+h1 {
+  font-family: 'Halcyon', sans-serif;
+  font-size: 96px;
+  line-height: 88px;
+  letter-spacing: -2.77;
+  color: #E0374C;
+}
+h2 {
+  font-family: 'Halcyon', sans-serif;
+  font-size: 42px;
+  line-height: 62px;
+  color: #E0374C;
+}
+p {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+}
+main {
+  background-color: none;
+  width: calc(50% - 160px);
+  height: auto;
+  position: absolute;
+  left: 10%;
+  top: 0;
+  bottom: 0;
+  padding: 70px 80px;
+}
+
+.braille-splash {
+  background-color: #E0374C;
+  width: 40%;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+}
+nav {
+  position: fixed;
+  background-color: rgba(2,255,3,0.0);
+  padding: 20px;
+  height: calc(100% - 40px);
+  width: calc(10% - 40px);
+  left: 0;
+  top: 0;
+}
+.wordmark {
+  font-family: 'Halcyon', sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+
+}
+.btn-menu {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: bold;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  cursor: pointer;
+}
+.btn-socials {
+  position: absolute;
+  bottom: 5%;
+  list-style-type: none;
+}
+.btn-nextpage, h5 {
+  font-size: 18px;
+  font-family: 'Halcyon', sans-serif;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+  padding-left: 0;
+}
+.btn-nextpage:hover{
+  padding-left: 20px !important;
+}
+
+.btn-prevpage, h5 {
+  font-size: 18px;
+  font-family: 'Halcyon', sans-serif;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+  padding-left: 0;
+}
+.btn-prevpage:hover{
+  padding-left: 0px !important;
+}
+
+
+/** Side Nav Bar **/
+/* The side navigation menu */
+.sidenav {
+ height: 100%; /* 100% Full-height */
+ width: 0; /* 0 width - change this with JavaScript */
+ position: fixed; /* Stay in place */
+ z-index: 100; /* Stay on top */
+ top: 0; /* Stay at the top */
+ left: 0;
+ background-color: rgba(255,255,255,1); /* Black*/
+ overflow-x: hidden; /* Disable horizontal scroll */
+ padding-top: 0px; /* Place content 60px from the top */
+ transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+ color: #E0374C;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+ transition: margin-left .5s;
+ padding: 0px;
+}
+
+.nav-menu {
+  position: absolute;
+  background-color: rgba(2,255,3,0);
+  padding: 20px;
+  height: calc(100% - 40px);
+  width: calc(10% - 40px);
+  left: 0;
+  top: 0;
+}
+.main-menu {
+  background-color: rgba(0,255,13,0);
+  width: calc(50% - 80px);
+  height: auto;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  bottom: 0;
+  padding: 60px 80px;
+}
+.nav-main-menu {
+  list-style-type: none;
+}
+
+.braille-splash-menu {
+  background-color: #E0374C;
+  width: 40%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+}
