@@ -11,6 +11,17 @@ $("a").on('click', function(event) { // when an anchor is clicked.
     }
 });
 
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("#scroll-icon").style.color = "#000";
+  } else {
+    document.getElementById("scroll-icon").style.color = "#fff";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
 $(".hover-home").hover(function() { // Mouse over
   $(".hover-home").addClass('highlight-home');
   $( ".frame" ).removeClass('frame-play');

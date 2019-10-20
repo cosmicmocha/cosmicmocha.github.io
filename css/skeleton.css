@@ -359,16 +359,19 @@ strong { font-weight: 500;}
 } nav ul .highlight-play a:after {
   border-color: #ffcb08;
 }
-.play a, .play a:hover{
-  color: #ffcb08 !important;
+.play a{
+  color: #8d6708 !important;
+  font-style: italic;
+}
+.play a:hover{
+  color: #8d6708 !important;
   font-style: normal;
 }
 
 
-
   .index-btns, .next, .larr-btns {
     padding-left: 0px;
-  
+
     margin-bottom: 0.6rem;
   } .index-btns a, .larr-btns a {
      font-style: normal;
