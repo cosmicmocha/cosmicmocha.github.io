@@ -35,7 +35,7 @@
       <nav class="navbar">
         <div class="container">
           <ul class="navbar-title">
-            <li class="navbar-title-item"><a class="navbar-title-link" href="#intro">Montserrat</a></li>
+            <li class="navbar-title-item"><span class="navbar-title-link">Montserrat</span></li>
           </ul>
           <ul class="navbar-list">
             <li class="navbar-item"><a class="navbar-link" href="#about">About</a></li>
@@ -102,7 +102,7 @@
   </div>
 </div>
   <div class="pink"><div class="container"><div class="row" id="contact">
-    <div class="six columns offset-by-six" style="margin-top: 6%">
+    <div class="six columns offset-by-six" style="margin-top: 6%; margin-bottom: 6%">
       <h4>Get in touch</h4>
       <p>Montserrat is free software, released under the SIL Open Font License. If you'd like to contribute, or you just wanna look under the hood, you can find the source files for the variable version of Montserrat <a href="https://github.com/cosmicmocha/Montserrat">here</a>.</p>
       <p>Montserrat was converted into an OpenType variations font by Valery Marier, you get in touch with her  through her website <a href="https://marier.design">marier.design</a> or <a href="https://twitter.com/valerymarier">@valerymarier</a> on Twitter.</p>
@@ -112,7 +112,23 @@
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+
   <script>
+  // for scrolling that is smoother than jazz.
+$("a").on('click', function(event) { // when an anchor is clicked.
+
+    if (this.hash !== "") { // if it has a hashtag in the href link.
+        event.preventDefault();
+        var hash = this.hash; // the variable hash is set to the link.
+
+        $('html, body').animate({scrollTop: $(hash).offset().top}, 500, function(){
+            window.location.hash = hash; // the page scrolls to the corresponding id tag smoother than creamy peanut butter.
+        });
+    }
+});
+
+
     var rangeinput = document.querySelector('.controls--slider');
     var reset = document.getElementById('reset');
 

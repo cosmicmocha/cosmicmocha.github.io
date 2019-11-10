@@ -147,7 +147,7 @@ body {
   color: #222; }
 
   .pink {
-    background-color: #ec5268;
+    background-color: #e5007f;
     color: #ffffff;
   } .pink > li, .pink > h1, .pink > h2, .pink > p, .pink h4 {
     color: #ffffff;
@@ -276,11 +276,11 @@ input[type="button"] {
   text-decoration: none;
   white-space: nowrap;
   background-color: transparent;
-  border: solid 1px #ec5268 ;
+  border: solid 1px #e5007f ;
   padding: 0.1rem 3rem;
   border-radius: 4px;
   cursor: pointer;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   color: rgb(27 55 101);
   font-variation-settings: "wght" 400;
   transition: all 0.5s ease;
@@ -295,8 +295,8 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  background-color: #ec5268;
-  border: solid 1px #ec5268 ;
+  background-color: #e5007f;
+  border: solid 1px #e5007f ;
   color: #fff;
   font-variation-settings: "wght" 400;
   outline: 0; }
@@ -520,7 +520,7 @@ there.
   /* These are the containers for the editable text */
   .slider-section {
     width: 100%;
-    background-color: #ec5268;
+    background-color: #e5007f;
     color: #ffffff;
     padding: 3rem 0rem 0.5rem 0rem;
     margin-bottom: 10px;
@@ -560,8 +560,8 @@ there.
       transition: all 0.5s ease;
   }
   input[type="button"]:hover {
-    background-color: #ec5268;
-    border: solid 1px #ec5268 ;
+    background-color: #e5007f;
+    border: solid 1px #e5007f ;
     color: #fff;
   }
   .reset-buttons {
