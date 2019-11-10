@@ -210,7 +210,7 @@ p {
     margin-bottom: 0; }
   .navbar-link {
     font-variant-caps: all-small-caps;
-    font-size: 1.2rem;
+    font-size: calc(9px + (13 - 9) * ((100vw - 300px) / (1440 - 300)));
     font-variation-settings: "wght" 625;
     letter-spacing: .15rem;
     margin-left: 35px;
@@ -226,7 +226,7 @@ p {
       margin-bottom: 0; }
     .navbar-title-link {
       font-variant-caps: all-small-caps;
-      font-size: 1.2rem;
+      font-size: calc(9px + (13 - 9) * ((100vw - 300px) / (1440 - 300)));
       font-variation-settings: "wght" 625;
       letter-spacing: .15rem;
       text-decoration: none;
@@ -244,7 +244,7 @@ p {
   font-variation-settings: "wght" 900;
   animation: Looper ease-in-out 3s infinite;
   animation-direction: alternate;
-  font-size: 12.2rem;
+  font-size: calc(38px + (122 - 38) * ((100vw - 300px) / (1440 - 300)));
   letter-spacing: 0.2rem;
 }
 
