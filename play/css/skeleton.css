@@ -131,7 +131,7 @@
   .offset-by-one-half.columns     { margin-left: 52%; }
 
 }
-
+html, body {overflow-x: hidden;}
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* NOTE
