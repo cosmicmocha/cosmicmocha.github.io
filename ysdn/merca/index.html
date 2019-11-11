@@ -69,8 +69,19 @@
     <div class="row">
       <div class="ten columns" style="margin-top: 15%">
         <h1 class="chapter-heading" id="ii">Marketing Materials</h1>
-        <p>Our style guide is built to adapt easily to any display mode, from analog to digital. The main goal is to create unity, harmony, and consistency across our brand materials without stifling the creativity of our individual designers.</p>
+        <p>No smart device is complete without some good marketing. Below are some ads that are meant to get our target users to look into and (hopefully) use our vending machines. We decided to create ads in both print and digital mediums because, while the vending machine itself is a smart device, people will be interacting with it in the analog world.</p><br>
         <h4 class="section-heading">Subway Ads</h4>
+        <p>Valery made the posters for the marketing material. She wanted to make a poster that captured the cheeky playfulness of the brand's style while still keeping the important zero-waste message intact.</p>
+        <div class="subway-list">
+          <li class="subway-fig">
+            <img src="images/poster-1.jpg" alt="A Poster that has the text 'Fresh Food With None Of The Baggage' distorted underneath a plastic bag." style="width:100%"/>
+            <figcaption>Poster Variation 1</figcaption>
+          </li>
+          <li class="subway-fig">
+            <img src="images/poster-2.jpg" alt="A Poster that has the text 'Tired Of Being Trapped In All This Plastic' distorted underneath a plastic bag." style="width:100%"/>
+            <figcaption>Poster Variation 2</figcaption>
+          </li>
+        </div><br>
         <h4 class="section-heading">Social Media Ads</h4>
       </div>
     </div>
@@ -227,5 +238,21 @@
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <script type="text/javascript" src="../../js/jquery.min.js"></script>
+  <script>
+  // for scrolling that is smoother than jazz.
+  $("a").on('click', function(event) { // when an anchor is clicked.
+
+      if (this.hash !== "") { // if it has a hashtag in the href link.
+          event.preventDefault();
+          var hash = this.hash; // the variable hash is set to the link.
+
+          $('html, body').animate({scrollTop: $(hash).offset().top}, 500, function(){
+              window.location.hash = hash; // the page scrolls to the corresponding id tag smoother than creamy peanut butter.
+          });
+      }
+  });
+  </script>
 </body>
 </html>
