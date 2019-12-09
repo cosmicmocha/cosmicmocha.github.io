@@ -36,6 +36,11 @@
     font-style: italic;
     /*    ^ only has weight axis (200–900 range) */
 }
+iframe {
+  width: 100%;
+  height: 50rem;
+  border-width: 1px;
+}
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
