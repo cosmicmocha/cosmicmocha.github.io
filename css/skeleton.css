@@ -25,6 +25,18 @@
 - Media Queries
 */
 
+@font-face {
+    font-family: "Alegreya Sans";
+    src: url(../font/AlegreyaSans.woff2) format('woff2-variations');
+    font-style: normal;
+}
+@font-face {
+    font-family: "Alegreya Sans";
+    src: url(../font/AlegreyaSans-Italic.woff2) format('woff2-variations');
+    font-style: italic;
+    /*    ^ only has weight axis (100–900 range) */
+}
+
 .dark-mode, .dark-mode nav {
   background-color: #222;
   transition: all 0.2s ease-in-out;
@@ -41,33 +53,7 @@
   transition: opacity 0.25s ease-in-out;
 }
 
-@keyframes colorchange
-    {
-      0%   {background-color: #fd8800;}
-      20%  {background-color: #fd008f;}
-      40%  {background-color: #9700fd;}
-      60%  {background-color: #003dfd;}
-      80% {background-color: #05c7e6;}
-      100% {background-color: #4bd58d;}
-    }
-    @keyframes colorchange-underline
-        {
-          0%   {border-color: #fd8800;}
-      20%  {border-color: #fd008f;}
-      40%  {border-color: #9700fd;}
-      60%  {border-color: #003dfd;}
-      80% {border-color: #05c7e6;}
-      100% {border-color: #4bd58d;}
-        }
-        @keyframes colorchange-type
-            {
-              0%   {color: #fd8800;}
-              20%  {color: #fd008f;}
-              40%  {color: #9700fd;}
-              60%  {color: #003dfd;}
-              80% {color: #05c7e6;}
-              100% {color: #4bd58d;}
-            }
+
 
 .frame {
   background-color: #eee;
@@ -246,27 +232,6 @@ body {
   font-family: 'Alegreya Sans', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #000; }
 
-
-/* Typography
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  margin-bottom: 2rem;
-  font-weight: 300; }
-  h1 { font-size: 2.5rem;}
-h2 { font-size: 2.0rem; letter-spacing: 0.04rem; line-height: 3.4rem}
-  h3 { font-size: 2.0rem; font-style: italic; margin-top: -3%;}
-  h4 { font-size: 3.0rem; }
-  h5 { font-size: 2.0rem; font-weight: 500;}
-  h6 { font-size: 2.15rem; }
-
-h2 cite {
-  font-style: normal;
-}
-p {
-  margin-top: 0; }
-strong { font-weight: 500;}
-/**lorem ipsum**/
   /* Navigation
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   nav {
@@ -544,9 +509,8 @@ footer p i {
 .footer-social a:hover {
   color: #565656 !important;
 }
-  .work-item {
+.work-item {
     animation-name: unset;
-
 }
 .work-item:hover,
 .work-item:focus {
@@ -587,7 +551,7 @@ there.
 /* Larger than tablet */
 @media (min-width: 750px) {
   h2 { font-size: 2.5rem; letter-spacing: 0.04rem; line-height: 4.4rem}
-  
+
 }
 
 /* Larger than desktop */
