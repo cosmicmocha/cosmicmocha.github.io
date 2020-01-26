@@ -309,7 +309,7 @@ nav ul li {
 }
 
 nav ul li a {
-transition: all 0.15s ease;
+transition: border 0.15s ease;
 text-decoration: none;
 position: relative;
 color: #000;
