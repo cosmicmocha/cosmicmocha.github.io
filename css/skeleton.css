@@ -268,7 +268,7 @@ body {
   }
 
   nav ul li a {
-  transition: border 0.15s ease;
+  transition: all 0.15s ease;
   text-decoration: none;
   position: relative;
   color: #000;
