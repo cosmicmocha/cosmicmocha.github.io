@@ -27,6 +27,7 @@
   /* color variables */
   --highlight-home: #eee;
   --highlight-about: #dc143c;
+  --highlight-about-nontext: #FB1D6F;
   --highlight-work: #2E89FF;
   --highlight-play: #FFCB08;
   --text-color: #212131;
@@ -117,7 +118,7 @@ blockquote cite {
 }
 .frame-about {
   animation: none;
-  background-color: var(--highlight-about) ;
+  background-color: var(--highlight-about-nontext) ;
 }
 .frame-work {
   animation: none  ;
@@ -323,7 +324,7 @@ nav ul .highlight-home a {
   animation: colorchange-underline 10s ease alternate infinite;
 }
 nav ul .highlight-about a {
-  border-bottom: 2px solid #dc143c;
+  border-bottom: 2px solid var(--highlight-about-nontext);
 }
 nav ul .highlight-work a {
   border-bottom: 2px solid #2E89FF;
