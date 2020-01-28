@@ -26,7 +26,7 @@
 
   /* color variables */
   --highlight-home: #eee;
-  --highlight-about: #FB1D6F;
+  --highlight-about: #dc143c;
   --highlight-work: #2E89FF;
   --highlight-play: #FFCB08;
   --text-color: #212131;
@@ -323,7 +323,7 @@ nav ul .highlight-home a {
   animation: colorchange-underline 10s ease alternate infinite;
 }
 nav ul .highlight-about a {
-  border-bottom: 2px solid #FB1D6F;
+  border-bottom: 2px solid #dc143c;
 }
 nav ul .highlight-work a {
   border-bottom: 2px solid #2E89FF;
