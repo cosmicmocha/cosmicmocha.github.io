@@ -277,11 +277,11 @@ body {
 }
 .frame-about {
   animation: none;
-  background-color: #FB1D6F !important;
+  background-color: #dc143c !important;
 }
 .frame-home {
   animation: colorchange 10s ease alternate infinite  !important;
-  background-color: #FB1D6F;
+  background-color: #dc143c;
 }
 .highlight-home a, .highlight-home a:hover{
   animation: colorchange-underline 10s ease alternate infinite;
@@ -291,9 +291,9 @@ body {
 }
 .highlight-about a, .highlight-about a:hover{
   color: #000 !important;
-  border-bottom: 2px solid #FB1D6F;
+  border-bottom: 2px solid #dc143c;
 } nav ul .highlight-about a:after {
-  border-color: #FB1D6F;
+  border-color: #dc143c;
 }
 .frame-work {
   animation: none  ;
