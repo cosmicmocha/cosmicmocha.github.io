@@ -29,6 +29,7 @@
   --highlight-about: #dc143c;
   --highlight-about-nontext: #FB1D6F;
   --highlight-work: #0063E6;
+  --highlight-work-nontext: #2E89FF;
   --highlight-play: #FFCB08;
   --text-color: #212131;
   --text-color-muted: #595959;
@@ -122,7 +123,7 @@ blockquote cite {
 }
 .frame-work {
   animation: none  ;
-  background-color: var(--highlight-work) ;
+  background-color: var(--highlight-work-nontext) ;
 }
 .frame-play {
   animation: none  ;
@@ -327,7 +328,7 @@ nav ul .highlight-about a {
   border-bottom: 2px solid var(--highlight-about-nontext);
 }
 nav ul .highlight-work a {
-  border-bottom: 2px solid #2E89FF;
+  border-bottom: 2px solid var(--highlight-work-nontext);
 }
 nav ul .highlight-play a {
   border-bottom: 2px solid #ffcb08;
