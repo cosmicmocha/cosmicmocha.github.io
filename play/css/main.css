@@ -19,6 +19,7 @@
 body {
   font-family: 'Space Cowgirl', sans-serif;
   font-variation-settings: "wght" 100;
+  font-weight: 100;
 }
 .wrapper {
   padding: 2em 0;
