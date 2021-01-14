@@ -63,8 +63,8 @@
 
 @font-face {
     font-family: 'Sporting Grotesque Witch';
-    src: url('sportinggrotesquewitch-regular.woff2') format('woff2'),
-         url('sportinggrotesquewitch-regular.woff') format('woff');
+    src: url('../fonts/sportinggrotesquewitch-regular.woff2') format('woff2'),
+         url('../fonts/sportinggrotesquewitch-regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
