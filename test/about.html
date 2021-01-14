@@ -20,16 +20,18 @@
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel='stylesheet' href='css/fonts.css'>
-
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.css" rel="stylesheet">
 
 
 </head>
 
-<body id="top">
+<body id="top" >
     <nav>
-        <a href="index.html" class="nav-btn">valerymarier</a>
+        <a href="index.html" class="nav-btn animsition-link" data-animsition-out-class="fade-out-right"
+  data-animsition-out-duration="600">valerymarier</a>
         <a id="more" class="nav-btn">more</a>
-        <a href="index.html" class="nav-btn">work</a>
+        <a href="index.html#work" class="nav-btn animsition-link" data-animsition-out-class="fade-out-right"
+  data-animsition-out-duration="600">work</a>
         <a href="#top" class="nav-btn">about</a>
         <div id="fixed-navbar">
             <ul class="navbar-menu">
@@ -46,7 +48,7 @@
 
 
     </nav>
-    <main id="main">
+    <main id="main" class="animsition">
         <div class="grid-container">
             <div class="intro">
                 <p>I am a graphic designer and all around cool gal based in the Toronto area. I’m interested in <em>typography</em> and <em>accessible communication</em> in both the physical and digital design worlds. Currently I am in my fourth year of studies in the <em>York/Sheridan Program in Design</em>.</p>
@@ -137,6 +139,10 @@
     <div class="cursor"></div>
     
     <script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js" charset="utf-8"></script>
+   <script type="text/javascript" src="js/main.js"></script>
+    
+    
     <script type="text/javascript">
         $('#more').on('click', function() {
             var newText = $(this).text() == "less" ? "more" : "less";

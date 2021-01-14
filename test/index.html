@@ -20,22 +20,22 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel='stylesheet' href='css/fonts.css'>
-
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.css" rel="stylesheet">
 
 
 </head>
 
-<body id="top">
+<body id="top" >
     <nav>
         <a href="#top" class="nav-btn">valerymarier</a>
         <a id="more" class="nav-btn">more</a>
         <a href="#work" class="nav-btn">work</a>
-        <a href="about.html" class="nav-btn">about</a>
+        <a href="about.html" class="nav-btn animsition-link">about</a>
         <div id="fixed-navbar">
             <ul class="navbar-menu">
                 <li><a href="https://woahpixels.com">Read my written work</a></li>
                 <li><a href="#">Visual experiments</a></li>
-                <li><a href="#" onClick="randomlinks(); return false;">See a random project</a></li>
+                <li><a href="#" onClick="randomlinks(); return false;" class="animsition-link">See a random project</a></li>
             </ul>
             <ul class="navbar-info">
                 <li>My phone number and résumé are available on request.</li>
@@ -46,33 +46,33 @@
 
 
     </nav>
-    <main id="main">
-        <div class="grid-container">
+    <main id="main" class="animsition">
+        <div class="grid-container" >
             <div class="hero">
                 <p>I’m Valery Marier, <br>a graphic designer who <br>creates <a>layouts<img class="hero-img" src="https://i.giphy.com/media/ZkwSxuckDvf7q/giphy.webp"></a>, <a>websites<img class="hero-img" src="https://media1.giphy.com/media/xTiTntReleqBnhBNwQ/giphy.gif?cid=ecf05e47sya4yo51dh00af9xjqudpm5od0fydjmh39jbr3pj&rid=giphy.gif"></a>, and <br>the occasional <a>typeface<img class="hero-img" src="https://i.giphy.com/media/l1J9NQvtuCQzUbH2g/giphy.webp"></a>. <br>Let’s make something great! <br><span class="hero-email"><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#118;&#97;&#108;&#101;&#114;&#121;&#64;&#109;&#97;&#114;&#105;&#101;&#114;&#46;&#100;&#101;&#115;&#105;&#103;&#110;">valery@marier.design</a></span></p>
             </div>
             <div class="spotlight-list">
                 <h2 id="work">Selected works &darr;</h2>
                 <div class="list">
-                    <a href="work/beaver.html"><div class="button-wrap" id="btn-1">
+                    <a href="work/beaver.html"  class="animsition-link"><div class="button-wrap" id="btn-1">
                         <p>Beaver</p>
                         <div class="button-arrow">&rarr;</div>
                         </div></a>
                 </div>
                 <div class="list">
-                    <a href="work/summertours.html"><div class="button-wrap" id="btn-2">
+                    <a href="work/summertours.html" class="animsition-link"><div class="button-wrap" id="btn-2">
                         <p>Summer Tours</p>
                         <div class="button-arrow">&rarr;</div>
                         </div></a>
                 </div>
                 <div class="list">
-                    <a href="work/alrbookkeeping.html"> <div class="button-wrap" id="btn-3">
+                    <a href="work/alrbookkeeping.html" class="animsition-link"> <div class="button-wrap" id="btn-3">
                         <p>ALR Bookkeeping</p>
                         <div class="button-arrow">&rarr;</div>
                         </div></a>
                 </div>
                 <div class="list">
-                     <a href="work/spacecowgirl.html"><div class="button-wrap" id="btn-4">
+                     <a href="work/spacecowgirl.html" class="animsition-link"><div class="button-wrap" id="btn-4">
                         <p>Space Cowgirl</p>
                         <div class="button-arrow">&rarr;</div>
                          </div></a>
@@ -88,7 +88,7 @@
             <div class="works">
                 <h2>Some more projects &darr;</h2>
                 <div class="works-list">
-                     <a href="work/witchy.html"><div class="works-button-wrap">
+                     <a href="work/witchy.html" class="animsition-link"><div class="works-button-wrap">
                         <p>Witchy</p>
                         <div class="works-button-arrow">&rarr;</div>
                          </div></a>
@@ -100,7 +100,7 @@
                          </div></a>
                 </div-->
                 <div class="works-list">
-                    <a href="work/accessibilityguide.html"> <div class="works-button-wrap">
+                    <a href="work/accessibilityguide.html" class="animsition-link"> <div class="works-button-wrap">
                         <p>Accessibility Field Guide</p>
                         <div class="works-button-arrow">&rarr;</div>
                         </div></a>
@@ -112,13 +112,13 @@
                          </div></a>
                 </div-->
                 <div class="works-list">
-                     <a href="work/accessdesign.html"><div class="works-button-wrap">
+                     <a href="work/accessdesign.html" class="animsition-link"><div class="works-button-wrap">
                         <p>Access Design</p>
                         <div class="works-button-arrow">&rarr;</div>
                          </div></a>
                 </div>
                 <div class="works-list">
-                     <a href="work/kerocoffee.html"><div class="works-button-wrap">
+                     <a href="work/kerocoffee.html" class="animsition-link"><div class="works-button-wrap">
                         <p>Kero Coffee</p>
                         <div class="works-button-arrow">&rarr;</div>
                          </div></a>
@@ -141,7 +141,35 @@
       <div class="cursor"></div>
     
     <script type="text/javascript" src="js/jquery.min.js"></script>
-    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js" charset="utf-8"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+
+  <!--script>
+  $(document).ready(function() {
+  $(".animsition").animsition({
+    inClass: 'fade-in-left',
+    outClass: 'fade-out-left',
+    inDuration: 1200,
+    outDuration: 600,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+    loading: true,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-fade-in-left',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
+});
+  </script-->
     
     <script type="text/javascript">
         $('#more').on('click', function() {

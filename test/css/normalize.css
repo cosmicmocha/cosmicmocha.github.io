@@ -51,6 +51,12 @@ html,
 body {
     color: var(--text-color);
     background-color: var(--background-color);
+
+        overflow-x: hidden;
+    
+}
+body, main {
+      overflow-y: hidden !important;
 }
 
 a {

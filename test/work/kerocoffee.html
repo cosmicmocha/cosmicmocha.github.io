@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/basic-template.css">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel='stylesheet' href='../css/fonts.css'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.css" rel="stylesheet">
 
 
 
@@ -27,12 +28,26 @@
 
 <body id="top">
     <nav>
-        <a href="../index.html" class="nav-btn">valerymarier</a>
-        <a href="../index.html#work" class="nav-btn">close</a>
-        <a href="index.html" class="nav-btn">&lt; prev</a>
-        <a href="#top" class="nav-btn">next &gt;</a>
+        <a href="../index.html" class="nav-btn animsition-link" data-animsition-out-class="fade-out-right"
+  data-animsition-out-duration="600">valerymarier</a>
+        <a id="more" class="nav-btn">more</a>
+        <a href="accessdesign.html" class="nav-btn animsition-link" data-animsition-out-class="fade-out-right"
+  data-animsition-out-duration="600">&lt; prev</a>
+        <a href="beaver.html" class="nav-btn animsition-link">next &gt;</a>
+        <div id="fixed-navbar">
+            <ul class="navbar-menu">
+                <li><a href="https://woahpixels.com">Read my written work</a></li>
+                <li><a href="#">Visual experiments</a></li>
+                <li><a href="#" onClick="randomlinks(); return false;" class="animsition-link">See a random project</a></li>
+            </ul>
+            <ul class="navbar-info">
+                <li>My phone number and résumé are available on request.</li>
+                <li>valery@marier.design</li>
+            </ul>
+
+        </div>
     </nav>
-    <main id="main">
+    <main id="main" class="animsition">
         <div class="grid-container">
             <div class="intro">
                 <p><em>Kero Coffee</em> is a responsive website for a hip coffee roastery.</p>
@@ -95,8 +110,14 @@
     <div class="cursor"></div>
     
     <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js" charset="utf-8"></script>
+   <script type="text/javascript" src="../js/main.js"></script>
+    
     <script type="text/javascript">
         $('#more').on('click', function() {
+            var newText = $(this).text() == "less" ? "more" : "less";
+            $(this).text(newText);
+            
             if ($('#fixed-navbar').css('top') == '0px') {
                 $('#fixed-navbar').animate({
                     top: '-200px'
@@ -113,6 +134,25 @@
                 }, 400);
             }
         });
+    
+        function randomlinks(){
+            var myrandom=Math.round(Math.random()*7)
+            var links=new Array()
+            links[0]="witchy.html"
+            links[1]="kerocoffee.html"
+            links[2]="spacecowgirl.html"
+            links[3]="summertours.html"
+            links[4]="alrbookkeeping.html"
+            links[5]="beaver.html"
+            links[6]="accessibilityguide.html"
+            links[7]="accessdesign.html"
+            
+            window.location=links[myrandom]
+}
+        
+        
+        
+        // fancy images
 
         $(document).ready(function() {
             $('#btn-1').hover(function() {
