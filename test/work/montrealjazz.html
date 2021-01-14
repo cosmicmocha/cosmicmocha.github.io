@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="author" content="Valery Marier">
+    <meta name="keywords" content="">
+
+    <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/basic-template.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel='stylesheet' href='../css/fonts.css'>
+
+
+
+</head>
+
+<body id="top">
+    <nav>
+        <a href="../index.html" class="nav-btn">valerymarier</a>
+        <a href="../index.html#work" class="nav-btn">close</a>
+        <a href="index.html" class="nav-btn">&lt; prev</a>
+        <a href="#top" class="nav-btn">next &gt;</a>
+    </nav>
+    <main id="main">
+        <div class="grid-container">
+            <div class="intro">
+                <p><em>Montreal Jazz Festival</em> is a festival identity project that aims to combine contemporary and traditional jazz elements.</p>
+            </div>
+            <div class="image-1">
+                <figure>
+                    <img src="img/montrealjazz/mtl-03.gif">
+                    <figcaption>Hey look! It’s a stock photo of someone hard at work!</figcaption>
+                </figure>
+            </div>
+            <div class="details-1"><p>The primary goal of this project isto make an annual look for the Festival International de Jazz de Montréal that is more approachable to younger more general audiences, while keeping the festival’s original raison d’être in tact. Early on I decided that the best way to create a good annual look was to create an indepth design system. I took colour ques from jazz posters from the 60s and I drew rough improvised instrument illustrations to accompany the colours. </p></div>
+            
+            <div class="image-2">
+                <figure>
+                    <img src="img/montrealjazz/mtl-01.png">
+                    <figcaption>Hey look! It’s a stock photo of someone hard at work!</figcaption>
+                </figure>
+            </div>
+            
+            <div class="image-3">
+                <figure>
+                    <img src="img/montrealjazz/mtl-02.png">
+                    <figcaption>Hey look! It’s a stock photo of someone hard at work!</figcaption>
+                </figure>
+            </div>
+            
+            <div class="details-2"><p>Since the festival was for the jazz genre, I wanted to capture the conrolled improvisation that many of the greatest jazz musicians used; Miles Davis, Louis Armstrong, Nat King Cole, ect. To do this I didn't create a single design with all of the elements, instead I opted to create a multitude of designs that could be used in different situations. I didn't want to lose the spirit of improvisation when I moved the annual look over to digital media. So I decided to use the variable font Barlow to allow an interesting, improvised, and lightweight typographic treatment of the website across all of the devices. Barlow is a two axis variable font, so it enabled me to create CSS animations using both it's weight and width axes.</p></div>
+            
+            <div class="image-4">
+                <figure>
+                    <img src="img/montrealjazz/mtl-04.gif">
+                    <figcaption>Hey look! It’s a stock photo of someone hard at work!</figcaption>
+                </figure>
+            </div>
+            
+            <div class="blockquote"><p>Type is the voice of our words. But, like jazz, it can also be the voice of our feelings</p></div>
+            
+            <div class="image-5">
+                <figure>
+                    <img src="img/montrealjazz/mtl-05.gif">
+                    <figcaption>Hey look! It’s a stock photo of someone hard at work!</figcaption>
+                </figure>
+            </div>
+            
+            <div class="image-6">
+                <figure>
+                    <img src="img/summertours/image-06.jpg">
+                    <figcaption>Hey look! It’s a stock photo of someone hard at work!</figcaption>
+                </figure>
+            </div>
+            
+            
+            
+            <div class="footer">
+                <p>Looking to collaborate on a project, or you just want to say hello? Drop me a line:</p>
+                <p class="footer-email"><a href="#">valery@marier.design</a></p>
+            </div>
+             <div class="socials">
+                <ul>
+                    <li><a href="https://instagram.com/valerymarier">Instagram</a></li>
+                    <li><a href="https://twitter.com/valerymarier">Twitter</a></li>
+                    <li><a href="https://ca.linkedin.com/in/valery-marier-0000561a1">LinkedIn</a></li>
+                    <li><a href="https://woahpixels.com">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    
+    <div class="cursor"></div>
+    
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript">
+        $('#more').on('click', function() {
+            if ($('#fixed-navbar').css('top') == '0px') {
+                $('#fixed-navbar').animate({
+                    top: '-200px'
+                }, 400);
+                $('main').animate({
+                    marginTop: '0'
+                }, 400);
+            } else {
+                $('#fixed-navbar').animate({
+                    top: '0'
+                }, 400);
+                $('main').animate({
+                    marginTop: '200px'
+                }, 400);
+            }
+        });
+
+        $(document).ready(function() {
+            $('#btn-1').hover(function() {
+                $('#img-1').toggleClass('image-fade-odd');
+            });
+
+            $('#btn-2').hover(function() {
+                $('#img-2').toggleClass('image-fade-even');
+            });
+
+            $('#btn-3').hover(function() {
+                $('#img-3').toggleClass('image-fade-odd');
+            });
+
+            $('#btn-4').hover(function() {
+                $('#img-4').toggleClass('image-fade-even');
+            });
+
+
+        });
+
+        // for scrolling that is smoother than jazz.
+        $("a").on('click', function(event) { // when an anchor is clicked.
+
+            if (this.hash !== "") { // if it has a hashtag in the href link.
+                event.preventDefault();
+                var hash = this.hash; // the variable hash is set to the link.
+
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 500, function() {
+                    window.location.hash = hash; // the page scrolls to the corresponding id tag smoother than creamy peanut butter.
+                });
+            }
+        });
+        
+        //cursor
+        
+        $(document).ready(function() {
+
+	var cursor = $(".cursor");
+
+	$(window).mousemove(function(e) {
+		cursor.css({
+			top: e.clientY - cursor.height() / 2,
+			left: e.clientX - cursor.width() / 2
+		});
+	});
+
+	$(window)
+		.mouseleave(function() {
+			cursor.css({
+				opacity: "0"
+			});
+		})
+		.mouseenter(function() {
+			cursor.css({
+				opacity: "1"
+			});
+		});
+
+	$("a")
+		.mouseenter(function() {
+			cursor.css({
+				transform: "scale(0.75)"
+			});
+		})
+		.mouseleave(function() {
+			cursor.css({
+				transform: "scale(1)"
+			});
+		});
+
+	$(window)
+		.mousedown(function() {
+			cursor.css({
+				transform: "scale(.25)"
+			});
+		})
+		.mouseup(function() {
+			cursor.css({
+				transform: "scale(1)"
+			});
+		});
+});
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="author" content="Valery Marier">
+    <meta name="keywords" content="">
+
+    <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/basic-template.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel='stylesheet' href='../css/fonts.css'>
+
+
+
+</head>
+
+<body id="top">
+    <nav>
+        <a href="../index.html" class="nav-btn">valerymarier</a>
+        <a href="../index.html#work" class="nav-btn">close</a>
+        <a href="index.html" class="nav-btn">&lt; prev</a>
+        <a href="#top" class="nav-btn">next &gt;</a>
+    </nav>
+    <main id="main">
+        <div class="grid-container">
+            <div class="intro">
+                <p><em>Michelle</em> is a contemporary typeface with oldstyle flair. It was made for typesetting large chunks of text on the web.</p>
+            </div>
+            <div class="image-1">
+                <figure>
+                    <img src="img/summertours/image-01.png">
+                    <figcaption>Hey look! It’s a stock photo of someone hard at work!</figcaption>
+                </figure>
+            </div>
+            <div class="details-1"><p>After doing some research in the field—the York University Library—and looking at some of the old books from the early twentieth century, I felt that an oldstyle typeface would be the best direction to go. Since I was designing an oldstyle typeface, I looked towards calligraphy for inspiration. When I first started designing the font I found that my letterforms were too rigid and chunky. Since I wanted it to have a juicy calligraphic feel to it, I opted to swap out the chunkiest parts out with looser forms. For the variability of the typeface, I decided to go with optical size because it was common for oldstyle fonts in metal type to have different forms at different sizes. </p></div>
+            
+            <div class="image-2">
+                <figure>
+                    <img src="img/summertours/image-02.jpg">
+                    <figcaption>Hey look! It’s a stock photo of someone hard at work!</figcaption>
+                </figure>
+            </div>
+            
+            <div class="image-3">
+                <figure>
+                    <img src="img/summertours/image-03.jpg">
+                    <figcaption>Hey look! It’s a stock photo of someone hard at work!</figcaption>
+                </figure>
+            </div>
+            
+            <div class="details-2"><p>For the specimen website I wanted to play off of the historical nature of oldstyle fonts in a contemporary manner. So I decided to create my own contemporary twist on nineteenth century victorian magazines, trade journals, and print galleys. In order to get the feeling of an old letterpress, I created heavily structured grid layout for the content to live in.I also opted to use several different sizes of type with several different snippets of literary work which I thought would work well to show off the qualities of my typeface. Then, after digging through issues of the Inland Printer as well as several Victorian fashion magazines, I got my hands on a couple of wood block illustrations that were in the public domain. I took each of these into Photoshop, cleaned up the lines, and added a vibrant punch of colour.</p></div>
+            
+            <div class="image-4">
+                <figure>
+                    <img src="img/summertours/image-04.jpg">
+                    <figcaption>Hey look! It’s a stock photo of someone hard at work!</figcaption>
+                </figure>
+            </div>
+            
+            <div class="blockquote"><p>The book Summer Tours aims to highlight the typography and letterforms of travel related documents from late nineteenth century Canada. Over the course of six weeks I was tasked with compiling all of the imagery across several digital archives, editing the images for press, designing the layout of the book itself, and writing the text present in the book. I created this book as my final project for the book design course in the York/Sheridan Program in Design.  </p></div>
+            
+            <div class="image-5">
+                <figure>
+                    <img src="img/summertours/image-05.jpg">
+                    <figcaption>Hey look! It’s a stock photo of someone hard at work!</figcaption>
+                </figure>
+            </div>
+            
+            <div class="image-6">
+                <figure>
+                    <img src="img/summertours/image-06.jpg">
+                    <figcaption>Hey look! It’s a stock photo of someone hard at work!</figcaption>
+                </figure>
+            </div>
+            
+            
+            
+            <div class="footer">
+                <p>Looking to collaborate on a project, or you just want to say hello? Drop me a line:</p>
+                <p class="footer-email"><a href="#">valery@marier.design</a></p>
+            </div>
+            <div class="socials">
+                <ul>
+                    <li><a href="https://instagram.com/valerymarier">Instagram</a></li>
+                    <li><a href="https://twitter.com/valerymarier">Twitter</a></li>
+                    <li><a href="https://linkedin.com/valerymarier">LinkedIn</a></li>
+                    <li><a href="https://woahpixels.com">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    
+    <div class="cursor"></div>
+    
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript">
+        $('#more').on('click', function() {
+            if ($('#fixed-navbar').css('top') == '0px') {
+                $('#fixed-navbar').animate({
+                    top: '-200px'
+                }, 400);
+                $('main').animate({
+                    marginTop: '0'
+                }, 400);
+            } else {
+                $('#fixed-navbar').animate({
+                    top: '0'
+                }, 400);
+                $('main').animate({
+                    marginTop: '200px'
+                }, 400);
+            }
+        });
+
+        $(document).ready(function() {
+            $('#btn-1').hover(function() {
+                $('#img-1').toggleClass('image-fade-odd');
+            });
+
+            $('#btn-2').hover(function() {
+                $('#img-2').toggleClass('image-fade-even');
+            });
+
+            $('#btn-3').hover(function() {
+                $('#img-3').toggleClass('image-fade-odd');
+            });
+
+            $('#btn-4').hover(function() {
+                $('#img-4').toggleClass('image-fade-even');
+            });
+
+
+        });
+
+        // for scrolling that is smoother than jazz.
+        $("a").on('click', function(event) { // when an anchor is clicked.
+
+            if (this.hash !== "") { // if it has a hashtag in the href link.
+                event.preventDefault();
+                var hash = this.hash; // the variable hash is set to the link.
+
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 500, function() {
+                    window.location.hash = hash; // the page scrolls to the corresponding id tag smoother than creamy peanut butter.
+                });
+            }
+        });
+        
+        //cursor
+        
+        $(document).ready(function() {
+
+	var cursor = $(".cursor");
+
+	$(window).mousemove(function(e) {
+		cursor.css({
+			top: e.clientY - cursor.height() / 2,
+			left: e.clientX - cursor.width() / 2
+		});
+	});
+
+	$(window)
+		.mouseleave(function() {
+			cursor.css({
+				opacity: "0"
+			});
+		})
+		.mouseenter(function() {
+			cursor.css({
+				opacity: "1"
+			});
+		});
+
+	$("a")
+		.mouseenter(function() {
+			cursor.css({
+				transform: "scale(0.75)"
+			});
+		})
+		.mouseleave(function() {
+			cursor.css({
+				transform: "scale(1)"
+			});
+		});
+
+	$(window)
+		.mousedown(function() {
+			cursor.css({
+				transform: "scale(.25)"
+			});
+		})
+		.mouseup(function() {
+			cursor.css({
+				transform: "scale(1)"
+			});
+		});
+});
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>

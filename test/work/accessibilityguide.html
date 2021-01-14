@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="author" content="Valery Marier">
+    <meta name="keywords" content="">
+
+    <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/basic-template.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel='stylesheet' href='../css/fonts.css'>
+
+
+
+</head>
+
+<body id="top">
+    <nav>
+        <a href="../index.html" class="nav-btn">valerymarier</a>
+        <a href="../index.html#work" class="nav-btn">close</a>
+        <a href="index.html" class="nav-btn">&lt; prev</a>
+        <a href="#top" class="nav-btn">next &gt;</a>
+    </nav>
+    <main id="main">
+        <div class="grid-container">
+            <div class="intro">
+                <p><em>A Field Guide to Web Accessibility</em> is exactly what it sounds like; a basic starting guide to accessible web design.</p>
+            </div>
+            <div class="image-1">
+   
+                    <img src="img/accessibilityguide/image-1.jpg">
+
+            </div>
+            <div class="details-1"><p>During my studies in university I came to realize that, despite having taken compulsory web design courses, many of my peers were still confused about how to go about designing an accessible website and what exactly was required in it. Since I've been designing websites since I was in high school, I figured that I would take my knowledge of web design and combine it with several accessible design resources (ally.css, the RGD Access Ability guidebook, etc) in order to create an easy to consume jumping off point for accessible web design.</p></div>
+            
+            <div class="image-2">
+  
+                    <img src="img/accessibilityguide/image-2.png">
+
+            </div>
+            
+            <div class="image-3">
+   
+                    <img src="img/accessibilityguide/image-3.png">
+
+            </div>
+            
+            <div class="details-2"><p>Early on, I made the decision to typeset the website in the variable font Public Sans. I did this because I wanted to experiment with variable typesetting while still retaining legibility across devices. I also opted to use simple playful illustrations throughout the guide, with alternate text of course, to make the guide book feel lighter and easier to consume. The use of blue sparingly throughout the website provides just enough <em>pop</em> without distracting the user from the website's core content. The website is accessible on all modern web browsers and is be WCAG 2.0 Level AA compliant.</p></div>
+            
+            <div class="image-4">
+
+                    <img src="img/accessibilityguide/image-4.jpg">
+
+            </div>
+            
+            <div class="blockquote"><p>Empathy isn’t just a part of the design process—it is the design process.</p></div>
+            
+            <div class="image-5">
+
+                    <img src="img/accessibilityguide/image-5.jpg">
+
+            </div>
+            
+            <div class="image-6">
+
+                    <img src="img/accessibilityguide/image-6.jpg">
+
+            </div>
+            
+            
+            
+            <div class="footer">
+                <p>Looking to collaborate on a project, or you just want to say hello? Drop me a line:</p>
+                <p class="footer-email"><a href="#">valery@marier.design</a></p>
+            </div>
+             <div class="socials">
+                <ul>
+                    <li><a href="https://instagram.com/valerymarier">Instagram</a></li>
+                    <li><a href="https://twitter.com/valerymarier">Twitter</a></li>
+                    <li><a href="https://ca.linkedin.com/in/valery-marier-0000561a1">LinkedIn</a></li>
+                    <li><a href="https://woahpixels.com">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    
+    <div class="cursor"></div>
+    
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript">
+        $('#more').on('click', function() {
+            if ($('#fixed-navbar').css('top') == '0px') {
+                $('#fixed-navbar').animate({
+                    top: '-200px'
+                }, 400);
+                $('main').animate({
+                    marginTop: '0'
+                }, 400);
+            } else {
+                $('#fixed-navbar').animate({
+                    top: '0'
+                }, 400);
+                $('main').animate({
+                    marginTop: '200px'
+                }, 400);
+            }
+        });
+
+        $(document).ready(function() {
+            $('#btn-1').hover(function() {
+                $('#img-1').toggleClass('image-fade-odd');
+            });
+
+            $('#btn-2').hover(function() {
+                $('#img-2').toggleClass('image-fade-even');
+            });
+
+            $('#btn-3').hover(function() {
+                $('#img-3').toggleClass('image-fade-odd');
+            });
+
+            $('#btn-4').hover(function() {
+                $('#img-4').toggleClass('image-fade-even');
+            });
+
+
+        });
+
+        // for scrolling that is smoother than jazz.
+        $("a").on('click', function(event) { // when an anchor is clicked.
+
+            if (this.hash !== "") { // if it has a hashtag in the href link.
+                event.preventDefault();
+                var hash = this.hash; // the variable hash is set to the link.
+
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 500, function() {
+                    window.location.hash = hash; // the page scrolls to the corresponding id tag smoother than creamy peanut butter.
+                });
+            }
+        });
+        
+        //cursor
+        
+        $(document).ready(function() {
+
+	var cursor = $(".cursor");
+
+	$(window).mousemove(function(e) {
+		cursor.css({
+			top: e.clientY - cursor.height() / 2,
+			left: e.clientX - cursor.width() / 2
+		});
+	});
+
+	$(window)
+		.mouseleave(function() {
+			cursor.css({
+				opacity: "0"
+			});
+		})
+		.mouseenter(function() {
+			cursor.css({
+				opacity: "1"
+			});
+		});
+
+	$("a")
+		.mouseenter(function() {
+			cursor.css({
+				transform: "scale(0.75)"
+			});
+		})
+		.mouseleave(function() {
+			cursor.css({
+				transform: "scale(1)"
+			});
+		});
+
+	$(window)
+		.mousedown(function() {
+			cursor.css({
+				transform: "scale(.25)"
+			});
+		})
+		.mouseup(function() {
+			cursor.css({
+				transform: "scale(1)"
+			});
+		});
+});
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>

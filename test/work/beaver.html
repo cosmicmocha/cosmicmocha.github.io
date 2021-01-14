@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="author" content="Valery Marier">
+    <meta name="keywords" content="">
+
+    <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/beaver.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel='stylesheet' href='../css/fonts.css'>
+
+
+
+</head>
+
+<body id="top">
+    <nav>
+        <a href="../index.html" class="nav-btn">valerymarier</a>
+        <a href="../index.html#work" class="nav-btn">close</a>
+        <a href="index.html" class="nav-btn">&lt; prev</a>
+        <a href="#top" class="nav-btn">next &gt;</a>
+    </nav>
+    <main id="main">
+        <div class="grid-container">
+            <div class="intro">
+                <p><em>Beaver</em> is a packaging design project for high quality art supplies with an emphasis on durability 
+and sustainability.</p>
+            </div>
+            <div class="image-1">
+
+                    <img src="img/beaver/image-1.jpg">
+
+            </div>
+            <div class="details-1"><p>For this project I was tasked with taking an existing piece of packaging and redesigning it to work better for it's intended audience. Initially, I wanted to just package japanese detail carving tools, but through my research and ideation phases I quickly realized that it would be more useful to package a carving set for block printing.</p><p>Having done block printing myself, I was well aware of how much of a pain it is to get started without resorting to using cheap plastic kits. In the current market if you want to get quality tools you have to make multiple individual stops at different suppliers to get good tools; my packaging project aims to remedy that issue.</p></div>
+            
+            <div class="image-2">
+
+                    <img src="img/beaver/image-2.jpg">
+
+            </div>
+            
+            <div class="image-3">
+
+                    <img src="img/beaver/image-3.jpg">
+
+            </div>
+            
+            <div class="details-2"><p>Beaver is a durable art supply brand. Strong, sharp, and hard working like the mighty canadian beaver, Beaver art supplies are intended to last the user through many years of wear and tear. But not only are Beaver art supplies durable, they are also premium quality. With the packaging meant to mimic the raw materials used to create works of art and highlight the possibilities that are contained within the materials themselves. It used a mixture of elegant typography and rough linocut inspired illustrations to show the consumer what they can accomplish before they ever even touch a tool. </p></div>
+            
+            <div class="image-4">
+
+                    <img src="img/beaver/image-4.jpg">
+ 
+            </div>
+            
+            <div class="image-5">
+
+                    <img src="img/beaver/image-5.jpg">
+  
+            </div>
+            
+            <div class="image-6">
+
+                    <img src="img/beaver/image-6.jpg">
+
+            </div>
+            
+            <div class="details-3"><p>The one thing that I knew I wanted out of this project from the get go was a container (or in this case containers) that had a second, and maybe even third life. I wanted the user to be able to reuse my packaging for a long while after they opened it, so I opted to make the bag reverse into a tote and made the tool roll double as a half apron.</p></div>
+            
+            <div class="image-7">
+
+                    <img src="img/beaver/image-7.jpg">
+
+            </div>
+            
+            <div class="image-8">
+
+                    <img src="img/beaver/image-8.jpg">
+
+            </div>
+            
+            <div class="image-9">
+
+                    <img src="img/beaver/image-9.jpg">
+
+            </div>
+            
+            
+            
+            <div class="footer">
+                <p>Looking to collaborate on a project, or you just want to say hello? Drop me a line:</p>
+                <p class="footer-email"><a href="#">valery@marier.design</a></p>
+            </div>
+            <div class="socials">
+                <ul>
+                    <li><a href="https://instagram.com/valerymarier">Instagram</a></li>
+                    <li><a href="https://twitter.com/valerymarier">Twitter</a></li>
+                    <li><a href="https://ca.linkedin.com/in/valery-marier-0000561a1">LinkedIn</a></li>
+                    <li><a href="https://woahpixels.com">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    
+    <div class="cursor"></div>
+    
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript">
+        $('#more').on('click', function() {
+            if ($('#fixed-navbar').css('top') == '0px') {
+                $('#fixed-navbar').animate({
+                    top: '-200px'
+                }, 400);
+                $('main').animate({
+                    marginTop: '0'
+                }, 400);
+            } else {
+                $('#fixed-navbar').animate({
+                    top: '0'
+                }, 400);
+                $('main').animate({
+                    marginTop: '200px'
+                }, 400);
+            }
+        });
+
+        $(document).ready(function() {
+            $('#btn-1').hover(function() {
+                $('#img-1').toggleClass('image-fade-odd');
+            });
+
+            $('#btn-2').hover(function() {
+                $('#img-2').toggleClass('image-fade-even');
+            });
+
+            $('#btn-3').hover(function() {
+                $('#img-3').toggleClass('image-fade-odd');
+            });
+
+            $('#btn-4').hover(function() {
+                $('#img-4').toggleClass('image-fade-even');
+            });
+
+
+        });
+
+        // for scrolling that is smoother than jazz.
+        $("a").on('click', function(event) { // when an anchor is clicked.
+
+            if (this.hash !== "") { // if it has a hashtag in the href link.
+                event.preventDefault();
+                var hash = this.hash; // the variable hash is set to the link.
+
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 500, function() {
+                    window.location.hash = hash; // the page scrolls to the corresponding id tag smoother than creamy peanut butter.
+                });
+            }
+        });
+        
+        //cursor
+        
+        $(document).ready(function() {
+
+	var cursor = $(".cursor");
+
+	$(window).mousemove(function(e) {
+		cursor.css({
+			top: e.clientY - cursor.height() / 2,
+			left: e.clientX - cursor.width() / 2
+		});
+	});
+
+	$(window)
+		.mouseleave(function() {
+			cursor.css({
+				opacity: "0"
+			});
+		})
+		.mouseenter(function() {
+			cursor.css({
+				opacity: "1"
+			});
+		});
+
+	$("a")
+		.mouseenter(function() {
+			cursor.css({
+				transform: "scale(0.75)"
+			});
+		})
+		.mouseleave(function() {
+			cursor.css({
+				transform: "scale(1)"
+			});
+		});
+
+	$(window)
+		.mousedown(function() {
+			cursor.css({
+				transform: "scale(.25)"
+			});
+		})
+		.mouseup(function() {
+			cursor.css({
+				transform: "scale(1)"
+			});
+		});
+});
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>

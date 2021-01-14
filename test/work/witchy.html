@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="author" content="Valery Marier">
+    <meta name="keywords" content="">
+
+    <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/witchy.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel='stylesheet' href='../css/fonts.css'>
+
+
+
+</head>
+
+<body id="top">
+    <nav>
+        <a href="../index.html" class="nav-btn">valerymarier</a>
+        <a href="../index.html#work" class="nav-btn">close</a>
+        <a href="index.html" class="nav-btn">&lt; prev</a>
+        <a href="#top" class="nav-btn">next &gt;</a>
+    </nav>
+    <main id="main">
+        <div class="grid-container">
+            <div class="intro">
+                <p><em>Witchy</em> is a contemporary typeface with oldstyle flair. It is intended for typesetting display text on the web.</p>
+            </div>
+            <div class="image-1">
+
+                    <img src="img/michelle/image-1.png">
+
+            </div>
+            <div class="details-1"><p><em>Witchy</em> is a Didone-esque typeface with oldstyle flair. The characters of the typeface employ the same character proportions as oldstyle typefaces like those cut by Garamond and Manutius. However, this font is not merely another oldstyle revival. By combining characteristics from different periods of typographic history together, along with my own contemporary flair, I've created a display face chock full of charm.</p></div>
+            
+            <div class="image-2">
+
+                    <img src="img/michelle/michelle-02.gif">
+
+            </div>
+            
+            <div class="image-3">
+
+                    <img src="img/michelle/michelle-03.gif">
+
+            </div>
+            
+            <div class="details-2"><p>My primary source of inspiration for this typeface is the 1584 book <em>The discouerie of witchcraft</em> by Scot Reginald. While I haven't read this old book in it's entirety, I found that the way that the digitized copy I had access to was typeset and printed quite enchanting. While the method of printing at the time didn't allow for type to be as sharp and clean as it is now, I found the ink bleeding that resulted from this process created some very interesting character shapes. <em>Witchy</em> is still very much a work-in-progress. It is in the early stages of development and still doesn't have a basic latin character set. However, if you would like to use the characters that are currently available in a project feel free to get in touch with me. </p></div>
+            
+            <div class="image-4">
+
+                    <img src="img/michelle/image-2.png">
+
+            </div>
+            
+            <div class="blockquote">
+                    <img src="img/michelle/image-3.png">
+            
+            </div>
+            
+            <div class="image-5">
+
+                    <img src="img/michelle/image-4.png">
+
+            </div>
+            
+            <div class="image-6">
+
+                    <img src="img/michelle/image-5.png">
+
+            </div>
+            
+            
+            
+            <div class="footer">
+                <p>Looking to collaborate on a project, or you just want to say hello? Drop me a line:</p>
+                <p class="footer-email"><a href="#">valery@marier.design</a></p>
+            </div>
+            <div class="socials">
+                <ul>
+                    <li><a href="https://instagram.com/valerymarier">Instagram</a></li>
+                    <li><a href="https://twitter.com/valerymarier">Twitter</a></li>
+                    <li><a href="https://ca.linkedin.com/in/valery-marier-0000561a1">LinkedIn</a></li>
+                    <li><a href="https://woahpixels.com">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    
+    <div class="cursor"></div>
+    
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript">
+        $('#more').on('click', function() {
+            if ($('#fixed-navbar').css('top') == '0px') {
+                $('#fixed-navbar').animate({
+                    top: '-200px'
+                }, 400);
+                $('main').animate({
+                    marginTop: '0'
+                }, 400);
+            } else {
+                $('#fixed-navbar').animate({
+                    top: '0'
+                }, 400);
+                $('main').animate({
+                    marginTop: '200px'
+                }, 400);
+            }
+        });
+
+        $(document).ready(function() {
+            $('#btn-1').hover(function() {
+                $('#img-1').toggleClass('image-fade-odd');
+            });
+
+            $('#btn-2').hover(function() {
+                $('#img-2').toggleClass('image-fade-even');
+            });
+
+            $('#btn-3').hover(function() {
+                $('#img-3').toggleClass('image-fade-odd');
+            });
+
+            $('#btn-4').hover(function() {
+                $('#img-4').toggleClass('image-fade-even');
+            });
+
+
+        });
+
+        // for scrolling that is smoother than jazz.
+        $("a").on('click', function(event) { // when an anchor is clicked.
+
+            if (this.hash !== "") { // if it has a hashtag in the href link.
+                event.preventDefault();
+                var hash = this.hash; // the variable hash is set to the link.
+
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 500, function() {
+                    window.location.hash = hash; // the page scrolls to the corresponding id tag smoother than creamy peanut butter.
+                });
+            }
+        });
+        
+        //cursor
+        
+        $(document).ready(function() {
+
+	var cursor = $(".cursor");
+
+	$(window).mousemove(function(e) {
+		cursor.css({
+			top: e.clientY - cursor.height() / 2,
+			left: e.clientX - cursor.width() / 2
+		});
+	});
+
+	$(window)
+		.mouseleave(function() {
+			cursor.css({
+				opacity: "0"
+			});
+		})
+		.mouseenter(function() {
+			cursor.css({
+				opacity: "1"
+			});
+		});
+
+	$("a")
+		.mouseenter(function() {
+			cursor.css({
+				transform: "scale(0.75)"
+			});
+		})
+		.mouseleave(function() {
+			cursor.css({
+				transform: "scale(1)"
+			});
+		});
+
+	$(window)
+		.mousedown(function() {
+			cursor.css({
+				transform: "scale(.25)"
+			});
+		})
+		.mouseup(function() {
+			cursor.css({
+				transform: "scale(1)"
+			});
+		});
+});
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
