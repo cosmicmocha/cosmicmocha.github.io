@@ -17,8 +17,6 @@
 
     <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    
-    <link rel='stylesheet' href='css/style.css'>
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel='stylesheet' href='css/fonts.css'>
@@ -29,7 +27,7 @@
 
 <body id="top">
     <nav>
-        <a href="index.html" class="nav-btn" data-target="0">valerymarier</a>
+        <a href="index.html" class="nav-btn">valerymarier</a>
         <a id="more" class="nav-btn">more</a>
         <a href="index.html" class="nav-btn">work</a>
         <a href="#top" class="nav-btn">about</a>
@@ -49,7 +47,7 @@
 
     </nav>
     <main id="main">
-        <div class=" sceneElement grid-container" data-viewport="1">
+        <div class="grid-container">
             <div class="intro">
                 <p>I am a graphic designer and all around cool gal based in the Toronto area. I’m interested in <em>typography</em> and <em>accessible communication</em> in both the physical and digital design worlds. Currently I am in my fourth year of studies in the <em>York/Sheridan Program in Design</em>.</p>
             </div>
@@ -138,10 +136,7 @@
     
     <div class="cursor"></div>
     
-   <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
-    <script type="text/javascript" src="js/jquery.smoothState.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-    
+    <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript">
         $('#more').on('click', function() {
             var newText = $(this).text() == "less" ? "more" : "less";
