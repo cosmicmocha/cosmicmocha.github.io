@@ -329,7 +329,7 @@ main {
     z-index: 1;
 }
 
-.reading-list .list .button-wrap:hover {
+.file-list .list .button-wrap:hover {
     border: none;
     background-color: var(--highlight-color);
     color: #fff;
@@ -337,7 +337,7 @@ main {
     transform: rotate(-0.75deg);
 }
 
-.reading-list .list:nth-child(odd) .button-wrap:hover {
+.file-list .list:nth-child(odd) .button-wrap:hover {
     border: none;
     background-color: var(--highlight-color);
     color: #fff;
@@ -359,7 +359,7 @@ main {
     padding: 10px 16px;
 }
 
-.reading-list h2 {
+.file-list h2 {
     font-variation-settings: "opsz" 45,"wght" 350,"SOFT" 10,"WONK" 1;
     border-bottom: 0.5px solid black;
     font-size: 45px;
