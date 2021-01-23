@@ -365,7 +365,7 @@ main {
     border-bottom: 0.5px solid black;
     transition: 0.250s;
     width: 100%;
-    height: 80px;
+    height: auto;
     display: block;
     z-index: -1;
 }
@@ -397,8 +397,8 @@ main {
 .works-button-wrap p {
     font-family: var(--font-stack-sans);
     font-size: 1.6rem;
-    line-height: 16px;
-    padding: 32px 1em;
+    line-height: 1.5;
+    padding: 30px 1em 30px 1em;
 }
 
 .works-button-wrap .works-button-arrow {
@@ -406,6 +406,22 @@ main {
     font-size: calc(20px + (50 - 20) * ((100vw - 300px) / (1400 - 300)));
     line-height: 50px;
     padding: 10px 16px;
+}
+
+@media (min-width: 1400px) {
+    .works-button-wrap .works-button-arrow {
+        font-family: var(--font-stack-serif);
+        font-size: 50px;
+        line-height: 50px;
+        padding: 20px 16px;
+    }
+
+    .works-button-wrap p {
+        font-family: var(--font-stack-sans);
+        font-size: 16px;
+       line-height: 1.5;
+    padding: 40px 1em 40px 1em;
+    }
 }
 
 .works h2 {
@@ -417,12 +433,7 @@ main {
 }
 
 @media (min-width: 1400px) {
-    .works-button-wrap .works-button-arrow {
-    font-family: var(--font-stack-serif);
-    font-size: 5rem;
-    line-height: 50px;
-    padding: 10px 16px;
-}
+
     .works h2 {
     font-variation-settings: "opsz" 45,"wght" 350,"SOFT" 10,"WONK" 1;
     border-bottom: 0.5px solid black;

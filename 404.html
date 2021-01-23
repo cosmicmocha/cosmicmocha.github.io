@@ -1,72 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-  <!-- Basic Page Needs
+    <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>404: Page Not Found</title>
-  <meta name="description" content="The graphic design portfolio of Valery Marier">
-  <meta name="author" content="Valery Marier">
+    <meta charset="utf-8">
+    <title>Home | Valery Marier</title>
+    <meta name="description" content="The graphic design portfolio of Valery Marier">
+    <meta name="author" content="Valery Marier">
     <meta name="keywords" content="valery marier, design, graphic designer, writer, digital art, digital design, freelance, freelance designer, freelance graphic designer, coding, creative coding, creative, creative design, research, design research, interactive design, interactivity, digital design, web design, interactive digital art, web designer,">
-    <meta name="copyright" content="Copyright 2019 by Valery Marier">
-  <link rel="icon" type="image/png" href="https://marier.design/images/favicon-sm.png">
+    <meta name="copyright" content="Copyright 2021 by Valery Marier">
+  <link rel="icon" type="image/png" href="images/favicon-sm.png">
 
-  <!-- Mobile Specific Metas
+    <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
+    <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="https://fonts.googleapis.com/css?family=Alegreya:400,400i" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel='stylesheet' href='css/fonts.css'>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.css" rel="stylesheet">
 
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="https://marier.design/css/normalize.css">
-  <link rel="stylesheet" href="https://marier.design/css/skeleton_index.css">
-  <link rel="stylesheet" href="https://marier.design/css/fontello.css">
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="https://marier.design/images/favicon.png">
 
 </head>
-<body id="index">
-  <!-- Coloured Frame -->
-  <div id="left" class="frame"></div>
-  <div id="right" class="frame"></div>
-  <div id="top"class="frame"></div>
-  <div id="bottom"class="frame"></div>
+
+<body id="top" >
+    <nav>
+        <a href="#top" class="nav-btn">valerymarier</a>
+        <a id="more" class="nav-btn">more</a>
+        <a href="#work" class="nav-btn">work</a>
+        <a href="about.html" class="nav-btn animsition-link">about</a>
+        <div id="fixed-navbar">
+            <ul class="navbar-menu">
+                <li><a href="https://woahpixels.com">Read my written work</a></li>
+               <!--li><a href="#">Visual experiments</a></li-->
+                <li><a href="#" onClick="randomlinks(); return false;" class="animsition-link">See a random project</a></li>
+            </ul>
+            <ul class="navbar-info">
+                <li>My phone number and résumé are available on request.</li>
+                <li>valery@marier.design</li>
+            </ul>
+
+        </div>
 
 
-  <!-- Navigation Pane -->
-  <nav>
-    <ul>
-      <li  class="index-active"><a aria="Home" href="https://marier.design/">@valerymarier</a></li>
-      <li class="hover-about" ><a aria="About" href="https://marier.design/about">About</a></li>
-      <li class="hover-work"><a aria="Work" href="https://marier.design/work">Work</a></li>
-      <li class="hover-play"><a aria="Play" href="https://marier.design/play">Play</a></li>
-    </ul>
-  </nav>
+    </nav>
+    <main id="main" class="animsition">
+        <div class="grid-container" >
+            <div class="hero">
+                <p style="margin-top: 100px;">404: Page Not Found.<br> I'm not sure how you got here but you can go back home by <span class="hero-email"><a href="https://marier.design">clicking here.</a></span></p>
+            </div>
+           
+        </div>
+    </main>
+      <div class="cursor"></div>
+    
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js" charset="utf-8"></script>
+        <script type="text/javascript" src="js/main.js"></script>
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <div class="row">
-      <div class="eight columns offset-by-two" style="margin-top: 12%">
-        <h1 style="text-align: left;">Sorry Chief,</h1>
-        <h5>We couldn't find that page.</h5>
-        <p class="index-btns hover-home" style="margin-top: 0.5%" ><a aria="Go Back To Home" href="https://marier.design/">Back to Home &rarr;</a></p>
-      </div>
-    </div>
-  </div>
-  <img alt="A halftone photograph of Don Adams with his signature shoe phone." src="https://marier.design/img/404.gif" style="mix-blend-mode: multiply; z-index: 6; width: 38%; height: auto; position: fixed; bottom: 0; right: 0;"/>
+  <!--script>
+  $(document).ready(function() {
+  $(".animsition").animsition({
+    inClass: 'fade-in-left',
+    outClass: 'fade-out-left',
+    inDuration: 1200,
+    outDuration: 600,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+    loading: true,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-fade-in-left',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
+});
+  </script-->
+    
+    <script type="text/javascript">
+        $('#more').on('click', function() {
+            var newText = $(this).text() == "less" ? "more" : "less";
+            $(this).text(newText);
+            
+            if ($('#fixed-navbar').css('top') == '0px') {
+                $('#fixed-navbar').animate({
+                    top: '-200px'
+                }, 400);
+                $('main').animate({
+                    marginTop: '0'
+                }, 400);
+            } else {
+                $('#fixed-navbar').animate({
+                    top: '0'
+                }, 400);
+                $('main').animate({
+                    marginTop: '200px'
+                }, 400);
+            }
+        });
+    
+        function randomlinks(){
+            var myrandom=Math.round(Math.random()*7)
+            var links=new Array()
+            links[0]="work/witchy.html"
+            links[1]="work/kerocoffee.html"
+            links[2]="work/spacecowgirl.html"
+            links[3]="work/summertours.html"
+            links[4]="work/alrbookkeeping.html"
+            links[5]="work/beaver.html"
+            links[6]="work/accessibilityguide.html"
+            links[7]="work/accessdesign.html"
+            
+            window.location=links[myrandom]
+}
+        
+        
+        
+        // fancy images
 
-  <script type="text/javascript" src="https://marier.design/js/jquery.min.js"></script>
-<script type="text/javascript" src="https://marier.design/js/app_index.js"></script>
+        $(document).ready(function() {
+            $('#btn-1').hover(function() {
+                $('#img-1').toggleClass('image-fade-odd');
+            });
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+            $('#btn-2').hover(function() {
+                $('#img-2').toggleClass('image-fade-even');
+            });
+
+            $('#btn-3').hover(function() {
+                $('#img-3').toggleClass('image-fade-odd');
+            });
+
+            $('#btn-4').hover(function() {
+                $('#img-4').toggleClass('image-fade-even');
+            });
+
+
+        });
+
+        // for scrolling that is smoother than jazz.
+        $("a").on('click', function(event) { // when an anchor is clicked.
+
+            if (this.hash !== "") { // if it has a hashtag in the href link.
+                event.preventDefault();
+                var hash = this.hash; // the variable hash is set to the link.
+
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 500, function() {
+                    window.location.hash = hash; // the page scrolls to the corresponding id tag smoother than creamy peanut butter.
+                });
+            }
+        });
+        
+        //cursor
+        
+        $(document).ready(function() {
+
+	var cursor = $(".cursor");
+
+	$(window).mousemove(function(e) {
+		cursor.css({
+			top: e.clientY - cursor.height() / 2,
+			left: e.clientX - cursor.width() / 2
+		});
+	});
+
+	$(window)
+		.mouseleave(function() {
+			cursor.css({
+				opacity: "0"
+			});
+		})
+		.mouseenter(function() {
+			cursor.css({
+				opacity: "1"
+			});
+		});
+
+	$("a")
+		.mouseenter(function() {
+			cursor.css({
+				transform: "scale(0.75)"
+			});
+		})
+		.mouseleave(function() {
+			cursor.css({
+				transform: "scale(1)"
+			});
+		});
+
+	$(window)
+		.mousedown(function() {
+			cursor.css({
+				transform: "scale(.25)"
+			});
+		})
+		.mouseup(function() {
+			cursor.css({
+				transform: "scale(1)"
+			});
+		});
+});
+
+
+    </script>
+
+
+
+
 </body>
+
 </html>

@@ -62,21 +62,21 @@ main {
     }
 
     .grid-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        gap: 1px 1px;
-        grid-template-areas:
-            "intro intro intro intro intro intro intro intro intro intro intro intro"
-            "image-1 image-1 image-1 image-1intro intro intro intro image-1 image-1 image-1 image-1 image-1 image-1 image-1 image-1"
-            "details details details details details details details details details details details details"
-            "education education education education education education education education education education education education"
-            "award-img-1 award-img-1 award-img-1 award-img-1 award-img-1 award-img-1 award-text-1 award-text-1 award-text-1 award-text-1 award-text-1 award-text-1"
-            "award-text-2 award-text-2 award-text-2 award-text-2 award-text-2 award-text-2 award-text-2 award-img-2 award-img-2 award-img-2 award-img-2 award-img-2"
-            ". award-img-3 award-img-3 award-img-3 award-img-3 award-img-3 award-text-3 award-text-3 award-text-3 award-text-3 award-text-3 award-text-3"
-            "reading-list reading-list reading-list reading-list reading-list reading-list reading-list reading-img reading-img reading-img reading-img reading-img"
-            "footer footer footer footer footer footer footer footer footer socials socials socials";
-    }
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1px 1px;
+    grid-template-areas:
+        "intro intro intro intro intro intro intro intro intro intro intro intro"
+        "image-1 image-1 image-1 image-1 image-1 image-1 image-1 image-1 image-1 image-1 image-1 image-1"
+        "details details details details details details details details details details details details"
+        "education education education education education education education education education education education education"
+        "award-img-1 award-img-1 award-img-1 award-img-1 award-img-1 award-img-1 award-text-1 award-text-1 award-text-1 award-text-1 award-text-1 award-text-1"
+        "award-text-2 award-text-2 award-text-2 award-text-2 award-text-2 award-text-2 award-text-2 award-img-2 award-img-2 award-img-2 award-img-2 award-img-2"
+        "award-img-3 award-img-3 award-img-3 award-img-3 award-img-3 award-text-3 award-text-3 award-text-3 award-text-3 award-text-3 award-text-3 award-text-3"
+        "reading-list reading-list reading-list reading-list reading-list reading-list reading-list reading-img reading-img reading-img reading-img reading-img"
+        "footer footer footer footer footer footer footer footer footer socials socials socials";
+}
 }
 
 .intro {
@@ -134,8 +134,9 @@ main {
     grid-area: award-text-3;
 }
 
-.reading-list {
-    grid-area: reading-list;    
+.reading {
+    grid-area: reading-list;
+    width: 100%;
 }
 
 .reading-img {
@@ -175,6 +176,7 @@ main {
 
 
 
+/** Index lists **/
 /** Index lists **/
 
 .education-list {
@@ -224,14 +226,6 @@ main {
     padding: 10px 16px;
 }
 
-.education h2 {
-    font-size: calc(20px + (72 - 20) * ((100vw - 300px) / (1400 - 300)));
-    font-variation-settings: "opsz"38, "wght"320, "SOFT"25, "WONK"0.5;
-    border-bottom: 0.5px solid black;
-    padding-bottom: 0.5em;
-    padding-top: 140px;
-}
-
 @media (min-width: 1400px) {
     .education-button-wrap .education-button-arrow {
         font-family: var(--font-stack-serif);
@@ -240,20 +234,31 @@ main {
         padding: 20px 16px;
     }
 
-    .education h2 {
-        font-variation-settings: "opsz"45, "wght"350, "SOFT"10, "WONK"1;
-        border-bottom: 0.5px solid black;
-        font-size: 45px;
-        padding-bottom: 0.5em;
-        padding-top: 140px;
-    }
-
     .education-button-wrap p {
         font-family: var(--font-stack-sans);
         font-size: 16px;
-        line-height: 16px;
-        padding: 42px 1em;
+       line-height: 1.5;
+    padding: 40px 1em 40px 1em;
     }
+}
+
+.education h2 {
+    border-bottom: 0.5px solid black;
+    font-size: calc(20px + (72 - 20) * ((100vw - 300px) / (1400 - 300)));
+    font-variation-settings: "opsz" 38,"wght" 320,"SOFT" 25,"WONK" 0.5;
+    padding-bottom: 0.5em;
+    padding-top: 70px;
+}
+
+@media (min-width: 1400px) {
+
+    .education h2 {
+    font-variation-settings: "opsz" 45,"wght" 350,"SOFT" 10,"WONK" 1;
+    border-bottom: 0.5px solid black;
+    font-size: 4.5rem;
+    padding-bottom: 0.5em;
+    padding-top: 140px;
+}
 }
 
 .award-img-1 {
@@ -342,9 +347,8 @@ main {
 /*-READDINGs-*/
 
 /** Index lists **/
-
-.list {
-    border-bottom: 0.5px solid var(--text-color);
+.reading-list {
+    border-bottom: 0.5px solid black;
     transition: 0.250s;
     width: 100%;
     height: auto;
@@ -352,7 +356,7 @@ main {
     z-index: -1;
 }
 
-.button-wrap {
+.reading-button-wrap {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -360,43 +364,69 @@ main {
     z-index: 1;
 }
 
-.reading-list .list .button-wrap:hover {
+.reading .reading-list .reading-button-wrap:hover {
     border: none;
     background-color: var(--highlight-color);
-    color: #fff;
+    color: var(--background-color);
     transition: 0.05s;
     transform: rotate(-0.75deg);
 }
 
-.reading-list .list:nth-child(odd) .button-wrap:hover {
+.reading .reading-list:nth-child(odd) .reading-button-wrap:hover {
     border: none;
     background-color: var(--highlight-color);
-    color: #fff;
+    color: var(--background-color);
     transition: 0.05s;
     transform: rotate(0.75deg);
 }
 
-.button-wrap p {
-    padding: 32px 1em;
+.reading-button-wrap p {
+    font-family: var(--font-stack-sans);
     font-size: 1.6rem;
     line-height: 1.5;
-    font-family: var(--font-stack-sans);
+    padding: 30px 1em 30px 1em;
 }
 
-.button-wrap .button-arrow {
+.reading-button-wrap .reading-button-arrow {
     font-family: var(--font-stack-serif);
     font-size: calc(20px + (50 - 20) * ((100vw - 300px) / (1400 - 300)));
-    line-height: 80px;
+    line-height: 50px;
     padding: 10px 16px;
 }
 
-.reading-list h2 {
+@media (min-width: 1400px) {
+    .reading-button-wrap .reading-button-arrow {
+        font-family: var(--font-stack-serif);
+        font-size: 50px;
+        line-height: 50px;
+        padding: 20px 16px;
+    }
+
+    .reading-button-wrap p {
+        font-family: var(--font-stack-sans);
+        font-size: 16px;
+       line-height: 1.5;
+    padding: 40px 1em 40px 1em;
+    }
+}
+
+.reading h2 {
+    border-bottom: 0.5px solid black;
     font-size: calc(20px + (72 - 20) * ((100vw - 300px) / (1400 - 300)));
-    font-variation-settings: "opsz"38, "wght"320, "SOFT"25, "WONK"0.5;
-    border-bottom: 0.5px solid black;
-    border-bottom: 0.5px solid black;
+    font-variation-settings: "opsz" 38,"wght" 320,"SOFT" 25,"WONK" 0.5;
     padding-bottom: 0.5em;
-    padding-top: 2em;
+    padding-top: 70px;
+}
+
+@media (min-width: 1400px) {
+
+    .reading h2 {
+    font-variation-settings: "opsz" 45,"wght" 350,"SOFT" 10,"WONK" 1;
+    border-bottom: 0.5px solid black;
+    font-size: 4.5rem;
+    padding-bottom: 0.5em;
+    padding-top: 140px;
+}
 }
 
 .reading-img {
@@ -432,7 +462,6 @@ main {
 #img-1 img {
     margin: 120px 0 0 240px;
     /**display: none;**/
-    position: relative;
     transform: rotate(8deg);
 
 }
@@ -500,26 +529,3 @@ main {
     }
 } **/
 
-@media (min-width: 1400px) {
-    .button-wrap p {
-        font-family: var(--font-stack-sans);
-        font-size: 16px;
-        line-height: 16px;
-        padding: 42px 1em;
-    }
-
-    .reading-list h2 {
-        font-variation-settings: "opsz"45, "wght"350, "SOFT"10, "WONK"1;
-        border-bottom: 0.5px solid black;
-        font-size: 45px;
-        padding-bottom: 0.5em;
-        padding-top: 2em;
-    }
-
-    .button-wrap .button-arrow {
-        font-family: var(--font-stack-serif);
-        font-size: 50px;
-        line-height: 50px;
-        padding: 20px 16px;
-    }
-}

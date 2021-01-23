@@ -37,9 +37,9 @@
         <a href="#top" class="nav-btn">about</a>
         <div id="fixed-navbar">
             <ul class="navbar-menu">
-                <li>Read my written work</li>
-                <li>Visual experiments</li>
-                <li>See a random project</li>
+                <li><a href="https://woahpixels.com">Read my written work</a></li>
+               <!--li><a href="#">Visual experiments</a></li-->
+                <li><a href="#" onClick="randomlinks(); return false;" class="animsition-link">See a random project</a></li>
             </ul>
             <ul class="navbar-info">
                 <li>My phone number and résumé are available on request.</li>
@@ -87,38 +87,34 @@
             <div class="award-img-2"><img src="img/about-hidethepainharold.jpg" alt="A picture of the meme Hide the Pain Harold, featuring an old man sitting in front of a laptop smiling and giving thumbs up."></div>
             <div class="award-img-3"><img src="img/about-seal.png" alt="A golden seal that with the words (Official Josh's Mom Seal of Quality) written in it in Comic Sans."></div>
             <div class="award-text-3">I mean <a href="https://gaspar.design" class="alt-link">Josh’s</a> mom says my design work is really good so..</div>
-            <div class="reading-list">
-            <h2 id="work">My reading list &darr;</h2>
-                <div class="list">
-                    <a href="https://www.worldcat.org/title/typographic-journey-through-the-inland-printer-1883-1900/oclc/712442899&referer=brief_results"><div class="button-wrap" id="btn-1">
+            
+            
+            <div class="reading">
+            <h2>Reading List &darr;</h2>
+                <div class="reading-list">
+                    <a href="https://www.worldcat.org/title/typographic-journey-through-the-inland-printer-1883-1900/oclc/712442899&referer=brief_results"><div class="reading-button-wrap" id="btn-1">
                         <p>A Typographical Journey through the Inland Printer</p>
-                        <div class="button-arrow">&rarr;</div>
+                        <div class="reading-button-arrow">&rarr;</div>
                         </div></a>
                 </div>
-                <div class="list">
-                    <a href="https://www.worldcat.org/title/witch-tree-symbol/oclc/297238567&referer=brief_results"><div class="button-wrap" id="btn-2">
+                <div class="reading-list">
+                    <a href="https://www.worldcat.org/title/witch-tree-symbol/oclc/297238567&referer=brief_results"><div class="reading-button-wrap" id="btn-2">
                         <p>Nancy Drew: The Witch Tree Symbol by Carolyn Keene</p>
-                        <div class="button-arrow">&rarr;</div>
+                        <div class="reading-button-arrow">&rarr;</div>
                         </div></a>
                 </div>
-                <div class="list">
-                    <a href="https://archive.org/details/delineatorvol3838unse/mode/2up" title="Note: my exact copy isn't readily available online."><div class="button-wrap" id="btn-3">
+                <div class="reading-list">
+                    <a href="https://archive.org/details/delineatorvol3838unse/mode/2up" title="Note: my exact copy isn't readily available online."><div class="reading-button-wrap" id="btn-3">
                         <p>The Delineator Journal of Fashion, June 1895</p>
-                        <div class="button-arrow">&rarr;</div>
-                        </div></a>
-                </div>
-                <div class="list">
-                    <a href="https://open.spotify.com/album/3QtcoigGc0KKzE6mVAkFfY?si=UetGBaqPQQ-BMDtA060YvA"><div class="button-wrap" id="btn-4">
-                        <p>In the Heat of the Night by Pat Benatar</p>
-                        <div class="button-arrow">&rarr;</div>
+                        <div class="reading-button-arrow">&rarr;</div>
                         </div></a>
                 </div>
             </div>
+            
             <div class="reading-img">
                 <div id="img-1"><img class="button-img"  src="img/reading/inlandprinter.png" alt="The cover of the book A Typographical Journey through the Inland Printer "></div>
                 <div id="img-2"><img class="button-img"  src="img/reading/nancydrew.png" alt="The cover of the book Nancy Drew: The Witch Tree Symbol"></div>
                 <div id="img-3"><img class="button-img"  src="img/reading/delineator.png" alt="The cover of the June 1895 edition of the Delineator magazine." ></div>
-                <div id="img-4"><img class="button-img"  src="img/reading/patbenatar.png" alt="The box art of Pat Benetar's  album In the Heat of the Night" ></div>
             </div>
             <div class="footer">
                 <p>Looking to collaborate on a project, or you just want to say hello? Drop me a line:</p>
@@ -177,11 +173,6 @@
             $('#btn-3').hover(function() {
                 $('#img-3').toggleClass('image-fade-odd');
             });
-
-            $('#btn-4').hover(function() {
-                $('#img-4').toggleClass('image-fade-even');
-            });
-
 
         });
 

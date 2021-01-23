@@ -45,6 +45,7 @@ main {
     "image-4 image-4 image-4 image-4 image-4 image-4 image-4 image-4 image-6 image-6 image-6 image-6"
     ". details-3 details-3 details-3 details-3 details-3 details-3 details-3 details-3 details-3 details-3 ."
     "image-7 image-7 image-7 image-7 image-7 image-7 image-8 image-8 image-8 image-8 image-8 image-8"
+            "file file file file file file file file file file file file"
     "image-9 image-9 image-9 image-9 image-9 image-9 image-9 image-9 image-9 image-9 image-9 image-9"
       "footer footer footer footer footer footer footer footer footer socials socials socials";
 }
@@ -154,7 +155,11 @@ main {
     font-size: 14px;
     color: var(--text-color-muted);
 }
-
+.file {
+    grid-area: file;
+    margin: 75px 0 75px 0;
+    border-top: 0.5px solid black;
+}
 .socials {
     grid-area: socials;
 }
@@ -199,16 +204,19 @@ main {
 
 /** Index lists **/
 
-.education-list {
+/** Index lists **/
+/** Index lists **/
+
+.file-list {
     border-bottom: 0.5px solid black;
     transition: 0.250s;
     width: 100%;
-    height: 80px;
+    height: auto;
     display: block;
     z-index: -1;
 }
 
-.education-button-wrap {
+.file-button-wrap {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -216,7 +224,7 @@ main {
     z-index: 1;
 }
 
-.education .education-list .education-button-wrap:hover {
+.file .file-list .file-button-wrap:hover {
     border: none;
     background-color: var(--highlight-color);
     color: var(--background-color);
@@ -224,7 +232,7 @@ main {
     transform: rotate(-0.75deg);
 }
 
-.education .education-list:nth-child(odd) .education-button-wrap:hover {
+.file .file-list:nth-child(odd) .file-button-wrap:hover {
     border: none;
     background-color: var(--highlight-color);
     color: var(--background-color);
@@ -232,26 +240,34 @@ main {
     transform: rotate(0.75deg);
 }
 
-.education-button-wrap p {
+.file-button-wrap p {
     font-family: var(--font-stack-sans);
-    font-size: 16px;
-    line-height: 16px;
-    padding: 32px 1em;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    padding: 30px 1em 30px 1em;
 }
 
-.education-button-wrap .education-button-arrow {
+.file-button-wrap .file-button-arrow {
     font-family: var(--font-stack-serif);
-    font-size: 50px;
+    font-size: calc(20px + (50 - 20) * ((100vw - 300px) / (1400 - 300)));
     line-height: 50px;
     padding: 10px 16px;
 }
 
-.education h2 {
-    font-variation-settings: "opsz" 45,"wght" 350,"SOFT" 10,"WONK" 1;
-    border-bottom: 0.5px solid black;
-    font-size: 45px;
-    padding-bottom: 0.5em;
-    padding-top: 140px;
+@media (min-width: 1400px) {
+    .file-button-wrap .file-button-arrow {
+        font-family: var(--font-stack-serif);
+        font-size: 50px;
+        line-height: 50px;
+        padding: 20px 16px;
+    }
+
+    .file-button-wrap p {
+        font-family: var(--font-stack-sans);
+        font-size: 16px;
+       line-height: 1.5;
+    padding: 40px 1em 40px 1em;
+    }
 }
 
 .award-img-1 {
