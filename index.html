@@ -1,113 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-  <!-- Basic Page Needs
+    <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Valery's Home on the Web</title>
-  <meta name="description" content="The graphic design portfolio of Valery Marier">
-  <meta name="author" content="Valery Marier">
+    <meta charset="utf-8">
+    <title>Home | Valery Marier</title>
+    <meta name="description" content="The graphic design portfolio of Valery Marier">
+    <meta name="author" content="Valery Marier">
     <meta name="keywords" content="valery marier, design, graphic designer, writer, digital art, digital design, freelance, freelance designer, freelance graphic designer, coding, creative coding, creative, creative design, research, design research, interactive design, interactivity, digital design, web design, interactive digital art, web designer,">
-    <meta name="copyright" content="Copyright 2019 by Valery Marier">
+    <meta name="copyright" content="Copyright 2021 by Valery Marier">
   <link rel="icon" type="image/png" href="images/favicon-sm.png">
 
-  <!-- Mobile Specific Metas
+    <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- CSS
+    <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel='stylesheet' href='css/fonts.css'>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.css" rel="stylesheet">
 
-
-  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,300i,500,500i&display=swap" rel="stylesheet">
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
-<body id="index">
-  <!-- Coloured Frame -->
-  <div id="left" class="frame frame-home"></div>
-  <div id="right" class="frame frame-home"></div>
-  <div id="top"class="frame frame-home"></div>
-  <div id="bottom"class="frame frame-home"></div>
+
+<body id="top" >
+    <nav>
+        <a href="#top" class="nav-btn">valerymarier</a>
+        <a id="more" class="nav-btn">more</a>
+        <a href="#work" class="nav-btn">work</a>
+        <a href="about.html" class="nav-btn animsition-link">about</a>
+        <div id="fixed-navbar">
+            <ul class="navbar-menu">
+                <li><a href="https://woahpixels.com">Read my written work</a></li>
+                <li><a href="#">Visual experiments</a></li>
+                <li><a href="#" onClick="randomlinks(); return false;" class="animsition-link">See a random project</a></li>
+            </ul>
+            <ul class="navbar-info">
+                <li>My phone number and résumé are available on request.</li>
+                <li>valery@marier.design</li>
+            </ul>
+
+        </div>
 
 
-  <!-- Navigation Pane -->
-  <nav>
-    <ul>
-      <li  class="index-active highlight-home"><a aria="Home">@valerymarier</a></li>
-      <li class="hover-about" ><a aria="About" href="about">About</a></li>
-      <li class="hover-work"><a aria="Work" href="work">Work</a></li>
-      <li class="hover-play"><a aria="Play" href="play">Play</a></li>
-    </ul>
-  </nav>
+    </nav>
+    <main id="main" class="animsition">
+        <div class="grid-container" >
+            <div class="hero">
+                <p>I’m Valery Marier, <br>a graphic designer who <br>creates <a href="#work">layouts<!--img class="hero-img" src="https://i.giphy.com/media/ZkwSxuckDvf7q/giphy.webp"--></a>, <a href="#work">websites<!--img class="hero-img" src="https://media1.giphy.com/media/xTiTntReleqBnhBNwQ/giphy.gif?cid=ecf05e47sya4yo51dh00af9xjqudpm5od0fydjmh39jbr3pj&rid=giphy.gif"--></a>, and <br>the occasional <a href="#work">typeface<!--img class="hero-img" src="https://i.giphy.com/media/l1J9NQvtuCQzUbH2g/giphy.webp"--></a>. <br>Let’s make something great! <br><span class="hero-email"><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#118;&#97;&#108;&#101;&#114;&#121;&#64;&#109;&#97;&#114;&#105;&#101;&#114;&#46;&#100;&#101;&#115;&#105;&#103;&#110;">valery@marier.design</a></span></p>
+            </div>
+            <div class="spotlight-list">
+                <h2 id="work">Selected works &darr;</h2>
+                <div class="list">
+                    <a href="work/beaver.html"  class="animsition-link"><div class="button-wrap" id="btn-1">
+                        <p>Beaver</p>
+                        <div class="button-arrow">&rarr;</div>
+                        </div></a>
+                </div>
+                <div class="list">
+                    <a href="work/summertours.html" class="animsition-link"><div class="button-wrap" id="btn-2">
+                        <p>Summer Tours</p>
+                        <div class="button-arrow">&rarr;</div>
+                        </div></a>
+                </div>
+                <div class="list">
+                    <a href="work/alrbookkeeping.html" class="animsition-link"> <div class="button-wrap" id="btn-3">
+                        <p>ALR Bookkeeping</p>
+                        <div class="button-arrow">&rarr;</div>
+                        </div></a>
+                </div>
+                <div class="list">
+                     <a href="work/spacecowgirl.html" class="animsition-link"><div class="button-wrap" id="btn-4">
+                        <p>Space Cowgirl</p>
+                        <div class="button-arrow">&rarr;</div>
+                         </div></a>
+                </div>
+            </div>
+            <div class="spotlight-img">
+                <div id="img-1"><img class="button-img" src="img/index-image-2.png" alt="The branding for Beaver Art Supplies with illustrations of beavers, cat tails, and ferns in the background."></div>           
+                <div id="img-2"><img class="button-img" src="img/index-image-3.png" alt="The cover of the book Summer Tours"></div>                
+                <div id="img-3"><img class="button-img" src="img/index-image-1.png" alt="The cover of the ALR Bookkeeping brand guidelines"></div>              
+                <div id="img-4"><img class="button-img" src="img/index-image-4.png" alt="A typographic sample of the font Space Cowgirl"></div>
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <main class="container">
-    <div class="row">
-      <div class="five columns offset-by-one" style="margin-top: 12%">
-        <h1>Valery Marier is a designer in the Toronto area. Welcome to her home on the web!</h1>
-      </div>
-      <div class="four columns offset-by-one" style="margin-top: 0%">
-        <img src="images/index-placeholder.jpg"/>
-      </div>
-    </div>
-    <div class="row"  style="margin-top: 1%"><div class="twelve columns"><div id="scroll-icon" class="index-scroll">&darr;</div></div></div>
+            </div>
+            <div class="works">
+                <h2>Some more projects &darr;</h2>
+                <div class="works-list">
+                     <a href="work/witchy.html" class="animsition-link"><div class="works-button-wrap">
+                        <p>Witchy</p>
+                        <div class="works-button-arrow">&rarr;</div>
+                         </div></a>
+                </div>
+                <!--div class="works-list">
+                     <a href="work/montserrat.html"><div class="works-button-wrap">
+                        <p>Montserrat Variable</p>
+                        <div class="works-button-arrow">&rarr;</div>
+                         </div></a>
+                </div-->
+                <div class="works-list">
+                    <a href="work/accessibilityguide.html" class="animsition-link"> <div class="works-button-wrap">
+                        <p>Accessibility Field Guide</p>
+                        <div class="works-button-arrow">&rarr;</div>
+                        </div></a>
+                </div>
+                <!--div class="works-list">
+                     <a href="work/montrealjazz.html"><div class="works-button-wrap">
+                        <p>Montreal Jazz Fest</p>
+                        <div class="works-button-arrow">&rarr;</div>
+                         </div></a>
+                </div-->
+                <div class="works-list">
+                     <a href="work/accessdesign.html" class="animsition-link"><div class="works-button-wrap">
+                        <p>Access Design</p>
+                        <div class="works-button-arrow">&rarr;</div>
+                         </div></a>
+                </div>
+                <div class="works-list">
+                     <a href="work/kerocoffee.html" class="animsition-link"><div class="works-button-wrap">
+                        <p>Kero Coffee</p>
+                        <div class="works-button-arrow">&rarr;</div>
+                         </div></a>
+                </div>
+            </div>
+            <div class="footer">
+                <p>Looking to collaborate on a project, or you just want to say hello? Drop me a line:</p>
+                <p class="footer-email"><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#118;&#97;&#108;&#101;&#114;&#121;&#64;&#109;&#97;&#114;&#105;&#101;&#114;&#46;&#100;&#101;&#115;&#105;&#103;&#110;">valery@marier.design</a></p>
+            </div>
+             <div class="socials">
+                <ul>
+                    <li><a href="https://instagram.com/valerymarier">Instagram</a></li>
+                    <li><a href="https://twitter.com/valerymarier">Twitter</a></li>
+                    <li><a href="https://ca.linkedin.com/in/valery-marier-0000561a1">LinkedIn</a></li>
+                    <li><a href="https://woahpixels.com">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+      <div class="cursor"></div>
+    
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js" charset="utf-8"></script>
+        <script type="text/javascript" src="js/main.js"></script>
 
-    <div class="row" style="margin-top: 3%">
-      <div class="six columns"><a class="work-item-link" href="work/access"><div class="work-item">
-      <img alt="An image of the cover of Valery's event booklet design" src="img/work/access-c.gif"/>
-      <p><strong>Access Design:</strong>&ensp;An accessible, tactile event schedule.</p>
-    </div></a>
-      </div>
-      <div class="six columns"><a class="work-item-link" href="work/michelle"><div class="work-item">
-      <img alt="An image of Valery's Cours app design." src="img/work/michelle.gif"/>
-      <p><strong>Michelle:</strong>&ensp;A variable font for long reading on the web.</p>
-    </div></a></div>
-    </div>
-    <div class="row" style="margin-top: 2%">
-      <div class="six columns offset-by-three">
-      <p class="index-desc">Valery Marier is a graphic designer interested in typography and accessible communication in both the physical and digital design worlds.</p>
-      <p class="index-desc">She combines her experience with both traditional and digital mediums and methodologies in a multidisciplinary approach to her design practice. By doing this, she is able to create unique design solutions that are suited to each project’s specific needs and circumstances.</p>
-      </div>
-    </div>
-    <div class="row" style="margin-top: 2%">
-      <div class="three columns offset-by-three" style="text-align:center;">
-        <p class="larr-btns"><a class="hover-index-about"aria="See More About Her" href="about">More about her &rarr;</a></p>
-      </div>
-      <div class="three columns" style="text-align:center;">
-        <p class="larr-btns"><a class="hover-index-work" aria="See Her Design Work" href="work">Her design work &rarr;</a></p>
-      </div>
-    </div>
-  </main>
-  <footer class="container about">
-    <div class="row">
-    <div class="seven columns">
-    <p>&copy;2019 by Valery Marier, all rights reserved.</p>
-    <p>Hosting by <a href="https://github.com">Github</a>. Typeset in <a href="https://www.huertatipografica.com/en/fonts/alegreya-sans-ht">Alegreya Sans</a>. Made with <i class="icon-heart"></i> in Toronto.</p>
-  </div>
-  <div class="two columns offset-by-three">
-    <div class="footer-social"><a aria-label="Go to Valery's Instagram page." href="https://instagram.com/valerymarier"><i class="icon-instagram"></i></a><a aria-label="Go to Valery's Twitter page." href="https://twitter.com/valerymarier"><i class="icon-twitter"></i></a><a aria-label="Go to Valery's Internet Archive page." href="https://archive.org/details/@peachypixels"><i class="icon-archive"></i></a></div>
-  </div>
-</div>
+  <!--script>
+  $(document).ready(function() {
+  $(".animsition").animsition({
+    inClass: 'fade-in-left',
+    outClass: 'fade-out-left',
+    inDuration: 1200,
+    outDuration: 600,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+    loading: true,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-fade-in-left',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
+});
+  </script-->
+    
+    <script type="text/javascript">
+        $('#more').on('click', function() {
+            var newText = $(this).text() == "less" ? "more" : "less";
+            $(this).text(newText);
+            
+            if ($('#fixed-navbar').css('top') == '0px') {
+                $('#fixed-navbar').animate({
+                    top: '-200px'
+                }, 400);
+                $('main').animate({
+                    marginTop: '0'
+                }, 400);
+            } else {
+                $('#fixed-navbar').animate({
+                    top: '0'
+                }, 400);
+                $('main').animate({
+                    marginTop: '200px'
+                }, 400);
+            }
+        });
+    
+        function randomlinks(){
+            var myrandom=Math.round(Math.random()*7)
+            var links=new Array()
+            links[0]="work/witchy.html"
+            links[1]="work/kerocoffee.html"
+            links[2]="work/spacecowgirl.html"
+            links[3]="work/summertours.html"
+            links[4]="work/alrbookkeeping.html"
+            links[5]="work/beaver.html"
+            links[6]="work/accessibilityguide.html"
+            links[7]="work/accessdesign.html"
+            
+            window.location=links[myrandom]
+}
+        
+        
+        
+        // fancy images
 
-  </footer>
+        $(document).ready(function() {
+            $('#btn-1').hover(function() {
+                $('#img-1').toggleClass('image-fade-odd');
+            });
 
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/textblock.js"></script>
+            $('#btn-2').hover(function() {
+                $('#img-2').toggleClass('image-fade-even');
+            });
 
-<script type="text/javascript" src="js/typesetting.js"></script>
-<script type="text/javascript" src="js/app_index.js"></script>
+            $('#btn-3').hover(function() {
+                $('#img-3').toggleClass('image-fade-odd');
+            });
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+            $('#btn-4').hover(function() {
+                $('#img-4').toggleClass('image-fade-even');
+            });
+
+
+        });
+
+        // for scrolling that is smoother than jazz.
+        $("a").on('click', function(event) { // when an anchor is clicked.
+
+            if (this.hash !== "") { // if it has a hashtag in the href link.
+                event.preventDefault();
+                var hash = this.hash; // the variable hash is set to the link.
+
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 500, function() {
+                    window.location.hash = hash; // the page scrolls to the corresponding id tag smoother than creamy peanut butter.
+                });
+            }
+        });
+        
+        //cursor
+        
+        $(document).ready(function() {
+
+	var cursor = $(".cursor");
+
+	$(window).mousemove(function(e) {
+		cursor.css({
+			top: e.clientY - cursor.height() / 2,
+			left: e.clientX - cursor.width() / 2
+		});
+	});
+
+	$(window)
+		.mouseleave(function() {
+			cursor.css({
+				opacity: "0"
+			});
+		})
+		.mouseenter(function() {
+			cursor.css({
+				opacity: "1"
+			});
+		});
+
+	$("a")
+		.mouseenter(function() {
+			cursor.css({
+				transform: "scale(0.75)"
+			});
+		})
+		.mouseleave(function() {
+			cursor.css({
+				transform: "scale(1)"
+			});
+		});
+
+	$(window)
+		.mousedown(function() {
+			cursor.css({
+				transform: "scale(.25)"
+			});
+		})
+		.mouseup(function() {
+			cursor.css({
+				transform: "scale(1)"
+			});
+		});
+});
+
+
+    </script>
+
+
+
+
 </body>
+
 </html>

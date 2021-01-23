@@ -1,0 +1,525 @@
+/** Table of contents
+
+    - Font linking
+    - Root style variables
+    - Base styles
+    - Grid
+    - Navigation
+    - Hero
+    - Highlighted work
+    - More work
+    - Footer
+
+**/
+
+
+
+/** Index Grid **/
+
+main {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding-top: 100px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1px 1px;
+    grid-template-areas:
+        "intro intro intro intro intro intro intro intro intro intro intro intro"
+        "image-1 image-1 image-1 image-1 image-1 image-1 image-1 image-1 image-1 image-1 image-1 image-1"
+        "details details details details details details details details details details details details"
+        "education education education education education education education education education education education education"
+        "award-img-1 award-img-1 award-img-1 award-img-1 award-img-1 award-img-1 award-text-1 award-text-1 award-text-1 award-text-1 award-text-1 award-text-1"
+        "award-text-2 award-text-2 award-text-2 award-text-2 award-text-2 award-text-2 award-text-2 award-img-2 award-img-2 award-img-2 award-img-2 award-img-2"
+        "award-img-3 award-img-3 award-img-3 award-img-3 award-img-3 award-text-3 award-text-3 award-text-3 award-text-3 award-text-3 award-text-3 award-text-3"
+        "reading-list reading-list reading-list reading-list reading-list reading-list reading-list reading-list reading-list reading-list reading-list reading-list"
+        "footer footer footer footer footer footer footer footer footer socials socials socials";
+}
+
+@media (min-width: 1080px) {
+    main {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        padding-top: 100px;
+    }
+}
+
+@media (min-width: 1400px) {
+
+    main {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        padding-top: 100px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 1px 1px;
+        grid-template-areas:
+            "intro intro intro intro intro intro intro intro intro intro intro intro"
+            "image-1 image-1 image-1 image-1intro intro intro intro image-1 image-1 image-1 image-1 image-1 image-1 image-1 image-1"
+            "details details details details details details details details details details details details"
+            "education education education education education education education education education education education education"
+            "award-img-1 award-img-1 award-img-1 award-img-1 award-img-1 award-img-1 award-text-1 award-text-1 award-text-1 award-text-1 award-text-1 award-text-1"
+            "award-text-2 award-text-2 award-text-2 award-text-2 award-text-2 award-text-2 award-text-2 award-img-2 award-img-2 award-img-2 award-img-2 award-img-2"
+            ". award-img-3 award-img-3 award-img-3 award-img-3 award-img-3 award-text-3 award-text-3 award-text-3 award-text-3 award-text-3 award-text-3"
+            "reading-list reading-list reading-list reading-list reading-list reading-list reading-list reading-img reading-img reading-img reading-img reading-img"
+            "footer footer footer footer footer footer footer footer footer socials socials socials";
+    }
+}
+
+.intro {
+    grid-area: intro;
+    font-family: var(--font-stack-serif);
+    font-variation-settings: "opsz"38, "wght"300, "SOFT"10, "WONK"1;
+    font-size: calc(20px + (64 - 20) * ((100vw - 300px) / (1400 - 300)));
+    line-height: 1.5;
+    text-align: left;
+}
+
+.image-1 {
+    grid-area: image-1;
+    font-family: var(--font-stack-sans);
+    font-size: 14px;
+    color: var(--text-color-muted);
+    margin-top: 100px;
+}
+
+.details {
+    grid-area: details;
+    font-family: var(--font-stack-serif);
+    margin-top: 50px;
+    font-variation-settings: "opsz"38, "wght"300, "SOFT"10, "WONK"1;
+    font-size: calc(20px + (64 - 20) * ((100vw - 300px) / (1400 - 300)));
+    line-height: 1.5;
+    text-align: left;
+}
+
+.education {
+    grid-area: education;
+}
+
+.award-img-1 {
+    grid-area: award-img-1;
+}
+
+.award-text-1 {
+    grid-area: award-text-1;
+}
+
+.award-text-2 {
+    grid-area: award-text-2;
+}
+
+.award-img-2 {
+    grid-area: award-img-2;
+}
+
+.award-img-3 {
+    grid-area: award-img-3;
+}
+
+.award-text-3 {
+    grid-area: award-text-3;
+}
+
+.reading-list {
+    grid-area: reading-list;    
+}
+
+.reading-img {
+    grid-area: reading-img;
+}
+
+.socials {
+    grid-area: socials;
+    
+}
+
+.footer {
+    grid-area: footer;
+    
+}
+
+@media (min-width: 1400px) {
+    .intro {
+        font-variation-settings: "opsz"64, "wght"300, "SOFT"10, "WONK"1;
+        font-size: 6.4rem;
+        line-height: 1.25;
+        text-align: center;
+    }
+
+    .details {
+        margin-top: 100px;
+        font-variation-settings: "opsz"64, "wght"300, "SOFT"10, "WONK"1;
+        font-size: 64px;
+        line-height: 1.25;
+        text-align: center;
+    }
+}
+
+
+
+/*- image 1 -*/
+
+
+
+/** Index lists **/
+
+.education-list {
+    border-bottom: 0.5px solid black;
+    transition: 0.250s;
+    width: 100%;
+    height: auto;
+    display: block;
+    z-index: -1;
+}
+
+.education-button-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.education .education-list .education-button-wrap:hover {
+    border: none;
+    background-color: var(--highlight-color);
+    color: var(--background-color);
+    transition: 0.05s;
+    transform: rotate(-0.75deg);
+}
+
+.education .education-list:nth-child(odd) .education-button-wrap:hover {
+    border: none;
+    background-color: var(--highlight-color);
+    color: var(--background-color);
+    transition: 0.05s;
+    transform: rotate(0.75deg);
+}
+
+.education-button-wrap p {
+    font-family: var(--font-stack-sans);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    padding: 30px 1em 30px 1em;
+}
+
+.education-button-wrap .education-button-arrow {
+    font-family: var(--font-stack-serif);
+    font-size: calc(20px + (50 - 20) * ((100vw - 300px) / (1400 - 300)));
+    line-height: 50px;
+    padding: 10px 16px;
+}
+
+.education h2 {
+    font-size: calc(20px + (72 - 20) * ((100vw - 300px) / (1400 - 300)));
+    font-variation-settings: "opsz"38, "wght"320, "SOFT"25, "WONK"0.5;
+    border-bottom: 0.5px solid black;
+    padding-bottom: 0.5em;
+    padding-top: 140px;
+}
+
+@media (min-width: 1400px) {
+    .education-button-wrap .education-button-arrow {
+        font-family: var(--font-stack-serif);
+        font-size: 50px;
+        line-height: 50px;
+        padding: 20px 16px;
+    }
+
+    .education h2 {
+        font-variation-settings: "opsz"45, "wght"350, "SOFT"10, "WONK"1;
+        border-bottom: 0.5px solid black;
+        font-size: 45px;
+        padding-bottom: 0.5em;
+        padding-top: 140px;
+    }
+
+    .education-button-wrap p {
+        font-family: var(--font-stack-sans);
+        font-size: 16px;
+        line-height: 16px;
+        padding: 42px 1em;
+    }
+}
+
+.award-img-1 {
+    width: 55%;
+    transform: rotate(-3deg);
+    margin: 50px auto 0 auto;
+}
+
+.award-img-2 {
+    width: 75%;
+    transform: rotate(4deg);
+    margin: 60px auto 0 auto;
+}
+
+.award-img-3 {
+    width: 65%;
+    transform: rotate(-3deg);
+    margin: 25px auto 0 auto;
+}
+
+.award-text-1 {
+    font-family: var(--font-stack-sans);
+    font-size: calc(12px + (34 - 12) * ((100vw - 300px) / (1400 - 300)));
+    transform: rotate(2deg);
+    text-align: center;
+    margin: 85px auto 0 auto;
+}
+
+.award-text-2 {
+    font-family: var(--font-stack-sans);
+    font-size: calc(12px + (34 - 12) * ((100vw - 300px) / (1400 - 300)));
+    transform: rotate(-3deg);
+    text-align: center;
+    margin: 55px auto 0 auto;
+}
+
+.award-text-3 {
+    font-family: var(--font-stack-sans);
+    font-size: calc(12px + (34 - 12) * ((100vw - 300px) / (1400 - 300)));
+    transform: rotate(-1deg);
+    text-align: center;
+    margin: 50px auto 0 auto;
+}
+
+@media (min-width: 1400px) {
+    .award-img-1 {
+    margin: 85px auto 0 auto;
+}
+
+.award-img-2 {
+
+    margin: 50px auto 0 auto;
+}
+
+.award-img-3 {
+    width: 65%;
+    transform: rotate(-3deg);
+    margin: 15px auto 0 auto;
+}
+
+    .award-text-1 {
+        font-family: var(--font-stack-sans);
+        font-size: 34px;
+        transform: rotate(2deg);
+        text-align: center;
+        margin: 215px auto 0 auto;
+    }
+
+    .award-text-2 {
+        font-family: var(--font-stack-sans);
+        font-size: 34px;
+        transform: rotate(-3deg);
+        text-align: center;
+        margin: 120px auto 0 auto;
+    }
+
+    .award-text-3 {
+        font-family: var(--font-stack-sans);
+        font-size: 34px;
+        transform: rotate(-1deg);
+        text-align: center;
+        margin: 125px auto 0 auto;
+    }
+}
+
+/*-READDINGs-*/
+
+/** Index lists **/
+
+.list {
+    border-bottom: 0.5px solid var(--text-color);
+    transition: 0.250s;
+    width: 100%;
+    height: auto;
+    display: block;
+    z-index: -1;
+}
+
+.button-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.reading-list .list .button-wrap:hover {
+    border: none;
+    background-color: var(--highlight-color);
+    color: #fff;
+    transition: 0.05s;
+    transform: rotate(-0.75deg);
+}
+
+.reading-list .list:nth-child(odd) .button-wrap:hover {
+    border: none;
+    background-color: var(--highlight-color);
+    color: #fff;
+    transition: 0.05s;
+    transform: rotate(0.75deg);
+}
+
+.button-wrap p {
+    padding: 32px 1em;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: var(--font-stack-sans);
+}
+
+.button-wrap .button-arrow {
+    font-family: var(--font-stack-serif);
+    font-size: calc(20px + (50 - 20) * ((100vw - 300px) / (1400 - 300)));
+    line-height: 80px;
+    padding: 10px 16px;
+}
+
+.reading-list h2 {
+    font-size: calc(20px + (72 - 20) * ((100vw - 300px) / (1400 - 300)));
+    font-variation-settings: "opsz"38, "wght"320, "SOFT"25, "WONK"0.5;
+    border-bottom: 0.5px solid black;
+    border-bottom: 0.5px solid black;
+    padding-bottom: 0.5em;
+    padding-top: 2em;
+}
+
+.reading-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#img-1, #img-2 , #img-3 , #img-4{
+    /**display: none;**/
+    position: absolute;
+    width: 40%;
+}
+#img-1 {
+    /**display: none;**/
+    z-index: 5;
+
+}
+#img-2 {
+    /**display: none;**/
+    z-index: 4;
+
+}
+#img-3 {
+    /**display: none;**/
+    z-index: 3;
+
+}
+#img-4 {
+    /**display: none;**/
+    z-index: 2;
+
+}
+#img-1 img {
+    margin: 120px 0 0 240px;
+    /**display: none;**/
+    position: relative;
+    transform: rotate(8deg);
+
+}
+#img-2 img {
+    margin: 140px 0 0 210px;
+    /**display: none;**/
+    transform: rotate(-6deg);
+
+}
+#img-3 img {
+    margin:  180px 0 0 180px;
+    /**display: none;**/
+    transform: rotate(-14deg);
+
+}
+#img-4  img{
+    margin: 220px 0 0 150px;
+    /**display: none;**/
+    transform: rotate(-22deg);
+
+}
+#img-1.image-fade-odd , #img-3.image-fade-odd {
+    /**display: none;**/
+    z-index: 999;
+
+}
+
+#img-2.image-fade-even, #img-4.image-fade-even{
+    /**display: none;**/
+    z-index: 999;
+
+}
+#img-1.image-fade-odd  img{
+    transition: all 0.5s ease;
+    transform: rotate(6deg);
+
+}
+
+#img-2.image-fade-even img{
+  transition: all 0.5s ease;
+    transform: rotate(-4deg);
+
+}
+#img-3.image-fade-odd  img{
+    transition: all 0.5s ease;
+    transform: rotate(-16deg);
+
+}
+
+#img-4.image-fade-even img{
+  transition: all 0.5s ease;
+    transform: rotate(-20deg);
+
+}
+
+/**@media (min-width: 1080px) {
+    .image-fade-odd {
+        margin: 105px auto 0 auto;
+        display: block;
+    }
+
+    .image-fade-even {
+        margin: 105px auto 0 auto;
+        display: block;
+    }
+} **/
+
+@media (min-width: 1400px) {
+    .button-wrap p {
+        font-family: var(--font-stack-sans);
+        font-size: 16px;
+        line-height: 16px;
+        padding: 42px 1em;
+    }
+
+    .reading-list h2 {
+        font-variation-settings: "opsz"45, "wght"350, "SOFT"10, "WONK"1;
+        border-bottom: 0.5px solid black;
+        font-size: 45px;
+        padding-bottom: 0.5em;
+        padding-top: 2em;
+    }
+
+    .button-wrap .button-arrow {
+        font-family: var(--font-stack-serif);
+        font-size: 50px;
+        line-height: 50px;
+        padding: 20px 16px;
+    }
+}
