@@ -30,6 +30,29 @@
 font-size: 14px;
 color: var(--text-color-muted);
         }
+        
+        p span {
+  position: relative;
+  top: 20px;
+  display: inline-block;
+  animation: bounce .3s ease infinite alternate;
+
+}
+
+p span:nth-child(2) { animation-delay: .1s; }
+p span:nth-child(3) { animation-delay: .2s; }
+p span:nth-child(4) { animation-delay: .3s; }
+p span:nth-child(5) { animation-delay: .4s; }
+p span:nth-child(6) { animation-delay: .5s; }
+p span:nth-child(7) { animation-delay: .6s; }
+p span:nth-child(8) { animation-delay: .7s; }
+
+@keyframes bounce {
+  100% {
+    top: -20px;
+
+  }
+}
     </style>
 
 
@@ -61,7 +84,8 @@ color: var(--text-color-muted);
     <main id="main"class="animsition">
         <div class="grid-container">
             <div class="intro">
-                <p>YSDN 4004 Project 1a: <em>Wordplay</em></p>
+                <p>YSDN 4004 Project 1a: 
+                <span>w</span><span>o</span><span>r</span><span>d</span><span>p</span><span>l</span><span>a</span><span>y</span></p>
             </div>
             <div class="image-1">
                 <figure>
