@@ -91,7 +91,7 @@ main {
 
 .hero p {
     font-family: var(--font-stack-serif);
-    font-size: calc(24px + (72 - 24) * ((100vw - 300px) / (1400 - 300)));
+    font-size: calc(24px + (70 - 24) * ((100vw - 300px) / (1400 - 300)));
     font-variation-settings: "opsz" 38,"wght" 320,"SOFT" 25,"WONK" 0.5;
     line-height: 1.5;
 }
@@ -153,7 +153,7 @@ main {
 
 @media (min-width: 1400px) {
     .hero p {
-    font-size: calc(72px + (110 - 72) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(66px + (105 - 66) * ((100vw - 300px) / (1600 - 300)));
     font-variation-settings: "opsz" 72,"wght" 300,"SOFT" 10,"WONK" 0.5;
     line-height: 1.25;
     }
@@ -271,24 +271,28 @@ main {
     /**display: none;**/
     position: relative;
     transform: rotate(8deg);
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.1));
 
 }
 #img-2 img {
     margin: 220px 0 0 180px;
     /**display: none;**/
     transform: rotate(-6deg);
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.1));
 
 }
 #img-3 img {
     margin:  280px 0 0 120px;
     /**display: none;**/
     transform: rotate(-14deg);
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.1));
 
 }
 #img-4  img{
     margin: 360px 0 0 80px;
     /**display: none;**/
     transform: rotate(-22deg);
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.1));
 
 }
 #img-1.image-fade-odd , #img-3.image-fade-odd {

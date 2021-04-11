@@ -1,0 +1,324 @@
+/** Table of contents
+
+    - Font linking
+    - Root style variables
+    - Base styles
+    - Grid
+    - Navigation
+    - Hero
+    - Highlighted work
+    - More work
+    - Footer
+
+**/
+
+
+
+/** Index Grid **/
+main {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding-top: 100px;
+}
+
+@media (min-width: 1080px) {
+main {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding-top: 100px;
+}
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 1px 25px;
+  grid-template-areas:
+    "intro intro intro intro intro intro intro intro intro intro intro intro"
+    "image-1 image-1 image-1 image-1 image-1 image-1 image-1 image-1 image-1 image-1 image-1 image-1"
+    "details-1 details-1 details-1 details-1 details-1 details-1 details-1 details-1 details-1 details-1 details-1 details-1"
+    "image-2 image-2 image-2 image-2 image-2 image-2 image-3 image-3 image-3 image-3 image-3 image-3"
+    "details-2 details-2 details-2 details-2 details-2 details-2 details-2 details-2 details-2 details-2 details-2 details-2"
+    "image-4 image-4 image-4 image-4 image-4 image-4 image-4 image-4 image-4 image-4 image-4 image-4"
+    "blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote"
+    "image-5 image-5 image-5 image-5 image-5 image-5 image-5 image-5 image-5 image-5 image-5 image-5"
+         "file file file file file file file file file file file file"
+    "image-6 image-6 image-6 image-6 image-6 image-6 image-6 image-6 image-6 image-6 image-6 image-6"
+    "footer footer footer footer footer footer footer footer footer socials socials socials";
+}
+
+.intro {
+    margin: 50px 0 50px 0;
+    grid-area: intro;
+    font-family: var(--font-stack-serif);
+    font-variation-settings: "opsz"38, "wght"300, "SOFT"10, "WONK"1;
+    font-size: calc(20px + (64 - 20) * ((100vw - 300px) / (1400 - 300)));
+    line-height: 1.5;
+     text-align: left;
+    } .intro p {
+        width: 75%;
+        float: left;
+    } .intro .badge {
+        width: 22%;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        transform: rotate(12deg);
+        animation: bounce 1.25s ease-out infinite alternate;
+        transition: opacity 0.3s ease;
+    } .intro .badge:hover {
+        animation-play-state: paused;
+        opacity: 0.5;
+    }
+@keyframes bounce {
+    100% {
+    top: 110px;
+    right: 4px;
+
+  }
+}
+
+.image-1 {
+    grid-area: image-1;
+    font-family: var(--font-stack-sans);
+    font-size: 14px;
+    color: var(--text-color-muted);
+    margin-top: 50px;
+}
+
+.details-1 {
+    grid-area: details-1;
+    font-family: var(--font-stack-serif);
+    margin-top: 50px;
+    font-variation-settings: "opsz"12, "wght"320, "SOFT"50, "WONK"0;
+   font-size: calc(12px + (24 - 12) * ((100vw - 300px) / (1400 - 300)));
+    line-height: 1.5;
+    text-align: left;
+
+    column-count: 1;
+}
+
+.details-1 a {
+    font-style: normal;
+    color: #4F1AFF;
+  display: inline-block;
+  padding:  0 0 0px 0;
+  position: relative;
+    font-variation-settings: "opsz"12, "wght"320, "SOFT"50, "WONK"0;
+     transition: all 0.3s ease;
+}
+.details-1 a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background: #4F1AFF;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.details-1 a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+.details-1 a:hover {
+  font-variation-settings: "opsz"12, "wght"520, "SOFT"50, "WONK"0;
+}
+
+.image-2 {
+    grid-area: image-2;
+    font-family: var(--font-stack-sans);
+    font-size: 14px;
+    color: var(--text-color-muted);
+    margin-top: 50px;
+}
+.image-3 {
+    grid-area: image-3;
+    font-family: var(--font-stack-sans);
+    font-size: 14px;
+    color: var(--text-color-muted);
+    margin-top: 50px;
+}
+.details-2 {
+    grid-area: details-2;
+    font-family: var(--font-stack-serif);
+    margin-top: 50px;
+    font-variation-settings: "opsz"12, "wght"320, "SOFT"50, "WONK"0;
+   font-size: calc(12px + (24 - 12) * ((100vw - 300px) / (1400 - 300)));
+    line-height: 1.5;
+    text-align: left;
+
+    column-count: 1;
+}
+.image-4 {
+    grid-area: image-4;
+    font-family: var(--font-stack-sans);
+    font-size: 14px;
+    color: var(--text-color-muted);
+    margin-top: 50px;
+}
+.blockquote {
+    grid-area: blockquote;
+    font-family: var(--font-stack-serif);
+    margin-top: 50px;
+     font-variation-settings: "opsz"12, "wght"300, "SOFT"50, "WONK"0;
+   font-size: calc(12px + (48 - 12) * ((100vw - 300px) / (1400 - 300)));
+    line-height: 1.5;
+}
+.blockquote figcaption {
+    margin-top: 1.5rem;
+    font-variation-settings: "opsz"12, "wght"320, "SOFT"50, "WONK"0;
+   font-size: calc(12px + (26 - 12) * ((100vw - 300px) / (1400 - 300)));
+}
+.image-5 {
+    grid-area: image-5;
+    font-family: var(--font-stack-sans);
+    font-size: 14px;
+    color: var(--text-color-muted);
+    margin-top: 50px;
+}
+.image-6 {
+    grid-area: image-6;
+    font-family: var(--font-stack-sans);
+    font-size: 14px;
+    color: var(--text-color-muted);
+    margin-top: 50px;
+}
+.file {
+    grid-area: file;
+    margin: 75px 0 35px 0;
+    border-top: 0.5px solid black;
+}
+.socials {
+    grid-area: socials;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+@media (min-width: 1400px) {
+    .intro {
+        margin: 100px 0 100px 0;
+        font-variation-settings: "opsz"64, "wght"300, "SOFT"10, "WONK"1;
+        font-size: 6.4rem;
+        line-height: 1.25;
+        text-align: left;
+    } .intro p {
+        width: 80%;
+        float: left;
+    } .intro .badge {
+        width: 15%;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        transform: rotate(12deg);
+        animation: bounce 1.25s ease-out infinite alternate;
+        transition: opacity 0.3s ease;
+    } .intro .badge:hover {
+        animation-play-state: paused;
+        opacity: 0.5;
+    }
+@keyframes bounce {
+    100% {
+    top: 110px;
+    right: 4px;
+
+  }
+}
+
+    .details-1, .details-2 {
+    font-variation-settings: "opsz"26, "wght"300, "SOFT"10, "WONK"0;
+    font-size: 26px;
+    column-count: 2;
+    column-gap: 60px;
+    margin-top: 100px;
+    }
+    .blockquote {
+    margin-top: 100px;
+font-variation-settings: "opsz"48, "wght"300, "SOFT"10, "WONK"1;
+        font-size: 4.8rem;
+        line-height: 1.25;
+}
+    .blockquote figcaption {
+    margin-top: 2.4rem;
+    font-variation-settings: "opsz"26, "wght"300, "SOFT"10, "WONK"0;
+    font-size: 26px;
+}
+     .image-1,  .image-2,  .image-3,  .image-4, .image-5, .image-6 {
+        margin-top: 100px;
+    }
+
+}
+
+/** Index lists **/
+
+.file-list {
+    border-bottom: 0.5px solid black;
+    transition: 0.250s;
+    width: 100%;
+    height: auto;
+    display: block;
+    z-index: -1;
+}
+
+.file-button-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.file .file-list .file-button-wrap:hover {
+    border: none;
+    background-color: var(--highlight-color);
+    color: var(--background-color);
+    transition: 0.05s;
+    transform: rotate(-0.75deg);
+}
+
+.file .file-list:nth-child(odd) .file-button-wrap:hover {
+    border: none;
+    background-color: var(--highlight-color);
+    color: var(--background-color);
+    transition: 0.05s;
+    transform: rotate(0.75deg);
+}
+
+.file-button-wrap p {
+    font-family: var(--font-stack-sans);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    padding: 30px 1em 30px 1em;
+}
+
+.file-button-wrap .file-button-arrow {
+    font-family: var(--font-stack-serif);
+    font-size: calc(20px + (50 - 20) * ((100vw - 300px) / (1400 - 300)));
+    line-height: 50px;
+    padding: 10px 16px;
+}
+
+@media (min-width: 1400px) {
+    .file-button-wrap .file-button-arrow {
+        font-family: var(--font-stack-serif);
+        font-size: 50px;
+        line-height: 50px;
+        padding: 20px 16px;
+    }
+
+    .file-button-wrap p {
+        font-family: var(--font-stack-sans);
+        font-size: 16px;
+       line-height: 1.5;
+    padding: 40px 1em 40px 1em;
+    }
+}

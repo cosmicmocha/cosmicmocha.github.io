@@ -80,6 +80,15 @@ main {
 
     column-count: 1;
 }
+.unquote {
+    font-family: var(--font-stack-serif);
+    font-variation-settings: "opsz"12, "wght"320, "SOFT"50, "WONK"0;
+   font-size: calc(12px + (24 - 12) * ((100vw - 300px) / (1400 - 300)));
+    line-height: 1.5;
+    text-align: left;
+
+    column-count: 1;
+}
 
 .details-1 a {
     font-style: normal;
@@ -199,6 +208,13 @@ main {
     column-gap: 60px;
     margin-top: 100px;
     }
+    .unquote {
+    font-variation-settings: "opsz"26, "wght"300, "SOFT"10, "WONK"0;
+    font-size: 26px;
+    column-count: 2;
+    column-gap: 60px;
+    }
+    
     .blockquote {
     margin-top: 100px;
 font-variation-settings: "opsz"48, "wght"300, "SOFT"10, "WONK"1;

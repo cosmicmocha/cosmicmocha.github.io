@@ -463,18 +463,24 @@ main {
     margin: 120px 0 0 240px;
     /**display: none;**/
     transform: rotate(8deg);
+        filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.1));
+
 
 }
 #img-2 img {
     margin: 140px 0 0 210px;
     /**display: none;**/
     transform: rotate(-6deg);
+        filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.1));
+
 
 }
 #img-3 img {
     margin:  180px 0 0 180px;
     /**display: none;**/
     transform: rotate(-14deg);
+        filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.1));
+
 
 }
 #img-4  img{
