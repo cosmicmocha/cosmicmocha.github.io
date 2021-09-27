@@ -34,9 +34,7 @@ main {
         "image-1 image-1 image-1 image-1 image-1 image-1 image-1 image-1 image-1 image-1 image-1 image-1"
         "details details details details details details details details details details details details"
         "education education education education education education education education education education education education"
-        "award-img-1 award-img-1 award-img-1 award-img-1 award-img-1 award-img-1 award-text-1 award-text-1 award-text-1 award-text-1 award-text-1 award-text-1"
-        "award-text-2 award-text-2 award-text-2 award-text-2 award-text-2 award-text-2 award-text-2 award-img-2 award-img-2 award-img-2 award-img-2 award-img-2"
-        "award-img-3 award-img-3 award-img-3 award-img-3 award-img-3 award-text-3 award-text-3 award-text-3 award-text-3 award-text-3 award-text-3 award-text-3"
+        "awards awards awards awards awards awards awards awards awards awards awards awards"
         "reading-list reading-list reading-list reading-list reading-list reading-list reading-list reading-list reading-list reading-list reading-list reading-list"
         "footer footer footer footer footer footer footer footer footer socials socials socials";
 }
@@ -71,9 +69,7 @@ main {
         "image-1 image-1 image-1 image-1 image-1 image-1 image-1 image-1 image-1 image-1 image-1 image-1"
         "details details details details details details details details details details details details"
         "education education education education education education education education education education education education"
-        "award-img-1 award-img-1 award-img-1 award-img-1 award-img-1 award-img-1 award-text-1 award-text-1 award-text-1 award-text-1 award-text-1 award-text-1"
-        "award-text-2 award-text-2 award-text-2 award-text-2 award-text-2 award-text-2 award-text-2 award-img-2 award-img-2 award-img-2 award-img-2 award-img-2"
-        "award-img-3 award-img-3 award-img-3 award-img-3 award-img-3 award-text-3 award-text-3 award-text-3 award-text-3 award-text-3 award-text-3 award-text-3"
+        "awards awards awards awards awards awards awards awards awards awards awards awards"
         "reading-list reading-list reading-list reading-list reading-list reading-list reading-list reading-img reading-img reading-img reading-img reading-img"
         "footer footer footer footer footer footer footer footer footer socials socials socials";
 }
@@ -110,28 +106,8 @@ main {
     grid-area: education;
 }
 
-.award-img-1 {
-    grid-area: award-img-1;
-}
-
-.award-text-1 {
-    grid-area: award-text-1;
-}
-
-.award-text-2 {
-    grid-area: award-text-2;
-}
-
-.award-img-2 {
-    grid-area: award-img-2;
-}
-
-.award-img-3 {
-    grid-area: award-img-3;
-}
-
-.award-text-3 {
-    grid-area: award-text-3;
+.awards {
+    grid-area: awards;
 }
 
 .reading {
@@ -145,12 +121,12 @@ main {
 
 .socials {
     grid-area: socials;
-    
+
 }
 
 .footer {
     grid-area: footer;
-    
+
 }
 
 @media (min-width: 1400px) {
@@ -167,7 +143,7 @@ main {
         font-size: 64px;
         line-height: 1.25;
         text-align: left;
-      
+
     }
 }
 
@@ -180,7 +156,7 @@ main {
 /** Index lists **/
 /** Index lists **/
 
-.education-list {
+.education-list, .awards-list {
     border-bottom: 0.5px solid black;
     transition: 0.250s;
     width: 100%;
@@ -189,7 +165,7 @@ main {
     z-index: -1;
 }
 
-.education-button-wrap {
+.education-button-wrap, .awards-button-wrap {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -197,7 +173,7 @@ main {
     z-index: 1;
 }
 
-.education .education-list .education-button-wrap:hover {
+.education .education-list .education-button-wrap:hover, .awards .awards-list .awards-button-wrap:hover {
     border: none;
     background-color: var(--highlight-color);
     color: var(--background-color);
@@ -205,7 +181,7 @@ main {
     transform: rotate(-0.75deg);
 }
 
-.education .education-list:nth-child(odd) .education-button-wrap:hover {
+.education .education-list:nth-child(odd) .education-button-wrap:hover, .awards .awards-list:nth-child(odd) .awards-button-wrap:hover {
     border: none;
     background-color: var(--highlight-color);
     color: var(--background-color);
@@ -213,14 +189,14 @@ main {
     transform: rotate(0.75deg);
 }
 
-.education-button-wrap p {
+.education-button-wrap p, .awards-button-wrap p {
     font-family: var(--font-stack-sans);
     font-size: 1.6rem;
     line-height: 1.5;
     padding: 30px 1em 30px 1em;
 }
 
-.education-button-wrap .education-button-arrow {
+.education-button-wrap .education-button-arrow, .awards-button-wrap .awards-button-arrow {
     font-family: var(--font-stack-serif);
     font-size: calc(20px + (50 - 20) * ((100vw - 300px) / (1400 - 300)));
     line-height: 50px;
@@ -228,14 +204,14 @@ main {
 }
 
 @media (min-width: 1400px) {
-    .education-button-wrap .education-button-arrow {
+    .education-button-wrap .education-button-arrow, .awards-button-wrap .awards-button-arrow {
         font-family: var(--font-stack-serif);
         font-size: 50px;
         line-height: 50px;
         padding: 20px 16px;
     }
 
-    .education-button-wrap p {
+    .education-button-wrap p, .awards-button-wrap p {
         font-family: var(--font-stack-sans);
         font-size: 16px;
        line-height: 1.5;
@@ -243,7 +219,7 @@ main {
     }
 }
 
-.education h2 {
+.education h2, .awards h2 {
     border-bottom: 0.5px solid black;
     font-size: calc(20px + (72 - 20) * ((100vw - 300px) / (1400 - 300)));
     font-variation-settings: "opsz" 38,"wght" 320,"SOFT" 25,"WONK" 0.5;
@@ -253,7 +229,7 @@ main {
 
 @media (min-width: 1400px) {
 
-    .education h2 {
+    .education h2, .awards h2 {
     font-variation-settings: "opsz" 45,"wght" 350,"SOFT" 10,"WONK" 1;
     border-bottom: 0.5px solid black;
     font-size: 4.5rem;
